@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="183px" height="64px" viewBox="0 0 183 64" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Murex</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Murex">
+            <text font-family="Bree-BoldOblique, Bree" font-size="48" font-style="italic" font-weight="bold">
+                <tspan x="0" y="51" fill="#40B883">M</tspan>
+                <tspan x="37.488" y="51" fill="#35495E">urex</tspan>
+            </text>
+            <polygon id="Path" fill="#40B883" fill-rule="nonzero" points="145.714286 39.0866808 133 44.9217759 135.285714 51 154.142857 41.9556025 155 37.1902748 138.714286 28 135.333333 33.4947146"></polygon>
+            <polygon id="Path" fill="#40B883" fill-rule="nonzero" points="163.714286 39.0866808 151 44.9217759 153.285714 51 172.142857 41.9556025 173 37.1902748 156.714286 28 153.333333 33.4947146"></polygon>
+            <polygon id="Path" fill="#35495E" fill-rule="nonzero" points="168 53 182.534884 53 183 50 168.465116 50"></polygon>
+        </g>
+    </g>
+</svg>
