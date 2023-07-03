@@ -1,6 +1,6 @@
 <h1>Download Murex</h1>
 
-[![Version](version.svg)](DOWNLOAD.md)
+[![Version](https://raw.githubusercontent.com/lmorg/murex/master/version.svg)](DOWNLOAD.md)
 
 <h2>Table of Contents</h2>
 
