@@ -76,8 +76,6 @@ for illustrative reasons)
 
 ## The Traditional
 
-![The Traditional](/images/blog/split_personalities/old.jpg)
-
 As I've already hinted in the section before, Bourne, Bash, Zsh all fall nicely
 into the first camp. The write-many read-once camp. And that makes sense to me
 when I consider the evolution of those shells. Their heritage does stem from
@@ -100,8 +98,6 @@ complex scripts. Perhaps the only language I've used which translates well both
 for terse REPLs and lengthier scripts is LISP.
 
 ## The Modern
-
-![The Modern](/images/blog/split_personalities/new.jpg)
 
 So how are modern shells addressing these split concerns?
 
@@ -161,8 +157,6 @@ This make Oil one of the most interesting alternative shells I have come
 across.
 
 ### Murex
-
-![Murex](/images/blog/split_personalities/murex.png)
 
 The approach Murex takes sits somewhere in between the previous two shells.
 It attempts to retain familiarity with POSIX syntax but isn't afraid to break
