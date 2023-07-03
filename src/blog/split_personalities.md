@@ -4,8 +4,6 @@
 
 ## A Very Brief History
 
-![Thompson (sitting) and Ritchie working together at a PDP-11](/images/blog/split_personalities/thompson.jpg)
-
 In the very early days of UNIX you had the Thompson shell which supported
 pipes, some basic control structures and wildcards. Thompson shell was based
 after the Multics shell, which in turn was inspired from `RUNCOM`. In fact the
@@ -61,7 +59,7 @@ with syntax that was inspired by the C. A pipeline would look something like
 the following:
 
     cat ("./example.csv") | grep ("-n", "foobar")
-    
+
 While this came with some readability improvements, it was a _massive_ pain to
 write over and over. So I added some syntax completion to the terminal,
 inspired by IDE's and how they attempt to minimize the repetition of entering
@@ -74,7 +72,7 @@ multitude of decades prior. What started out as the example above ended up
 looking more like the example below:
 
     cat ./example.csv | grep -n foobar
-    
+
 (please excuse the useless use of `cat` in these examples -- it's purely there
 for illustrative reasons)
 
@@ -125,20 +123,20 @@ along the pipeline.
 
 Where Powershell falls down for me is in two key areas:
 
-1. Many of the flags passed are verbose. Calling .NET objects can be verbose.
-   Take this example of base64 encoding a string:
+1.  Many of the flags passed are verbose. Calling .NET objects can be verbose.
+    Take this example of base64 encoding a string:
 
-        [Convert]::ToBase64String([System.Text.Encoding]::Unicode.GetBytes("TextToEncode"))
-     
-2. Powershell doesn't play nicely with POSIX. Okay, I'm arguably contradicting
-   myself now because earlier I raised this as a benefit. And in many ways it
-   is. However if you wish to run Powershell on Linux, which you can do, you
-   may find that you'll want to work with CLI tools that do "think" in terms of
-   byte streams. Many of these tools have equivalent aliases written in .NET so
-   you can appear to use them without escaping the rich programming environment
-   provided by Powershell. However you may, and I often did, run into a great
-   many scenarios where my expectations didn't match the practicalities of
-   Powershell.
+         [Convert]::ToBase64String([System.Text.Encoding]::Unicode.GetBytes("TextToEncode"))
+
+2.  Powershell doesn't play nicely with POSIX. Okay, I'm arguably contradicting
+    myself now because earlier I raised this as a benefit. And in many ways it
+    is. However if you wish to run Powershell on Linux, which you can do, you
+    may find that you'll want to work with CLI tools that do "think" in terms of
+    byte streams. Many of these tools have equivalent aliases written in .NET so
+    you can appear to use them without escaping the rich programming environment
+    provided by Powershell. However you may, and I often did, run into a great
+    many scenarios where my expectations didn't match the practicalities of
+    Powershell.
 
 (I will talk more about the second point in another article where I'll discuss
 pipelines, data types and the need for modern shells to understand rich data
@@ -179,12 +177,12 @@ over ALGOL style named scopes:
 
 **POSIX:**
 
-    if [ 0 -eq 1 ]; then 
+    if [ 0 -eq 1 ]; then
         echo '0 == 1'
     else
         echo '0 != 1'
     fi
-    
+
 **Murex:**
 
     if { 0 == 1 } then {
@@ -192,14 +190,14 @@ over ALGOL style named scopes:
     } else {
         echo '0 != 1'
     }
-    
+
 But since the curly braces are tokens, grammar like `then` / `else` become
 superfluous words that only exist for readability. So then we can make them
 optional. And you end up with a syntax that allows for a certain amount of
 golfing in the REPL should the operator want to save a few key strokes
 
     if { 0 == 1 } { echo '0 == 1' } { echo '0 != 1' }
-    
+
 ## Conclusion
 
 The write-many read-once tendencies of the interactive terminal and the
@@ -217,11 +215,11 @@ Published: 02.10.2021 at 22:42
 
 ## See Also
 
-* [Murex's Interactive Shell](../user-guide/interactive-shell.md):
+- [Murex's Interactive Shell](../user-guide/interactive-shell.md):
   What's different about Murex's interactive shell?
-* [Reading Lists From The Command Line](../blog/reading_lists.md):
+- [Reading Lists From The Command Line](../blog/reading_lists.md):
   How hard can it be to read a list of data from the command line? If your list is line delimited then it should be easy. However what if your list is a JSON array? This post will explore how to work with lists in a different command line environments.
-* [Rosetta Stone](../user-guide/rosetta-stone.md):
+- [Rosetta Stone](../user-guide/rosetta-stone.md):
   A tabulated list of Bashism's and their equivalent Murex syntax
-* [`if`](../commands/if.md):
+- [`if`](../commands/if.md):
   Conditional statement to execute different blocks of code depending on the result of the condition
