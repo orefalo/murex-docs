@@ -30,8 +30,6 @@ like it is extended from REPL usage.
 
 ## Opposing Requirements
 
-![Opposing Requirements](/images/blog/split_personalities/conflict.png)
-
 The problem with shell usage is it falls into two contradictory categories
 equally:
 
