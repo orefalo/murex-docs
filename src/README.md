@@ -29,7 +29,7 @@ highlights:
       - title: Brew <code>brew install murex</code>
       - title: MacPorts <code>sudo port install murex</code>
       - title: <i>More options are available in the <b>INSTALL</b> document.</i>
-        link: https://theme-hope.vuejs.press/guide/markdown/others.html#link-check
+        link: /install
 
   - header: A Modern shell for the rest of us
     description: Murex carries tons of unique features for you.
