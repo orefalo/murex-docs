@@ -7,14 +7,14 @@
   "scripts": {
     "docs:build": "vuepress build src",
     "docs:clean-dev": "vuepress dev src --clean-cache",
-    "docs:dev": "vuepress dev src",
+    "docs:dev": "NODE_ENV=DEV vuepress dev src",
     "docs:update-package": "pnpm dlx vp-update"
   },
   "devDependencies": {
-    "@vuepress/client": "2.0.0-beta.63",
-    "vue": "3.3.4",
-    "vuepress": "2.0.0-beta.63",
-    "vuepress-theme-hope": "2.0.0-beta.229"
+    "@vuepress/client": "2.0.0-beta.64",
+    "vue": "^3.3.4",
+    "vuepress": "2.0.0-beta.64",
+    "vuepress-theme-hope": "2.0.0-beta.230"
   },
   "packageManager": "pnpm@8.6.5"
 }
