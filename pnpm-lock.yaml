@@ -9,7 +9,7 @@ devDependencies:
     specifier: 2.0.0-beta.64
     version: 2.0.0-beta.64
   vue:
-    specifier: ^3.3.4
+    specifier: 3.3.4
     version: 3.3.4
   vuepress:
     specifier: 2.0.0-beta.64

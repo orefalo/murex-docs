@@ -8,7 +8,7 @@ bgImageDark: https://theme-hope-assets.vuejs.press/bg/4-dark.svg
 bgImageStyle:
   background-attachment: fixed
 heroText: Murex.Rocks
-tagline: An intuitive, typed and content aware shell from the 2020s.
+tagline: An intuitive, typed and content aware shell for the 2020s and beyond.
 actions:
   - text: Getting Started 💡
     link: ./getting_started
@@ -67,7 +67,7 @@ highlights:
 
       - title: Type inference
         icon: table-columns
-        details: the shell tries to infer the data type of a variable or pipelines it manages
+        details: the shell tries to infer the data type of variable and pipelines it manages
         link: https://theme-hope.vuejs.press/guide/markdown/tabs.html
 
       - title: Enhanced pipelines & redirection
