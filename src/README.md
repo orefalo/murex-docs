@@ -32,7 +32,7 @@ highlights:
         link: /install
 
   - header: A Modern shell for the rest of us
-    description: Murex carries tons of unique features for you.
+    description: Murex carries tons of unique features...
     image: /murex.svg
     bgImage: https://theme-hope-assets.vuejs.press/bg/2-light.svg
     bgImageDark: https://theme-hope-assets.vuejs.press/bg/2-dark.svg
