@@ -3,7 +3,7 @@ home: true
 icon: home
 title: Murex
 heroImage: /favicon.svg
-bgImage: https://theme-hope-assets.vuejs.press/bg/4-light.svg
+bgImage: bluebg.jpg
 bgImageDark: https://theme-hope-assets.vuejs.press/bg/4-dark.svg
 bgImageStyle:
   background-attachment: fixed
@@ -19,22 +19,10 @@ actions:
     link: ./guide/
 
 highlights:
-  - header: Easy to install
-    image: /Download.svg
-    bgImage: https://theme-hope-assets.vuejs.press/bg/3-light.svg
-    bgImageDark: https://theme-hope-assets.vuejs.press/bg/3-dark.svg
-    highlights:
-      - title: PKGBuild file <code>https://aur.archlinux.org/cgit/aur.git/plain/PKGBUILD?h=murex</code>
-      - title: AUR Package <code>https://aur.archlinux.org/packages/murex</code>
-      - title: Brew <code>brew install murex</code>
-      - title: MacPorts <code>sudo port install murex</code>
-      - title: <i>More options are available in the <b>INSTALL</b> document.</i>
-        link: /install
-
   - header: A Modern shell for the rest of us
     description: Murex carries tons of unique features...
     image: /murex.svg
-    bgImage: https://theme-hope-assets.vuejs.press/bg/2-light.svg
+    bgImage: linesbg.svg
     bgImageDark: https://theme-hope-assets.vuejs.press/bg/2-dark.svg
     bgImageStyle:
       background-repeat: repeat
@@ -109,6 +97,17 @@ highlights:
         icon: table-columns
         details: full features builtins allow fast execution and portability
         link: https://theme-hope.vuejs.press/guide/markdown/tabs.html
+  - header: Easy to install
+    image: /Download.svg
+    bgImage: orangebg.jpg
+    bgImageDark: https://theme-hope-assets.vuejs.press/bg/3-dark.svg
+    highlights:
+      - title: PKGBuild file <code>https://aur.archlinux.org/cgit/aur.git/plain/PKGBUILD?h=murex</code>
+      - title: AUR Package <code>https://aur.archlinux.org/packages/murex</code>
+      - title: Brew <code>brew install murex</code>
+      - title: MacPorts <code>sudo port install murex</code>
+      - title: <i>More options are available in the <b>INSTALL</b> document.</i>
+        link: /install
 
 copyright: false
 footer: GPL Licensed, Copyright © 2017-present Laurence Morgan
