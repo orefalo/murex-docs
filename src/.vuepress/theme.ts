@@ -6,8 +6,8 @@ export default hopeTheme({
   hostname: "https://vuepress-theme-hope-docs-demo.netlify.app",
 
   author: {
-    name: "Replace with Author",
-    url: "https://link to github",
+    name: "Laurence Morgan",
+    url: "https://github.com/lmorg",
   },
 
   iconAssets: "fontawesome-with-brands",
@@ -26,7 +26,7 @@ export default hopeTheme({
 
   footer: "Default footer",
 
-  displayFooter: true,
+  displayFooter: false,
 
   // encrypt: {
   //   config: {
@@ -39,7 +39,7 @@ export default hopeTheme({
   },
 
   plugins: {
-    // You should generate and use your own comment service
+    // TODO: You should generate and use your own comment service
     comment: {
       provider: "Giscus",
       repo: "vuepress-theme-hope/giscus-discussions",
