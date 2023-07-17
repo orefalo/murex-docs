@@ -5,8 +5,8 @@ title: Murex
 heroImage: /favicon.svg
 # bgImage: bluebg.jpg
 # bgImageDark: https://theme-hope-assets.vuejs.press/bg/4-dark.svg
-bgImageStyle:
-  background-attachment: fixed
+# bgImageStyle:
+#   background-attachment: fixed
 heroText: Murex.Rocks
 tagline: An intuitive, typed and content aware shell for the 2020s and beyond.
 actions:
@@ -29,7 +29,7 @@ highlights:
     #   background-size: initial
     features:
       - title: Content Aware
-        icon: table-columns
+        icon: arrows-to-circle
         details: natively manipulate JSON, TOML, YAML, XML, Markdown structures
         link: https://theme-hope.vuejs.press/guide/markdown/tabs.html
 
@@ -39,62 +39,62 @@ highlights:
         link: https://theme-hope.vuejs.press/guide/markdown/tabs.html
 
       - title: Arrays manipulation
-        icon: table-columns
+        icon: layer-group
         details: native builtins allows the proper manipulation of arrays
         link: link to GUIDE.arrays-and-maps.html
 
       - title: Scalar expression
-        icon: table-columns
+        icon: check-double
         details: the shell parses variables as expression to get around accidental bugs due to spaces
         link: https://theme-hope.vuejs.press/guide/markdown/tabs.html
 
       - title: Public & Private functions
-        icon: table-columns
+        icon: unlock-keyhole
         details: private functions restrict scope visibility to nearest module or source file
         link: https://theme-hope.vuejs.press/guide/markdown/tabs.html
 
       - title: Type inference
-        icon: table-columns
+        icon: text-width
         details: the shell tries to infer the data type of variable and pipelines it manages
         link: https://theme-hope.vuejs.press/guide/markdown/tabs.html
 
       - title: Enhanced pipelines & redirection
-        icon: clipboard-check
+        icon: puzzle-piece
         details: supports sending typed information to compatible functions via redirection and pipelines
         link: https://theme-hope.vuejs.press/guide/markdown/others.html#link-check
 
       - title: Type casting and formats
-        icon: table-columns
+        icon: text-height
         details: change the meta-data about how an information should be read or displayed
         link: https://theme-hope.vuejs.press/guide/markdown/tabs.html
 
       - title: Inline spellchecking
-        icon: box-archive
+        icon: spell-check
         details: identifies typing spelling errors as underlined
         link: https://theme-hope.vuejs.press/guide/markdown/container.html
 
       - title: Smart Autocomplete
-        icon: table-columns
+        icon: wand-magic
         details: use `TAB` to complete commands and parameters
         link: https://theme-hope.vuejs.press/guide/markdown/tabs.html
 
       - title: Hint text
-        icon: box-archive
+        icon: comment
         details: gives clues to the user without distractions
         link: https://theme-hope.vuejs.press/guide/markdown/container.html
 
       - title: Syntax highlighting
-        icon: table-columns
+        icon: highlighter
         details: in the interactive terminal, syntax is highlighted and can be pipelined
         link: https://theme-hope.vuejs.press/guide/markdown/tabs.html
 
       - title: Syntax Completion
-        icon: table-columns
+        icon: down-left-and-up-right-to-center
         details: balances and auto-close brackets et accolades
         link: https://theme-hope.vuejs.press/guide/markdown/tabs.html
 
       - title: 65 builtins commands
-        icon: table-columns
+        icon: building
         details: full features builtins allow fast execution and portability
         link: https://theme-hope.vuejs.press/guide/markdown/tabs.html
   - header: Easy to install
