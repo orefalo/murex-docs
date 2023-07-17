@@ -2,7 +2,7 @@
 home: true
 icon: home
 title: Murex
-heroImage: /favicon.svg
+heroImage: favicon.svg
 # bgImage: bluebg.jpg
 # bgImageDark: https://theme-hope-assets.vuejs.press/bg/4-dark.svg
 # bgImageStyle:
@@ -54,7 +54,7 @@ highlights:
         link: https://theme-hope.vuejs.press/guide/markdown/tabs.html
 
       - title: Type inference
-        icon: text-width
+        icon: text-height
         details: the shell tries to infer the data type of variable and pipelines it manages
         link: https://theme-hope.vuejs.press/guide/markdown/tabs.html
 
@@ -64,7 +64,7 @@ highlights:
         link: https://theme-hope.vuejs.press/guide/markdown/others.html#link-check
 
       - title: Type casting and formats
-        icon: text-height
+        icon: text-width
         details: change the meta-data about how an information should be read or displayed
         link: https://theme-hope.vuejs.press/guide/markdown/tabs.html
 
@@ -98,7 +98,8 @@ highlights:
         details: full features builtins allow fast execution and portability
         link: https://theme-hope.vuejs.press/guide/markdown/tabs.html
   - header: Easy to install
-    image: /Download.svg
+    image: box.svg
+
     # bgImage: orangebg.jpg
     # bgImageDark: https://theme-hope-assets.vuejs.press/bg/3-dark.svg
     highlights:
