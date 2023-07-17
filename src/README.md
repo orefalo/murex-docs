@@ -107,9 +107,9 @@ footer: GPL Licensed, Copyright © 2017-present Laurence Morgan
 <!-- markdownlint-disable -->
 
 <div class="image-preview">
-  <img src="murex-kill-autocomplete.png" />
-  <img src="murex-open-foreach.png" />
-  <img src="murex-spellchecker.png" />
+  <img src="/murex-kill-autocomplete.png" />
+  <img src="/murex-open-foreach.png" />
+  <img src="/murex-spellchecker.png" />
 </div>
 
 <style>
