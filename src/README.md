@@ -142,7 +142,7 @@ footer: GPL Licensed, Copyright © 2017-present Laurence Morgan
 
 <!-- markdownlint-restore -->
 
-## 🛠 Easy to Install
+## 📦 Easy to Install
 
 Install `Murex` from your favorite package manager
 
@@ -176,6 +176,6 @@ sudo port install murex
 
 More options are available in the [INSTALL](../cookbook/tutorial/README.md) document
 
-## 🚀 Getting Started Tutorial
+## 🛟 Getting Started Tutorial
 
 - [Tutorial](../cookbook/tutorial/README.md)
