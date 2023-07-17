@@ -1,7 +1,7 @@
 ---
 title: Blog
 index: false
-icon: laptop-code
+icon: comment
 category:
   - Guide
 ---

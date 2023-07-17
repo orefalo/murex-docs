@@ -136,6 +136,6 @@ sudo port install murex
 
 More options are available in the [INSTALL](../cookbook/tutorial/README.md) document
 
-## 🚀 Step-by-Step Tutorial
+## 🚀 Getting Started Tutorial
 
 - [Tutorial](../cookbook/tutorial/README.md)
