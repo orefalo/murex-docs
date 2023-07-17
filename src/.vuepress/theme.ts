@@ -10,6 +10,8 @@ export default hopeTheme({
     url: "https://github.com/lmorg",
   },
 
+  favicon: "favicon.ico",
+
   iconAssets: "fontawesome-with-brands",
 
   logo: "/murex.svg",

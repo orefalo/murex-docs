@@ -3,8 +3,8 @@ home: true
 icon: home
 title: Murex
 heroImage: /favicon.svg
-bgImage: bluebg.jpg
-bgImageDark: https://theme-hope-assets.vuejs.press/bg/4-dark.svg
+# bgImage: bluebg.jpg
+# bgImageDark: https://theme-hope-assets.vuejs.press/bg/4-dark.svg
 bgImageStyle:
   background-attachment: fixed
 heroText: Murex.Rocks
@@ -21,12 +21,12 @@ actions:
 highlights:
   - header: A Modern shell for the rest of us
     description: Murex carries tons of unique features...
-    image: /murex.svg
-    bgImage: linesbg.svg
-    bgImageDark: https://theme-hope-assets.vuejs.press/bg/2-dark.svg
-    bgImageStyle:
-      background-repeat: repeat
-      background-size: initial
+    # image: /murex.svg
+    # bgImage: linesbg.svg
+    # bgImageDark: https://theme-hope-assets.vuejs.press/bg/2-dark.svg
+    # bgImageStyle:
+    #   background-repeat: repeat
+    #   background-size: initial
     features:
       - title: Content Aware
         icon: table-columns
@@ -99,8 +99,8 @@ highlights:
         link: https://theme-hope.vuejs.press/guide/markdown/tabs.html
   - header: Easy to install
     image: /Download.svg
-    bgImage: orangebg.jpg
-    bgImageDark: https://theme-hope-assets.vuejs.press/bg/3-dark.svg
+    # bgImage: orangebg.jpg
+    # bgImageDark: https://theme-hope-assets.vuejs.press/bg/3-dark.svg
     highlights:
       - title: PKGBuild file <code>https://aur.archlinux.org/cgit/aur.git/plain/PKGBUILD?h=murex</code>
       - title: AUR Package <code>https://aur.archlinux.org/packages/murex</code>
