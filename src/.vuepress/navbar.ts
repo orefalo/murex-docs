@@ -4,7 +4,7 @@ export default navbar([
   "/",
   {
     text: "Docs",
-    icon: "lightbulb",
+    icon: "book",
     prefix: "/guide/",
     children: [
       {

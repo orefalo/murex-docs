@@ -12,7 +12,7 @@ export default sidebar({
 
     {
       text: "Getting Started",
-      icon: "laptop-code",
+      icon: "life-ring",
       prefix: "demo/",
       link: "demo/",
       children: "structure",
@@ -25,7 +25,7 @@ export default sidebar({
     },
     {
       text: "Builtins",
-      icon: "book",
+      icon: "building",
       prefix: "guide/",
       children: "structure",
     },

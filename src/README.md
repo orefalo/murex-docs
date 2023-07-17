@@ -70,27 +70,27 @@ highlights:
 
       - title: Inline spellchecking
         icon: spell-check
-        details: identifies typing spelling errors as underlined
+        details: quickly identify typing spelling errors with underlines text
         link: https://theme-hope.vuejs.press/guide/markdown/container.html
 
       - title: Smart Autocomplete
-        icon: wand-magic
-        details: use `TAB` to complete commands and parameters
+        icon: wand-magic-sparkles
+        details: use `TAB` to auto-complete commands and parameters
         link: https://theme-hope.vuejs.press/guide/markdown/tabs.html
 
       - title: Hint text
         icon: comment
-        details: gives clues to the user without distractions
+        details: the hinttext gives clues to the user without any distractions
         link: https://theme-hope.vuejs.press/guide/markdown/container.html
 
       - title: Syntax highlighting
         icon: highlighter
-        details: in the interactive terminal, syntax is highlighted and can be pipelined
+        details: in the interactive terminal, syntax is highlighted and style can be piped to the next built-in
         link: https://theme-hope.vuejs.press/guide/markdown/tabs.html
 
       - title: Syntax Completion
         icon: down-left-and-up-right-to-center
-        details: balances and auto-close brackets et accolades
+        details: balances and auto-closes brackets and accolades
         link: https://theme-hope.vuejs.press/guide/markdown/tabs.html
 
       - title: 65 builtins commands

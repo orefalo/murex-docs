@@ -1,7 +1,7 @@
 ---
 title: Install
 index: false
-icon: laptop-code
+icon: arrow-down
 category:
   - Guide
 ---
