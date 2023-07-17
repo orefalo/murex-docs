@@ -97,19 +97,45 @@ highlights:
         icon: building
         details: full features builtins allow fast execution and portability
         link: https://theme-hope.vuejs.press/guide/markdown/tabs.html
-  - header: Easy to install
-    image: box.svg
-
-    # bgImage: orangebg.jpg
-    # bgImageDark: https://theme-hope-assets.vuejs.press/bg/3-dark.svg
-    highlights:
-      - title: PKGBuild file <code>https://aur.archlinux.org/cgit/aur.git/plain/PKGBUILD?h=murex</code>
-      - title: AUR Package <code>https://aur.archlinux.org/packages/murex</code>
-      - title: Brew <code>brew install murex</code>
-      - title: MacPorts <code>sudo port install murex</code>
-      - title: <i>More options are available in the <b>INSTALL</b> document.</i>
-        link: /install
 
 copyright: false
 footer: GPL Licensed, Copyright © 2017-present Laurence Morgan
 ---
+
+## 🛠 Easy to Install
+
+Install `Murex` from your favorite package manager
+
+::: code-tabs#shell
+
+@tab Brew
+
+```bash
+brew install murex
+```
+
+@tab AUR Package
+
+```bash
+https://aur.archlinux.org/packages/murex
+```
+
+@tab PKGBuild file
+
+```bash
+https://aur.archlinux.org/cgit/aur.git/plain/PKGBUILD?h=murex
+```
+
+@tab MacPorts
+
+```bash
+sudo port install murex
+```
+
+:::
+
+More options are available in the [INSTALL](../cookbook/tutorial/README.md) document
+
+## 🚀 Step-by-Step Tutorial
+
+- [Tutorial](../cookbook/tutorial/README.md)
