@@ -102,6 +102,46 @@ copyright: false
 footer: GPL Licensed, Copyright © 2017-present Laurence Morgan
 ---
 
+## 👁‍🗨 Screenshots
+
+<!-- markdownlint-disable -->
+
+<div class="image-preview">
+  <img src="murex-kill-autocomplete.png" />
+  <img src="murex-open-foreach.png" />
+  <img src="murex-spellchecker.png" />
+</div>
+
+<style>
+  .image-preview {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .image-preview > img {
+     box-sizing: border-box;
+     width: 33.3% !important;
+     padding: 9px;
+     border-radius: 16px;
+  }
+
+  @media (max-width: 719px){
+    .image-preview > img {
+      width: 50% !important;
+    }
+  }
+
+  @media (max-width: 419px){
+    .image-preview > img {
+      width: 100% !important;
+    }
+  }
+</style>
+
+<!-- markdownlint-restore -->
+
 ## 🛠 Easy to Install
 
 Install `Murex` from your favorite package manager

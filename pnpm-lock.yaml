@@ -1910,7 +1910,7 @@ packages:
   /@types/sax@1.2.4:
     resolution: {integrity: sha512-pSAff4IAxJjfAXUG6tFkO7dsSbTmf8CtUpfhhZ5VhkRpC4628tJhh3+V6H1E+/Gs9piSzYKT5yzHO5M4GG9jkw==}
     dependencies:
-      '@types/node': 17.0.45
+      '@types/node': 20.4.0
     dev: true
 
   /@types/trusted-types@2.0.3:
@@ -1994,8 +1994,8 @@ packages:
       '@vue/shared': 3.3.4
     dev: true
 
-  /@vue/repl@2.5.2:
-    resolution: {integrity: sha512-2+YwL5/7QFhnwkK1A2sSJMVie04kY9Kz3l6Z60QySIldDUDfxUNxe0xICUwRucEOdQnu3TueUXn4+F504QmM5Q==}
+  /@vue/repl@2.5.5:
+    resolution: {integrity: sha512-wzhUz4kqVHarN1oykypFP8e81VLJMRd0Gtkwa945XbAI1mIGTVVyxgs93H6f73NHsHTD+S144UYLUPVCnlqjeQ==}
     requiresBuild: true
     dev: true
 
@@ -5057,8 +5057,8 @@ packages:
       kind-of: 6.0.3
     dev: true
 
-  /semver@7.5.3:
-    resolution: {integrity: sha512-QBlUtyVk/5EeHbi7X0fw6liDZc7BBmEaSYn01fMU1OUYbf6GPsbTtd8WmnqbI20SeycoHSeiybkE/q1Q+qlThQ==}
+  /semver@7.5.4:
+    resolution: {integrity: sha512-1bCSESV6Pv+i21Hvpxp3Dx+pSD8lIPt8uVjRrxAUt/nbswYc+tK6Y2btiULjd4+fnq15PX+nqQDC7Oft7WkwcA==}
     engines: {node: '>=10'}
     hasBin: true
     dependencies:
@@ -5820,7 +5820,7 @@ packages:
       '@mdit/plugin-uml': 0.4.8
       '@types/js-yaml': 4.0.5
       '@types/markdown-it': 12.2.3
-      '@vue/repl': 2.5.2
+      '@vue/repl': 2.5.5
       '@vuepress/client': 2.0.0-beta.64
       '@vuepress/shared': 2.0.0-beta.64
       '@vuepress/utils': 2.0.0-beta.64
@@ -6100,7 +6100,7 @@ packages:
       execa: 7.1.1
       fflate: 0.8.0
       gray-matter: 4.0.3
-      semver: 7.5.3
+      semver: 7.5.4
       striptags: 3.2.0
       vue: 3.3.4
       vue-router: 4.2.4(vue@3.3.4)

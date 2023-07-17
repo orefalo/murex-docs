@@ -12,6 +12,8 @@ export default hopeTheme({
 
   favicon: "favicon.ico",
 
+  fullscreen: true,
+
   iconAssets: "fontawesome-with-brands",
 
   logo: "/murex.svg",
@@ -42,13 +44,13 @@ export default hopeTheme({
 
   plugins: {
     // TODO: You should generate and use your own comment service
-    comment: {
-      provider: "Giscus",
-      repo: "vuepress-theme-hope/giscus-discussions",
-      repoId: "R_kgDOG_Pt2A",
-      category: "Announcements",
-      categoryId: "DIC_kwDOG_Pt2M4COD69",
-    },
+    // comment: {
+    //   provider: "Giscus",
+    //   repo: "vuepress-theme-hope/giscus-discussions",
+    //   repoId: "R_kgDOG_Pt2A",
+    //   category: "Announcements",
+    //   categoryId: "DIC_kwDOG_Pt2M4COD69",
+    // },
 
     // All features are enabled for demo, only preserve features you need here
     mdEnhance: {

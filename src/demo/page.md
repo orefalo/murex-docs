@@ -21,9 +21,9 @@ sticky: true
 # this page will appear in starred articles
 star: true
 # You can customize footer content
-footer: Footer content for test
+footer: GPL Licensed
 # You can customize copyright content
-copyright: No Copyright
+copyright: Copyright © 2017-present Laurence Morgan
 ---
 
 Content before `more` comment is regarded as page excerpt.
