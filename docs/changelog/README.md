@@ -12,6 +12,10 @@ Track new features, any breaking changes, and the release history here.
 
 ## Articles
 
+### 18.07.2023 - [v4.4](changelog/v4.4.md)
+
+v4.4 features two new builtins, improvements in testing, and automatic generation of autocompletion suggestions backed by man page parsing. Plus there has been a lot of focus on improving _readline_ responsiveness
+
 ### 02.07.2023 - [What's new in murex v4.3](v4.3.md)
 
 This brings improved support on Windows plus one breaking change from the previous release (v4.2)
