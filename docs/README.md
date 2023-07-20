@@ -94,13 +94,13 @@ highlights:
         link: https://theme-hope.vuejs.press/guide/markdown/tabs.html
 
       - title: Extension Framework
-        icon: building
-        details: design yourself or enjoy prebuilt extensions such as `auto-jump` or `starfish` 
+        icon: cube
+        details: design yourself or enjoy prebuilt extensions such as `auto-jump` or `starfish`
         link: https://theme-hope.vuejs.press/guide/markdown/tabs.html
 
       - title: Built-in Package Manager
-        icon: building
-        details: 
+        icon: cubes
+        details: comes with all utilities to search and manage the lifecycle of packages
         link: https://theme-hope.vuejs.press/guide/markdown/tabs.html
 
       - title: 65 builtins commands
@@ -109,13 +109,23 @@ highlights:
         link: https://theme-hope.vuejs.press/guide/markdown/tabs.html
 
       - title: Notifications and Events
-        icon: building
+        icon: bolt
         details: events streamline notifications upon files changes, process lifecycle and simple content availability.
         link: https://theme-hope.vuejs.press/guide/markdown/tabs.html
 
       - title: PNG Generation
-        icon: building
-        details: Generate barcodes or images diretly from you scripts
+        icon: image
+        details: generate barcodes and images diretly from scripts
+        link: https://theme-hope.vuejs.press/guide/markdown/tabs.html
+
+      - title: Multi-threaded
+        icon: gears
+        details: builtins are not forked processes like in a traditional POSIX shell, rather separate threads to optimize resource and performance.
+        link: https://theme-hope.vuejs.press/guide/markdown/tabs.html
+
+      - title: NOT POSIX compliant!
+        icon: recycle
+        details: purposely NOT POSIX compliant to set free, be performant and allow for extended capabilities
         link: https://theme-hope.vuejs.press/guide/markdown/tabs.html
 
 copyright: false

@@ -11,11 +11,11 @@ The path separater is defined by the first character in the path. For example
 however you should remember to quote or escape any special characters (tokens)
 used by the shell (such as pipe, `|`, and hash, `#`).
 
-The *value* must always be supplied as JSON however 
+The _value_ must always be supplied as JSON however
 
 ## Usage
 
-    <stdin> -> alter: [ -m | --merge | -s | --sum ] /path value -> <stdout>
+    `<stdin>` -> alter: [ -m | --merge | -s | --sum ] /path value -> `<stdout>`
 
 ## Examples
 
@@ -26,7 +26,7 @@ The *value* must always be supplied as JSON however
         "Description": "Interactive shell prompt.",
         "Value": "moo"
     }
-    
+
 `alter` also accepts JSON as a parameter for adding structured data:
 
     config: -> [ shell ] -> [ prompt ] -> alter: /Example { "Foo": "Bar" }
@@ -39,7 +39,7 @@ The *value* must always be supplied as JSON however
         },
         "Value": "{ out 'murex » ' }"
     }
-    
+
 However it is also data type aware so if they key you're updating holds a string
 (for example) then the JSON data a will be stored as a string:
 
@@ -50,7 +50,7 @@ However it is also data type aware so if they key you're updating holds a string
         "Description": "Interactive shell prompt.",
         "Value": "{ \"Foo\": \"Bar\" }"
     }
-    
+
 Numbers will also follow the same transparent conversion treatment:
 
     » tout: json { "one": 1, "two": 2 } -> alter: /two "3"
@@ -58,7 +58,7 @@ Numbers will also follow the same transparent conversion treatment:
         "one": 1,
         "two": 3
     }
-    
+
 > Please note: `alter` is not changing the value held inside `config` but
 > instead took the STDOUT from `config`, altered a value and then passed that
 > new complete structure through it's STDOUT.
@@ -79,7 +79,7 @@ do this with the `--merge` (or `-m`) flag.
     d
     e
     f
-    
+
 ### -s / --sum
 
 This behaves similarly to `--merge` where structures are blended together.
@@ -95,14 +95,14 @@ those values are added together.
 
 ## Flags
 
-* `--merge`
-    Merge data structures rather than overwrite
-* `--sum`
-    Sum values in a map, merge items in an array
-* `-m`
-    Alias for `--merge
-* `-s`
-    Alias for `--sum
+- `--merge`
+  Merge data structures rather than overwrite
+- `--sum`
+  Sum values in a map, merge items in an array
+- `-m`
+  Alias for `--merge
+- `-s`
+  Alias for `--sum
 
 ## Detail
 
@@ -113,38 +113,38 @@ assigned via the first character in the path. For example
 
     config -> alter: .shell.prompt.Value moo
     config -> alter: >shell>prompt>Value moo
-    
+
 Just make sure you quote or escape any characters used as shell tokens. eg
 
     config -> alter: '#shell#prompt#Value' moo
     config -> alter: ' shell prompt Value' moo
-    
+
 ### Supported data-types
 
-The *value* field must always be supplied as JSON however the *STDIN* struct
+The _value_ field must always be supplied as JSON however the _STDIN_ struct
 can be any data-type supported by murex.
 
 You can check what data-types are available via the `runtime` command:
 
     runtime --marshallers
-    
+
 Marshallers are enabled at compile time from the `builtins/data-types` directory.
 
 ## See Also
 
-* [`[[` (element)](../commands/element.md):
+- [`[[` (element)](../commands/element.md):
   Outputs an element from a nested structure
-* [`[` (index)](../commands/index.md):
+- [`[` (index)](../commands/index.md):
   Outputs an element from an array, map or table
-* [`append`](../commands/append.md):
+- [`append`](../commands/append.md):
   Add data to the end of an array
-* [`cast`](../commands/cast.md):
+- [`cast`](../commands/cast.md):
   Alters the data type of the previous function without altering it's output
-* [`config`](../commands/config.md):
+- [`config`](../commands/config.md):
   Query or define Murex runtime settings
-* [`format`](../commands/format.md):
+- [`format`](../commands/format.md):
   Reformat one data-type into another data-type
-* [`prepend` ](../commands/prepend.md):
+- [`prepend` ](../commands/prepend.md):
   Add data to the start of an array
-* [`runtime`](../commands/runtime.md):
+- [`runtime`](../commands/runtime.md):
   Returns runtime information on the internal state of Murex

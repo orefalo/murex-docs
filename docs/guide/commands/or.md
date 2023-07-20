@@ -9,10 +9,10 @@ code-blocks included as parameters are successful or not.
 
 ## Usage
 
-    or: { code-block } { code-block } -> <stdout>
-    
-    !or: { code-block } { code-block } -> <stdout>
-    
+    or: { code-block } { code-block } -> `<stdout>`
+
+    !or: { code-block } { code-block } -> `<stdout>`
+
 `or` supports as many or as few code-blocks as you wish.
 
 ## Examples
@@ -31,33 +31,32 @@ code-blocks are unsuccessful (ie the opposite of `or`).
 
 ### Code-Block Testing
 
-* `or` only executes code-blocks up until one of the code-blocks is successful
+- `or` only executes code-blocks up until one of the code-blocks is successful
   then it exits the function and returns `true`.
 
-* `!or` only executes code-blocks while the code-blocks are successful. Once one
+- `!or` only executes code-blocks while the code-blocks are successful. Once one
   is unsuccessful `!or` exits and returns `true` (ie it `not`s every code-block).
 
 ## Synonyms
 
-* `or`
-* `!or`
-
+- `or`
+- `!or`
 
 ## See Also
 
-* [`!` (not)](../commands/not.md):
+- [`!` (not)](../commands/not.md):
   Reads the STDIN and exit number from previous process and not's it's condition
-* [`and`](../commands/and.md):
+- [`and`](../commands/and.md):
   Returns `true` or `false` depending on whether multiple conditions are met
-* [`catch`](../commands/catch.md):
-  Handles the exception code raised by `try` or `trypipe` 
-* [`false`](../commands/false.md):
+- [`catch`](../commands/catch.md):
+  Handles the exception code raised by `try` or `trypipe`
+- [`false`](../commands/false.md):
   Returns a `false` value
-* [`if`](../commands/if.md):
+- [`if`](../commands/if.md):
   Conditional statement to execute different blocks of code depending on the result of the condition
-* [`true`](../commands/true.md):
+- [`true`](../commands/true.md):
   Returns a `true` value
-* [`try`](../commands/try.md):
+- [`try`](../commands/try.md):
   Handles errors inside a block of code
-* [`trypipe`](../commands/trypipe.md):
+- [`trypipe`](../commands/trypipe.md):
   Checks state of each function in a pipeline and exits block on error

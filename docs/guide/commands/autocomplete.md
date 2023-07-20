@@ -9,16 +9,16 @@ completion rules for suggestions in the interactive command line.
 
 ## Usage
 
-    autocomplete get [ command ] -> <stdout>
-    
+    autocomplete get [ command ] -> `<stdout>`
+
     autocomplete set command { mxjson }
 
 ## Flags
 
-* `get`
-    output all autocompletion schemas
-* `set`
-    define a new autocompletion schema
+- `get`
+  output all autocompletion schemas
+- `set`
+  define a new autocompletion schema
 
 ## Detail
 
@@ -32,7 +32,7 @@ you can overwrite existing rules.
 The directives are listed below. Headings are formatted as follows:
 
     "DirectiveName": json data-type (default value)
-    
+
 Where "default value" is what will be auto-populated at run time if you don't
 define an autocomplete schema manually. **zls** stands for zero-length string
 (ie: "").
@@ -64,7 +64,6 @@ define an autocomplete schema manually. **zls** stands for zero-length string
 - ["ListView": boolean (false)](#listview-boolean-false)
 - ["NestedCommand": boolean (false)](#nestedcommand-boolean-false)
 - ["Optional": boolean (false)](#optional-boolean-false)
-
 
 </div>
 
@@ -100,7 +99,7 @@ for multiple parameters:
         "IncDirs": true,
         "AllowMultiple": true
     }] }
-    
+
 ### "AnyValue": boolean (false)
 
 Deprecated. Please use **AllowAny** instead.
@@ -113,16 +112,16 @@ the following patterns in the command line:
 
     » example [tab]
     # suggests "/home/"
-    
+
     » example /home/[tab]
     # suggests "/home/foo" and "/home/bar"
-    
+
 Please note that **AutoBranch**'s behavior is also dependant on a "shell"
 `config` setting, recursive-enabled":
 
     » config get shell recursive-enabled
     true
-    
+
 ### "CacheTTL": int (5)
 
 Dynamic autocompletions (via **Dynamic** or **DynamicDesc**) are cached to
@@ -147,7 +146,7 @@ autocompletes within the rest of the command. For example
             })
         }
     ] }
-    
+
 Here the days of the week take 3 seconds to show up as autocompletion
 suggestions the first time and instantly for the next 60 seconds after.
 
@@ -160,12 +159,12 @@ mirror the same as those parameters entered in the interactive terminal.
 
 Two variables are created for each **Dynamic** function:
 
-* `ISMETHOD`: `true` if the command being autocompleted is going to run as a
-              pipelined method. `false` if it isn't.
+- `ISMETHOD`: `true` if the command being autocompleted is going to run as a
+  pipelined method. `false` if it isn't.
 
-* `PREFIX`: contains the partial term. For example if you typed `hello wor[tab]`
-            then `$PREFIX` would be set to **wor** for **hello**'s
-            autocompletion.
+- `PREFIX`: contains the partial term. For example if you typed `hello wor[tab]`
+  then `$PREFIX` would be set to **wor** for **hello**'s
+  autocompletion.
 
 The expected STDOUT should be an array (list) of any data type. For example:
 
@@ -176,15 +175,15 @@ The expected STDOUT should be an array (list) of any data type. For example:
         "Thursday",
         "Friday"
     ]
-    
+
 You can additionally include suggestions if any of the array items exactly
 matches any of the following strings:
 
-* `@IncFiles`   ([read more]((#incfiles-boolean-false)))
-* `@IncDirs`    ([read more]((#incdirs-boolean-false)))
-* `@IncExePath` ([read more]((#incexepath-boolean-false)))
-* `@IncExeAll`  ([read more]((#incexeall-boolean-false)))
-* `@IncManPage` ([read more]((#incmanpage-boolean-false)))
+- `@IncFiles` ([read more](<(#incfiles-boolean-false)>))
+- `@IncDirs` ([read more](<(#incdirs-boolean-false)>))
+- `@IncExePath` ([read more](<(#incexepath-boolean-false)>))
+- `@IncExeAll` ([read more](<(#incexeall-boolean-false)>))
+- `@IncManPage` ([read more](<(#incmanpage-boolean-false)>))
 
 ### "DynamicDesc": string (zls)
 
@@ -198,12 +197,12 @@ suggestion - depending on which suggestion "popup" you define (see
 
 Two variables are created for each **Dynamic** function:
 
-* `ISMETHOD`: `true` if the command being autocompleted is going to run as a
-              pipelined method. `false` if it isn't.
+- `ISMETHOD`: `true` if the command being autocompleted is going to run as a
+  pipelined method. `false` if it isn't.
 
-* `PREFIX`: contains the partial term. For example if you typed `hello wor[tab]`
-            then `$PREFIX` would be set to **wor** for **hello**'s
-            autocompletion.
+- `PREFIX`: contains the partial term. For example if you typed `hello wor[tab]`
+  then `$PREFIX` would be set to **wor** for **hello**'s
+  autocompletion.
 
 The expected STDOUT should be an object (map) of any data type. The key is the
 autocompletion suggestion, with the value being the description. For example:
@@ -215,7 +214,7 @@ autocompletion suggestion, with the value being the description. For example:
         "Thursday": "Forth day of the week",
         "Friday": "Fifth day of the week",
     }
-    
+
 ### "ExecCmdline": boolean (false)
 
 Sometimes you'd want your autocomplete suggestions to aware of the output
@@ -234,14 +233,14 @@ commands **Dynamic** or **DynamicDesc** code block.
 Because this is a dangerous feature, your partial commandline will only
 execute if the following conditions are met:
 
-* the commandline must be one pipeline (eg `;` tokens are not allowed)
-* the commandline must not have any new line characters
-* there must not be any redirection, including named pipes
-    (eg `cmd <namedpipe>`) and the STDOUT/STDERR switch token (`?`)
-* the commandline doesn't inline any variables (`$strings`, `@arrays`) or
-    functions (`${subshell}`, `$[index]`)
-* lastly all commands are whitelisted in "safe-commands"
-    (`config get shell safe-commands`)
+- the commandline must be one pipeline (eg `;` tokens are not allowed)
+- the commandline must not have any new line characters
+- there must not be any redirection, including named pipes
+  (eg `cmd <namedpipe>`) and the STDOUT/STDERR switch token (`?`)
+- the commandline doesn't inline any variables (`$strings`, `@arrays`) or
+  functions (`${subshell}`, `$[index]`)
+- lastly all commands are whitelisted in "safe-commands"
+  (`config get shell safe-commands`)
 
 If these criteria are met, the commandline is considered "safe"; if any of
 those conditions fail then the commandline is considered "unsafe".
@@ -251,7 +250,7 @@ Murex will come with a number of sane commands already included in its
 
     » function: foobar { -> match foobar }
     » config: eval shell safe-commands { -> append foobar }
-    
+
 Remember that **ExecCmdline** is designed to be included with either
 **Dynamic** or **DynamicDesc** and those code blocks would need to read
 from STDIN:
@@ -263,16 +262,16 @@ from STDIN:
         "Dynamic": ({
             switch ${ get-type: stdin } {
                 case * {
-                    <stdin> -> [ 0: ] -> format json -> [ 0 ]
+                    `<stdin>` -> [ 0: ] -> format json -> [ 0 ]
                 }
-                
+
                 catch {
-                    <stdin> -> formap k v { out $k } -> cast str -> append "]"
+                    `<stdin>` -> formap k v { out $k } -> cast str -> append "]"
                 }
             }
         })
     }] }
-    
+
 ### "FileRegexp": string (zls)
 
 When set in conjunction with **IncFiles**, this directive will filter on files
@@ -283,7 +282,7 @@ use the following:
         "IncFiles": true,
         "FileRegexp": (\.txt)
     }] }
-    
+
 > Please note that you may need to double escape any regexp strings: escaping
 > the `.` match and then also escaping the escape character in JSON. It is
 > recommended you use the `mxjson` method of quoting using parentheses as this
@@ -311,7 +310,7 @@ multiple parameters.
             }]
         }
     }] }
-    
+
 ...will provide "foo" as a suggestion to `example add`, and "bar" as a
 suggestion to `example delete`.
 
@@ -334,7 +333,7 @@ You can set default properties to all matched flags by using `*` as a
             }]
         }
     }] }
-    
+
 ...in this code we are saying not only does "add" support "foo" and "delete"
 supports "bar", but both "add" and "delete" also supports any filesystem files.
 
@@ -359,7 +358,7 @@ wasn't matched, then you can use a zero length string (""). For example
             }]
         }
     }] }
-    
+
 ### "Flags": array of strings (auto-populated from man pages)
 
 Setting **Flags** is the fastest and easiest way to populate suggestions
@@ -368,14 +367,14 @@ because it is just an array of strings. eg
     autocomplete set example { [{
         "Flags": [ "foo", "bar" ]
     }] }
-    
+
 If a command doesn't **Flags** already defined when you request a completion
 suggestion but that command does have a man page, then **Flags** will be
 automatically populated with any flags identified from an a quick parse of
 the man page. However because man pages are written to be human readable
 rather than machine parsable, there may not be a 100% success rate with the
 automatic man page parsing.
-    
+
 ### "FlagsDesc": map of strings (null)
 
 This is the same concept as **Flags** except it is a map with the suggestion
@@ -395,18 +394,18 @@ autocomplete in code.
 of that autocomplete definition. The path should look something like:
 `/int/string/int/string....` where
 
-* the first character is the separator,
+- the first character is the separator,
 
-* the first value is an integer that relates to the index in your autocomplete
-    array,
+- the first value is an integer that relates to the index in your autocomplete
+  array,
 
-* the second value is a string which points to the flag value map (if you
-    defined **FlagValues**),
+- the second value is a string which points to the flag value map (if you
+  defined **FlagValues**),
 
-* the third value is the integer of the autocomplete array inside that
-**FlagValues** map,
+- the third value is the integer of the autocomplete array inside that
+  **FlagValues** map,
 
-* ...and so on as necessary.
+- ...and so on as necessary.
 
 An example of a really simple **Goto**:
 
@@ -414,10 +413,10 @@ An example of a really simple **Goto**:
         {
             "Flags": [ "if=", "of=", "bs=", "iflag=", "oflag=", "count=", "status=" ],
             "FlagValues": {
-                "if": [{ 
+                "if": [{
                     "IncFiles": true
                 }],
-                "of": [{ 
+                "of": [{
                     "IncFiles": true
                 }],
                 "*": [{
@@ -429,7 +428,7 @@ An example of a really simple **Goto**:
             "Goto": "/0"
         }
     ] }
-    
+
 **Goto** is given precedence over any other directive. So ensure it's the only
 directive in it's group.
 
@@ -496,23 +495,23 @@ flags.
 
 ## See Also
 
-* [`<stdin>` ](../commands/stdin.md):
+- [`<stdin>` ](../commands/stdin.md):
   Read the STDIN belonging to the parent code block
-* [`[` (index)](../commands/index.md):
+- [`[` (index)](../commands/index.md):
   Outputs an element from an array, map or table
-* [`alias`](../commands/alias.md):
+- [`alias`](../commands/alias.md):
   Create an alias for a command
-* [`config`](../commands/config.md):
+- [`config`](../commands/config.md):
   Query or define Murex runtime settings
-* [`function`](../commands/function.md):
+- [`function`](../commands/function.md):
   Define a function block
-* [`get-type`](../commands/get-type.md):
+- [`get-type`](../commands/get-type.md):
   Returns the data-type of a variable or pipe
-* [`private`](../commands/private.md):
+- [`private`](../commands/private.md):
   Define a private function block
-* [`summary` ](../commands/summary.md):
+- [`summary` ](../commands/summary.md):
   Defines a summary help text for a command
-* [`switch`](../commands/switch.md):
+- [`switch`](../commands/switch.md):
   Blocks of cascading conditionals
-* [mxjson](../types/mxjson.md):
+- [mxjson](../types/mxjson.md):
   Murex-flavoured JSON (deprecated)

@@ -1,4 +1,4 @@
-# `<stdin>`  - Command Reference
+# `<stdin>` - Command Reference
 
 > Read the STDIN belonging to the parent code block
 
@@ -9,7 +9,7 @@ STDIN down a pipeline
 
 ## Usage
 
-    <stdin> -> <stdout>
+    `<stdin>` -> `<stdout>`
 
 ## Examples
 
@@ -17,7 +17,7 @@ When writing more complex scripts, you cannot always invoke your read as the
 first command in a code block. For example a simple pipeline might be:
 
     » function: example { -> match: 2 }
-    
+
 But this only works if `->` is the very first command. The following would
 fail:
 
@@ -26,17 +26,17 @@ fail:
         out: "only match 2"
         -> match 2
     }
-    
+
 This is where `<stdin>` comes to our rescue:
 
     function: example {
         out: "only match 2"
-        <stdin> -> match 2
+        `<stdin>` -> match 2
     }
-    
+
 This could also be written as:
 
-    function: example { out: "only match 2"; <stdin> -> match 2 }
+    function: example { out: "only match 2"; `<stdin>` -> match 2 }
 
 ## Detail
 
@@ -62,34 +62,34 @@ data along asynchronously.
 For example
 
     pipe: example
-    
+
     bg {
         <example> -> match: Hello
     }
-    
+
     out: "foobar"        -> <example>
     out: "Hello, world!" -> <example>
     out: "foobar"        -> <example>
-    
+
     !pipe: example
-    
+
 This returns `Hello, world!` because `out` is writing to the **example** named
 pipe and `match` is also reading from it in the background (`bg`).
 
 Named pipes can also be inlined into the command parameters with `<>` tags
 
     pipe: example
-    
+
     bg {
         <example> -> match: Hello
     }
-    
+
     out: <example> "foobar"
     out: <example> "Hello, world!"
     out: <example> "foobar"
-    
+
     !pipe: example
-    
+
 > Please note this is also how `test` works.
 
 Murex named pipes can also represent network sockets, files on a disk or any
@@ -100,7 +100,7 @@ or write endpoints transparently.
 To see the different supported types run
 
     runtime --pipes
-    
+
 ### Namespaces and usage in modules and packages
 
 Pipes created via `pipe` are created in the global namespace. This allows pipes
@@ -110,22 +110,21 @@ that pipes created in modules should be prefixed with the name of its package.
 
 ## Synonyms
 
-* `<stdin>`
-
+- `<stdin>`
 
 ## See Also
 
-* [Pipeline](../user-guide/pipeline.md):
+- [Pipeline](../user-guide/pipeline.md):
   Overview of what a "pipeline" is
-* [`<>` / `read-named-pipe`](../commands/namedpipe.md):
+- [`<>` / `read-named-pipe`](../commands/namedpipe.md):
   Reads from a Murex named pipe
-* [`function`](../commands/function.md):
+- [`function`](../commands/function.md):
   Define a function block
-* [`match`](../commands/match.md):
+- [`match`](../commands/match.md):
   Match an exact value in an array
-* [`out`](../commands/out.md):
+- [`out`](../commands/out.md):
   Print a string to the STDOUT with a trailing new line character
-* [`pipe`](../commands/pipe.md):
+- [`pipe`](../commands/pipe.md):
   Manage Murex named pipes
-* [`runtime`](../commands/runtime.md):
+- [`runtime`](../commands/runtime.md):
   Returns runtime information on the internal state of Murex

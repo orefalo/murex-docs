@@ -1,6 +1,6 @@
 # `escape` - Command Reference
 
-> Escape or unescape input 
+> Escape or unescape input
 
 ## Description
 
@@ -14,15 +14,15 @@ returns its unescaped counterpart.
 
 Escape
 
-    <stdin> -> escape -> <stdout>
-    
-    escape string to escape -> <stdout>
-    
+    `<stdin>` -> escape -> `<stdout>`
+
+    escape string to escape -> `<stdout>`
+
 Unescape
 
-    <stdin> -> !escape -> <stdout>
-    
-    !escape string to unescape -> <stdout>
+    `<stdin>` -> !escape -> `<stdout>`
+
+    !escape string to unescape -> `<stdout>`
 
 ## Examples
 
@@ -31,19 +31,18 @@ Escape
     » out (multi
     » line
     » string) -> escape
-    "multi\nline\nstring\n" 
+    "multi\nline\nstring\n"
 
 ## Synonyms
 
-* `escape`
-* `!escape`
-
+- `escape`
+- `!escape`
 
 ## See Also
 
-* [`esccli`](../commands/esccli.md):
+- [`esccli`](../commands/esccli.md):
   Escapes an array so output is valid shell code
-* [`eschtml`](../commands/eschtml.md):
+- [`eschtml`](../commands/eschtml.md):
   Encode or decodes text for HTML
-* [`escurl`](../commands/escurl.md):
+- [`escurl`](../commands/escurl.md):
   Encode or decodes text for the URL

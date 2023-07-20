@@ -16,11 +16,11 @@ used with `foreach`, such as `--jmap`.
 
 `formap` writes a list:
 
-    <stdin> -> foreach variable { code-block } -> <stdout>
-    
+    `<stdin>` -> foreach variable { code-block } -> `<stdout>`
+
 `formap` writes to a buffered JSON map:
 
-    <stdin> -> formap --jmap key value { code-block (map key) } { code-block (map value) } -> <stdout>
+    `<stdin>` -> formap --jmap key value { code-block (map key) } { code-block (map value) } -> `<stdout>`
 
 ## Examples
 
@@ -40,14 +40,14 @@ First of all lets assume the following dataset:
             "Gender": "Female"
         }
     }
-    
+
 We can create human output from this:
 
     » $people -> formap key value { out "$key is $value[Age] years old" }
     Sally is 54 years old
     Tom is 32 years old
     Dick is 43 years old
-    
+
 > Please note that maps are intentionally unsorted so you cannot guarantee the
 > order of the output produced even if the input has been superficially set in
 > a specific order.
@@ -59,12 +59,12 @@ With `--jmap` we can turn that structure into a new structure:
         "Dick": "43",
         "Sally": "54",
         "Tom": "32"
-    } 
+    }
 
 ## Flags
 
-* `--jmap`
-    Write a `json` map to STDOUT instead of an array
+- `--jmap`
+  Write a `json` map to STDOUT instead of an array
 
 ## Detail
 
@@ -85,26 +85,26 @@ wish to persist meta values across blocks you will need to reassign `$.`, eg
             out "$(meta_parent.i): $.i"
         }
     }
-    
+
 The following meta values are defined:
 
-* `i`: iteration number
+- `i`: iteration number
 
 ## See Also
 
-* [`[` (index)](../commands/index.md):
+- [`[` (index)](../commands/index.md):
   Outputs an element from an array, map or table
-* [`break`](../commands/break.md):
+- [`break`](../commands/break.md):
   Terminate execution of a block within your processes scope
-* [`for`](../commands/for.md):
+- [`for`](../commands/for.md):
   A more familiar iteration loop to existing developers
-* [`foreach`](../commands/foreach.md):
+- [`foreach`](../commands/foreach.md):
   Iterate through an array
-* [`json` ](../types/json.md):
+- [`json` ](../types/json.md):
   JavaScript Object Notation (JSON)
-* [`set`](../commands/set.md):
+- [`set`](../commands/set.md):
   Define a local variable and set it's value
-* [`tabulate`](../commands/tabulate.md):
+- [`tabulate`](../commands/tabulate.md):
   Table transformation tools
-* [`while`](../commands/while.md):
+- [`while`](../commands/while.md):
   Loop until condition false

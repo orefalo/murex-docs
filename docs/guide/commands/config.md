@@ -13,28 +13,28 @@ centralised and discoverable.
 
 List all settings:
 
-    config -> <stdout>
-    
+    config -> `<stdout>`
+
 Get a setting:
 
-    config get app key -> <stdout>
-    
+    config get app key -> `<stdout>`
+
 Set a setting:
 
     config set app key value
-    
-    <stdin> -> config set app key
-    
+
+    `<stdin>` -> config set app key
+
     config eval app key { -> code-block }
-    
+
 Define a new config setting:
 
     config define app key { mxjson }
-    
+
 Reset a setting to it's default value:
 
     !config app key
-    
+
     config default app key
 
 ## Examples
@@ -53,15 +53,15 @@ With regards to `config`, the following terms are applied:
 
 This refers to a grouped category of settings. For example the name of a built
 in.
-  
+
 Other app names include
 
-* `shell`: for "global" (system wide) Murex settings
-* `proc`: for scoped Murex settings
-* `http`: for settings that are applied to any processes which use the builtin
-   HTTP user agent (eg `open`, `get`, `getfile`, `post`)
-* `test`: settings for Murex's test frameworks
-* `index`: settings for `[` (index)
+- `shell`: for "global" (system wide) Murex settings
+- `proc`: for scoped Murex settings
+- `http`: for settings that are applied to any processes which use the builtin
+  HTTP user agent (eg `open`, `get`, `getfile`, `post`)
+- `test`: settings for Murex's test frameworks
+- `index`: settings for `[` (index)
 
 ### "key"
 
@@ -76,7 +76,7 @@ Value is the actual value of a setting. So the value for "app": `http`, "key":
 
     » config get http timeout
     10
-    
+
 ### "scope" / "scoped"
 
 Settings in `config`, by default, are scoped per function and module. Any
@@ -94,10 +94,10 @@ another executing function (same concept as global variables).
 ## Directives
 
 The directives for `config define` are listed below. Headings are formatted
-as follows: 
+as follows:
 
     "DirectiveName": json data-type (default value)
-    
+
 Where "default value" is what will be auto-populated if you don't include that
 directive (or "required" if the directive must be included).
 
@@ -136,7 +136,7 @@ block defined from the `Read` and `Write` mapped values. eg
 
     # Create the example config file
     (this is the default value) -> > example.conf
-    
+
     # mxjson format, so we can have comments and block quotes: #, (, )
     config define example test ({
         "Description": "This is only an example",
@@ -153,13 +153,13 @@ block defined from the `Read` and `Write` mapped values. eg
         # read the config file to get the default value
         "Default": "${open example.conf}"
     })
-    
+
 It's also worth noting the different syntax between **Read** and **Default**.
 The **Read** code block is being executed when the **Read** directive is being
 requested, whereas the **Default** code block is being executed when the JSON
 is being read.
 
-In technical terms, the **Default** code block is being executed by Murex 
+In technical terms, the **Default** code block is being executed by Murex
 when `config define` is getting executed where as the **Read** and **Write**
 code blocks are getting stored as a JSON string and then executed only when
 those hooks are getting triggered.
@@ -178,33 +178,32 @@ This is executed when `autocomplete` is setting a value (eg `set`, `default`,
 
 ## Synonyms
 
-* `config`
-* `!config`
-
+- `config`
+- `!config`
 
 ## See Also
 
-* [`[[` (element)](../commands/element.md):
+- [`[[` (element)](../commands/element.md):
   Outputs an element from a nested structure
-* [`[` (index)](../commands/index.md):
+- [`[` (index)](../commands/index.md):
   Outputs an element from an array, map or table
-* [`append`](../commands/append.md):
+- [`append`](../commands/append.md):
   Add data to the end of an array
-* [`event`](../commands/event.md):
+- [`event`](../commands/event.md):
   Event driven programming for shell scripts
-* [`function`](../commands/function.md):
+- [`function`](../commands/function.md):
   Define a function block
-* [`get`](../commands/get.md):
+- [`get`](../commands/get.md):
   Makes a standard HTTP request and returns the result as a JSON object
-* [`getfile`](../commands/getfile.md):
+- [`getfile`](../commands/getfile.md):
   Makes a standard HTTP request and return the contents as Murex-aware data type for passing along Murex pipelines.
-* [`match`](../commands/match.md):
+- [`match`](../commands/match.md):
   Match an exact value in an array
-* [`open`](../commands/open.md):
+- [`open`](../commands/open.md):
   Open a file with a preferred handler
-* [`post`](../commands/post.md):
+- [`post`](../commands/post.md):
   HTTP POST request with a JSON-parsable return
-* [`runtime`](../commands/runtime.md):
+- [`runtime`](../commands/runtime.md):
   Returns runtime information on the internal state of Murex
-* [mxjson](../types/mxjson.md):
+- [mxjson](../types/mxjson.md):
   Murex-flavoured JSON (deprecated)

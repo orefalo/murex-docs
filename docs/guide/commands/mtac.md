@@ -11,11 +11,11 @@ like `cat` but returns the contents in the reverse order. The difference
 with the `mtac` builtin is that it is data-type aware. So it doesn't just
 function as a replacement for `tac` but it also works on JSON arrays,
 s-expressions, and any other data-type supporting arrays compiled into
-Murex. 
+Murex.
 
 ## Usage
 
-    <stdin> -> mtac -> <stdout>
+    `<stdin>` -> mtac -> `<stdout>`
 
 ## Examples
 
@@ -27,7 +27,7 @@ Murex.
         "Tuesday",
         "Monday"
     ]
-    
+
     # Normal output (without mtac)
     » ja: [Monday..Friday]
     [
@@ -50,35 +50,34 @@ STDIN is a long running process or non-standard stream (eg network pipe).
 
 ## Synonyms
 
-* `mtac`
-* `list.reverse`
-
+- `mtac`
+- `list.reverse`
 
 ## See Also
 
-* [`2darray` ](../commands/2darray.md):
+- [`2darray` ](../commands/2darray.md):
   Create a 2D JSON array from multiple input sources
-* [`a` (mkarray)](../commands/a.md):
+- [`a` (mkarray)](../commands/a.md):
   A sophisticated yet simple way to build an array or list
-* [`append`](../commands/append.md):
+- [`append`](../commands/append.md):
   Add data to the end of an array
-* [`count`](../commands/count.md):
+- [`count`](../commands/count.md):
   Count items in a map, list or array
-* [`ja` (mkarray)](../commands/ja.md):
+- [`ja` (mkarray)](../commands/ja.md):
   A sophisticated yet simply way to build a JSON array
-* [`jsplit` ](../commands/jsplit.md):
+- [`jsplit` ](../commands/jsplit.md):
   Splits STDIN into a JSON array based on a regex parameter
-* [`map` ](../commands/map.md):
+- [`map` ](../commands/map.md):
   Creates a map from two data sources
-* [`msort` ](../commands/msort.md):
+- [`msort` ](../commands/msort.md):
   Sorts an array - data type agnostic
-* [`prefix`](../commands/prefix.md):
+- [`prefix`](../commands/prefix.md):
   Prefix a string to every item in a list
-* [`prepend` ](../commands/prepend.md):
+- [`prepend` ](../commands/prepend.md):
   Add data to the start of an array
-* [`pretty`](../commands/pretty.md):
+- [`pretty`](../commands/pretty.md):
   Prettifies JSON to make it human readable
-* [`suffix`](../commands/suffix.md):
+- [`suffix`](../commands/suffix.md):
   Prefix a string to every item in a list
-* [`ta` (mkarray)](../commands/ta.md):
+- [`ta` (mkarray)](../commands/ta.md):
   A sophisticated yet simple way to build an array of a user defined data-type

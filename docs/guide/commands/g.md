@@ -10,50 +10,50 @@ Output is a JSON list.
 
 ## Usage
 
-    g: pattern -> <stdout>
-    
-    [ <stdin> -> ] @g command pattern [ -> <stdout> ]
-    
-    !g: pattern -> <stdout>
-    
-    <stdin> -> g: pattern -> <stdout>
-    
-    <stdin> -> !g: pattern -> <stdout>
+    g: pattern -> `<stdout>`
+
+    [ `<stdin>` -> ] @g command pattern [ -> `<stdout>` ]
+
+    !g: pattern -> `<stdout>`
+
+    `<stdin>` -> g: pattern -> `<stdout>`
+
+    `<stdin>` -> !g: pattern -> `<stdout>`
 
 ## Examples
 
 Inline globbing:
 
     cat: @{ g: *.txt }
-    
+
 Writing a JSON array of files to disk:
 
     g: *.txt |> filelist.json
-    
+
 Writing a list of files to disk:
 
     g: *.txt -> format str |> filelist.txt
-    
+
 Checking if a file exists:
 
     if { g: somefile.txt } then {
         # file exists
     }
-    
+
 Checking if a file does not exist:
 
     !if { g: somefile.txt } then {
         # file does not exist
     }
-    
+
 Return all files apart from text files:
 
     !g: *.txt
-    
+
 Filtering a file list based on glob matches:
 
     f: +f -> g: *.md
-    
+
 Remove any glob matches from a file list:
 
     f: +f -> !g: *.md
@@ -62,8 +62,8 @@ Remove any glob matches from a file list:
 
 ### Pattern Reference
 
-* `*` matches any number of (including zero) characters
-* `?` matches any single character
+- `*` matches any number of (including zero) characters
+- `?` matches any single character
 
 ### Inverse Matches
 
@@ -74,10 +74,10 @@ them, then you can use the bang prefix. eg
     [
         "README.md"
     ]
-    
+
     » !g: *
     Error in `!g` (1,1): No data returned.
-    
+
 ### When Used As A Method
 
 `!g` first looks for files that match its pattern, then it reads the file list
@@ -94,17 +94,16 @@ The reason for this behavior is to separate this from `!regexp` and `!match`.
 
 ## Synonyms
 
-* `g`
-* `!g`
-
+- `g`
+- `!g`
 
 ## See Also
 
-* [`f`](../commands/f.md):
+- [`f`](../commands/f.md):
   Lists or filters file system objects (eg files)
-* [`match`](../commands/match.md):
+- [`match`](../commands/match.md):
   Match an exact value in an array
-* [`regexp`](../commands/regexp.md):
+- [`regexp`](../commands/regexp.md):
   Regexp tools for arrays / lists of strings
-* [`rx`](../commands/rx.md):
+- [`rx`](../commands/rx.md):
   Regexp pattern matching for file system objects (eg `.*\\.txt`)

@@ -14,28 +14,28 @@ into machine readable data structure.
 
 ## Usage
 
-    <stdin> -> tabulate [ flags ] -> <stdout>
+    `<stdin>` -> tabulate [ flags ] -> `<stdout>`
 
 ## Flags
 
-* `--column-wraps`
-    Boolean, used with --map or --key-value to merge trailing lines if the text wraps within the same column
-* `--help`
-    Boolean, displays a list of flags
-* `--joiner`
-    String, used with --map to concatenate any trailing records in a given field
-* `--key-inc-hint`
-    Boolean, used with --map to split any space or equal delimited hints/examples (eg parsing flags)
-* `--key-value`
-    Boolean, discard any records that don't appear key value pairs (auto-enabled when --map used)
-* `--map`
-    Boolean, return JSON map instead of table
-* `--separator`
-    'String, custom regex pattern for spliting fields (default: `(\t|\s[\s]+)+`)'
-* `--split-comma`
-    Boolean, split first field and duplicate the line if comma found in first field (eg parsing flags in help pages)
-* `--split-space`
-    Boolean, split first field and duplicate the line if white space found in first field (eg parsing flags in help pages)
+- `--column-wraps`
+  Boolean, used with --map or --key-value to merge trailing lines if the text wraps within the same column
+- `--help`
+  Boolean, displays a list of flags
+- `--joiner`
+  String, used with --map to concatenate any trailing records in a given field
+- `--key-inc-hint`
+  Boolean, used with --map to split any space or equal delimited hints/examples (eg parsing flags)
+- `--key-value`
+  Boolean, discard any records that don't appear key value pairs (auto-enabled when --map used)
+- `--map`
+  Boolean, return JSON map instead of table
+- `--separator`
+  'String, custom regex pattern for spliting fields (default: `(\t|\s[\s]+)+`)'
+- `--split-comma`
+  Boolean, split first field and duplicate the line if comma found in first field (eg parsing flags in help pages)
+- `--split-space`
+  Boolean, split first field and duplicate the line if white space found in first field (eg parsing flags in help pages)
 
 ## Detail
 
@@ -49,13 +49,13 @@ for dynamically turning command like program help output into JSON maps for
 
 ## See Also
 
-* [`[[` (element)](../commands/element.md):
+- [`[[` (element)](../commands/element.md):
   Outputs an element from a nested structure
-* [`[` (index)](../commands/index.md):
+- [`[` (index)](../commands/index.md):
   Outputs an element from an array, map or table
-* [`autocomplete`](../commands/autocomplete.md):
+- [`autocomplete`](../commands/autocomplete.md):
   Set definitions for tab-completion in the command line
-* [`formap`](../commands/formap.md):
+- [`formap`](../commands/formap.md):
   Iterate through a map or other collection of data
-* [`format`](../commands/format.md):
+- [`format`](../commands/format.md):
   Reformat one data-type into another data-type

@@ -8,17 +8,17 @@ Defines, updates or deallocates a local variable.
 
 ## Usage
 
-    <stdin> -> set var_name
-    
+    `<stdin>` -> set var_name
+
     # Assume value from STDIN, define the data type manually
-    <stdin> -> set datatype var_name
-    
+    `<stdin>` -> set datatype var_name
+
     # Define value manually (data type defaults to string; `str`)
     set var_name=data
-    
+
     # Define value and data type manually
     set datatype var_name=data
-    
+
     # Define a variable but don't set any value
     set var_name
     set datatype var_name
@@ -30,7 +30,7 @@ As a method:
     » out "Hello, world!" -> set hw
     » out "$hw"
     Hello, World!
-    
+
 As a function:
 
     » set hw="Hello, world!"
@@ -44,7 +44,7 @@ As a function:
 You can unset variable names with the bang prefix:
 
     !set var_name
-    
+
 ### Type Annotations
 
 When `set` or `global` are used as a function, the parameters are passed as a
@@ -55,21 +55,21 @@ them as an alternate data type then you should add type annotations:
     (`$age` is an integer, `int`)
 
     » global: bool dark_theme = true
-    
+
 (`$dark_theme` is a boolean, `bool`)
 
 When using `set` or `global` as a method, by default they will define the
 variable as the data type of the pipe:
 
     » open: example.json -> set: file
-    
+
 (`$file` is defined a `json` type because `open` wrote to `set`'s pipe with a
 `json` type)
 
 You can also annotate `set` and `global` when used as a method too:
 
     out: 30 -> set: int age
-    
+
 (`$age` is an integer, `int`, despite `out` writing a string, `str, to the pipe)
 
 > `export` does not support type annotations because environmental variables
@@ -91,7 +91,7 @@ code where `set` overrides both the global and environmental variable:
     » export: foobar=3
     » out: $foobar
     1
-    
+
 #### Local variables
 
 These are defined via `set` and `let`. They're variables that are persistent
@@ -101,14 +101,13 @@ encapsulated like so:
     function example {
         # variables scoped inside here
     }
-    
+
 ...or...
 
     private example {
         # variables scoped inside here
     }
-    
-    
+
 ...however dynamic autocompletes, events, unit tests and any blocks defined in
 `config` will also be triggered as functions.
 
@@ -124,7 +123,7 @@ treated as part of the same part of the same scope as the parent function:
     »     out: $foobar
     » }
     example
-    
+
 Where this behavior might catch you out is with iteration blocks which create
 variables, eg `for`, `foreach` and `formap`. Any variables created inside them
 are still shared with any code outside of those structures but still inside the
@@ -139,16 +138,16 @@ local variables are not inherited but the child functions:
     »     set: foobar=example
     »     child
     » }
-    » 
+    »
     » function child {
     »     # returns the `global` value, "not set", because the local `set` isn't inherited
     »     out: $foobar
     » }
-    » 
+    »
     » global: $foobar="not set"
     » parent
     not set
-    
+
 It's also worth remembering that any variable defined using `set` in the shells
 FID (ie in the interactive shell) is localised to structures running in the
 interactive, REPL, shell and are not inherited by any called functions.
@@ -170,7 +169,7 @@ however their real purpose is passing data to external processes. For example
     » export foo=bar
     » env -> grep foo
     foo=bar
-    
+
 ### Function Names
 
 As a security feature function names cannot include variables. This is done to
@@ -182,14 +181,14 @@ Instead Murex will assume you want the output of the variable printed:
     » out "Hello, world!" -> set hw
     » $hw
     Hello, world!
-    
+
 On the rare occasions you want to force variables to be expanded inside a
 function name, then call that function via `exec`:
 
     » set cmd=grep
     » ls -> exec: $cmd main.go
     main.go
-    
+
 This only works for external executables. There is currently no way to call
 aliases, functions nor builtins from a variable and even the above `exec` trick
 is considered bad form because it reduces the readability of your shell scripts.
@@ -202,40 +201,39 @@ quotes:
 
     » out "$foo"
     bar
-    
+
     » out '$foo'
     $foo
-    
+
     » out %($foo)
     bar
 
 ## Synonyms
 
-* `set`
-* `!set`
-
+- `set`
+- `!set`
 
 ## See Also
 
-* [Reserved Variables](../user-guide/reserved-vars.md):
+- [Reserved Variables](../user-guide/reserved-vars.md):
   Special variables reserved by Murex
-* [Variable and Config Scoping](../user-guide/scoping.md):
+- [Variable and Config Scoping](../user-guide/scoping.md):
   How scoping works within Murex
-* [`(` (brace quote)](../commands/brace-quote.md):
+- [`(` (brace quote)](../commands/brace-quote.md):
   Write a string to the STDOUT without new line
-* [`=` (arithmetic evaluation)](../commands/equ.md):
+- [`=` (arithmetic evaluation)](../commands/equ.md):
   Evaluate a mathematical function (deprecated)
-* [`[[` (element)](../commands/element.md):
+- [`[[` (element)](../commands/element.md):
   Outputs an element from a nested structure
-* [`[` (index)](../commands/index.md):
+- [`[` (index)](../commands/index.md):
   Outputs an element from an array, map or table
-* [`exec`](../commands/exec.md):
+- [`exec`](../commands/exec.md):
   Runs an executable
-* [`export`](../commands/export.md):
+- [`export`](../commands/export.md):
   Define an environmental variable and set it's value
-* [`expr`](../commands/expr.md):
+- [`expr`](../commands/expr.md):
   Expressions: mathematical, string comparisons, logical operators
-* [`global`](../commands/global.md):
+- [`global`](../commands/global.md):
   Define a global variable and set it's value
-* [`let`](../commands/let.md):
+- [`let`](../commands/let.md):
   Evaluate a mathematical function and assign to variable (deprecated)

@@ -28,7 +28,7 @@ export default hopeTheme({
   // sidebar
   sidebar,
 
-  footer: "Default footer",
+  footer: "Empty footer",
 
   displayFooter: false,
 
@@ -56,40 +56,41 @@ export default hopeTheme({
     mdEnhance: {
       align: true,
       attrs: true,
-      chart: true,
+      // chart: true,
       codetabs: true,
       // demo: true,
       // echarts: true,
       // figure: true,
       // flowchart: true,
-      gfm: true,
+      //GitHub Flavored Markdown Spec
+      //gfm: true,
       imgLazyload: true,
       imgSize: true,
-      include: true,
+      // include: true,
       // katex: true,
-      mark: true,
+      // mark: true,
       // mermaid: true,
-      playground: {
-        presets: ["ts", "vue"],
-      },
-      presentation: ["highlight", "math", "search", "notes", "zoom"],
-      stylize: [
-        {
-          matcher: "Recommended",
-          replacer: ({ tag }) => {
-            if (tag === "em")
-              return {
-                tag: "Badge",
-                attrs: { type: "tip" },
-                content: "Recommended",
-              };
-          },
-        },
-      ],
-      sub: true,
-      sup: true,
+      // playground: {
+      //   presets: ["ts", "vue"],
+      // },
+      // presentation: ["highlight", "math", "search", "notes", "zoom"],
+      // stylize: [
+      //   {
+      //     matcher: "Recommended",
+      //     replacer: ({ tag }) => {
+      //       if (tag === "em")
+      //         return {
+      //           tag: "Badge",
+      //           attrs: { type: "tip" },
+      //           content: "Recommended",
+      //         };
+      //     },
+      //   },
+      // ],
+      // sub: true,
+      // sup: true,
       tabs: true,
-      vPre: true,
+      // vPre: true,
       // vuePlayground: true,
     },
   },

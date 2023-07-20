@@ -10,10 +10,10 @@ Please note that indexes in Murex are counted from zero.
 
 ## Usage
 
-    <stdin> -> [ element ] -> <stdout>
-    $variable[ element ] -> <stdout>
-    
-    <stdin> -> ![ element ] -> <stdout>
+    `<stdin>` -> [ element ] -> `<stdout>`
+    $variable[ element ] -> `<stdout>`
+
+    `<stdin>` -> ![ element ] -> `<stdout>`
 
 ## Examples
 
@@ -25,7 +25,7 @@ Return the 2nd (1), 4th (3) and 6th (5) element in an array:
         "3",
         "5"
     ]
-    
+
 Return the data-type and description of **config shell syntax-highlighting**:
 
     » config -> [[ /shell/syntax-highlighting ]] -> [ Data-Type Description ]
@@ -33,7 +33,7 @@ Return the data-type and description of **config shell syntax-highlighting**:
         "bool",
         "Syntax highlighting of murex code when in the interactive shell"
     ]
-    
+
 Return all elements _except_ for 1 (2nd), 3 (4th) and 5 (6th):
 
     » a: [0..9]-> ![ 1 3 5 ]
@@ -44,7 +44,7 @@ Return all elements _except_ for 1 (2nd), 3 (4th) and 5 (6th):
     7
     8
     9
-    
+
 Return all elements except for the data-type and description:
 
     » config -> [[ /shell/syntax-highlighting ]] -> ![ Data-Type Description ]
@@ -54,7 +54,7 @@ Return all elements except for the data-type and description:
         "Global": true,
         "Value": true
     }
-    
+
 Return the top 5 processes from `ps`, ordered by memory usage:
 
     » ps aux -> [PID %MEM COMMAND] -> sort -nrk2 -> [..5]
@@ -63,16 +63,16 @@ Return the top 5 processes from `ps`, ordered by memory usage:
     108025  2.9   /usr/lib/firefox/firefox
     1036    2.4   /usr/lib/baloo_file
     915710  1.9   /opt/visual-studio-code/code
-    
+
 Return the 1st and 30th row:
 
     » ps aux -> [*1 *30]
     USER    PID     %CPU    %MEM    VSZ     RSS     TTY     STAT    START   TIME    COMMAND
     root    37      0.0     0.0     0       0       ?       I<      Dec18   0:00    [kworker/3:0H-events_highpri]
-    
+
 Return the 1st and 5th column:
 
-    » ps aux -> [*A *E] -> head -n5                                                                                                                                                                                                       
+    » ps aux -> [*A *E] -> head -n5
     USER    VSZ
     root    168284
     root    0
@@ -98,31 +98,30 @@ you can disable this behavior in `config`
 
     » config -> [ foobar ]
     Error in `[` ((builtin) 2,11): Key 'foobar' not found
-    
+
     » config set index silent true
-    
+
     » config -> [ foobar ]
 
 ## Synonyms
 
-* `[`
-* `![`
-* `index`
-
+- `[`
+- `![`
+- `index`
 
 ## See Also
 
-* [`[[` (element)](../commands/element.md):
+- [`[[` (element)](../commands/element.md):
   Outputs an element from a nested structure
-* [`[` (range) ](../commands/range.md):
+- [`[` (range) ](../commands/range.md):
   Outputs a ranged subset of data from STDIN
-* [`a` (mkarray)](../commands/a.md):
+- [`a` (mkarray)](../commands/a.md):
   A sophisticated yet simple way to build an array or list
-* [`config`](../commands/config.md):
+- [`config`](../commands/config.md):
   Query or define Murex runtime settings
-* [`count`](../commands/count.md):
+- [`count`](../commands/count.md):
   Count items in a map, list or array
-* [`ja` (mkarray)](../commands/ja.md):
+- [`ja` (mkarray)](../commands/ja.md):
   A sophisticated yet simply way to build a JSON array
-* [`mtac`](../commands/mtac.md):
+- [`mtac`](../commands/mtac.md):
   Reverse the order of an array

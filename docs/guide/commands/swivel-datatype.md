@@ -11,7 +11,7 @@ series of maps to be marshalled by a serialised datatype such as JSON or YAML.
 
 ## Usage
 
-    <stdin> -> swivel-datatype: data-type -> <stdout>
+    `<stdin>` -> swivel-datatype: data-type -> `<stdout>`
 
 ## Examples
 
@@ -23,7 +23,7 @@ Lets take the first 5 entries from `ps`:
     "root","2","0.0","0.0","0","0","?","S","Feb19","0:00","[kthreadd]"
     "root","4","0.0","0.0","0","0","?","I<","Feb19","0:00","[kworker/0:0H]"
     "root","6","0.0","0.0","0","0","?","I<","Feb19","0:00","[mm_percpu_wq]"
-    
+
 That data swivelled would look like the following:
 
     » ps: aux -> head: -n5 -> format: csv -> swivel-datatype: yaml
@@ -82,7 +82,7 @@ That data swivelled would look like the following:
     - "0"
     - "0"
     - "0"
-    
+
 Please note that for input data-types whose table doesn't define titles (such as
 the `generic` datatype), the map keys are defaulted to column numbers:
 
@@ -118,26 +118,26 @@ the `generic` datatype), the map keys are defaulted to column numbers:
 You can check what output data-types are available via the `runtime` command:
 
     runtime --marshallers
-    
+
 Marshallers are enabled at compile time from the `builtins/data-types` directory.
 
 ## See Also
 
-* [commands/`[[` (element)](../commands/element.md):
+- [commands/`[[` (element)](../commands/element.md):
   Outputs an element from a nested structure
-* [commands/`[` (index)](../commands/index.md):
+- [commands/`[` (index)](../commands/index.md):
   Outputs an element from an array, map or table
-* [commands/`alter`](../commands/alter.md):
+- [commands/`alter`](../commands/alter.md):
   Change a value within a structured data-type and pass that change along the pipeline without altering the original source input
-* [commands/`append`](../commands/append.md):
+- [commands/`append`](../commands/append.md):
   Add data to the end of an array
-* [commands/`cast`](../commands/cast.md):
+- [commands/`cast`](../commands/cast.md):
   Alters the data type of the previous function without altering it's output
-* [commands/`format`](../commands/format.md):
+- [commands/`format`](../commands/format.md):
   Reformat one data-type into another data-type
-* [commands/`prepend` ](../commands/prepend.md):
+- [commands/`prepend` ](../commands/prepend.md):
   Add data to the start of an array
-* [commands/`runtime`](../commands/runtime.md):
+- [commands/`runtime`](../commands/runtime.md):
   Returns runtime information on the internal state of Murex
-* [commands/`swivel-table`](../commands/swivel-table.md):
+- [commands/`swivel-table`](../commands/swivel-table.md):
   Rotates a table by 90 degrees

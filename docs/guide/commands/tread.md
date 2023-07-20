@@ -1,6 +1,6 @@
 # `tread` - Command Reference
 
-> `read` a line of input from the user and store as a user defined *typed* variable (deprecated)
+> `read` a line of input from the user and store as a user defined _typed_ variable (deprecated)
 
 ## Description
 
@@ -12,15 +12,15 @@ store that as a typed variable.
 ## Usage
 
     tread: data-type "prompt" var_name
-    
-    <stdin> -> tread: data-type var_name
+
+    `<stdin>` -> tread: data-type var_name
 
 ## Examples
 
     tread: qs "Please paste a URL: " url
     out: "The query string values included were:"
     $url -> format json
-    
+
     out: Please paste a URL: -> tread: qs url
     out: "The query string values included were:"
     $url -> format json
@@ -38,19 +38,19 @@ variable.
 
 ## See Also
 
-* [`(` (brace quote)](../commands/brace-quote.md):
+- [`(` (brace quote)](../commands/brace-quote.md):
   Write a string to the STDOUT without new line
-* [`cast`](../commands/cast.md):
+- [`cast`](../commands/cast.md):
   Alters the data type of the previous function without altering it's output
-* [`err`](../commands/err.md):
+- [`err`](../commands/err.md):
   Print a line to the STDERR
-* [`format`](../commands/format.md):
+- [`format`](../commands/format.md):
   Reformat one data-type into another data-type
-* [`out`](../commands/out.md):
+- [`out`](../commands/out.md):
   Print a string to the STDOUT with a trailing new line character
-* [`pretty`](../commands/pretty.md):
+- [`pretty`](../commands/pretty.md):
   Prettifies JSON to make it human readable
-* [`read`](../commands/read.md):
+- [`read`](../commands/read.md):
   `read` a line of input from the user and store as a variable
-* [`tout`](../commands/tout.md):
+- [`tout`](../commands/tout.md):
   Print a string to the STDOUT and set it's data-type

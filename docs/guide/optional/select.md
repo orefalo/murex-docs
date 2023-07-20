@@ -1,4 +1,4 @@
-# `select`  - Optional Command Reference
+# `select` - Optional Command Reference
 
 > Inlining SQL into shell pipelines
 
@@ -10,9 +10,9 @@ data type as the input type
 
 ## Usage
 
-    <stdin> -> select * | ... WHERE ... -> <stdout>
-    
-    select * | ... FROM file[.gz] WHERE ... -> <stdout>
+    `<stdin>` -> select * | ... WHERE ... -> `<stdout>`
+
+    select * | ... FROM file[.gz] WHERE ... -> `<stdout>`
 
 ## Examples
 
@@ -50,8 +50,8 @@ List a count of all the processes running against each user ID:
     7       _locationd
     144     root
     308     foobar
-    
-    
+
+
     select count(*)
 
 ## Detail
@@ -102,7 +102,7 @@ queries for the sake of brevity.
             "Value": true
         }
     }
-    
+
 (See below for how to use `config`)
 
 ### Read All vs Sequential Reads
@@ -122,18 +122,17 @@ If you do run into any issues then please raise them on [Github](https://github.
 
 ## Synonyms
 
-* `select`
-
+- `select`
 
 ## See Also
 
-* [`*` (generic) ](../types/generic.md):
+- [`*` (generic) ](../types/generic.md):
   generic (primitive)
-* [`config`](../commands/config.md):
+- [`config`](../commands/config.md):
   Query or define Murex runtime settings
-* [`csv` ](../types/csv.md):
+- [`csv` ](../types/csv.md):
   CSV files (and other character delimited tables)
-* [`jsonl` ](../types/jsonl.md):
+- [`jsonl` ](../types/jsonl.md):
   JSON Lines
-* [v2.1](../changelog/v2.1.md):
+- [v2.1](../changelog/v2.1.md):
   This release comes with support for inlining SQL and some major bug fixes plus a breaking change for `config`. Please read for details.

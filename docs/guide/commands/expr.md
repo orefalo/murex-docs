@@ -4,19 +4,17 @@
 
 ## Description
 
-
-
 ## Usage
 
-    expr: expression -> <stdout>
+    expr: expression -> `<stdout>`
 
 ## Examples
 
 Order of operations:
 
-    » 3 * (3 + 1)                                                                                                                                                                                                                         
+    » 3 * (3 + 1)
     12
-    
+
 JSON array:
 
     » %[apples oranges grapes]
@@ -28,9 +26,9 @@ JSON array:
 
 ## See Also
 
-* [`=` (arithmetic evaluation)](../commands/equ.md):
+- [`=` (arithmetic evaluation)](../commands/equ.md):
   Evaluate a mathematical function (deprecated)
-* [`let`](../commands/let.md):
+- [`let`](../commands/let.md):
   Evaluate a mathematical function and assign to variable (deprecated)
-* [`set`](../commands/set.md):
+- [`set`](../commands/set.md):
   Define a local variable and set it's value

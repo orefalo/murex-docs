@@ -13,8 +13,8 @@
       case | if { conditional } [then] { code-block }
       ...
       [ default { code-block } ]
-    } -> <stdout>
-    
+    } -> `<stdout>`
+
 The first parameter should be either **case** or **if** -- the statements are
 subtly different and thus alter the behavior of `switch`.
 
@@ -30,7 +30,7 @@ Output an array of editors installed:
         if { which: nano  } { out: nano  }
         if { which: emacs } { out: emacs }
     } -> format: json
-    
+
 A higher/lower game written using `switch`:
 
     function higherlower {
@@ -38,16 +38,16 @@ A higher/lower game written using `switch`:
         rand: int 100 -> set rand
         while { $rand } {
           read: guess "Guess a number between 1 and 100: "
-    
+
           switch {
             case: { = $guess < $rand } then {
               out: "Too low"
             }
-    
+
             case: { = $guess > $rand } then {
               out: "Too high"
             }
-    
+
             default: {
               out: "Correct"
               let: rand=0
@@ -56,7 +56,7 @@ A higher/lower game written using `switch`:
         }
       }
     }
-    
+
 String matching with `switch`:
 
     read: name "What is your name? "
@@ -76,7 +76,7 @@ String matching with `switch`:
 If you supply a value with `switch`...
 
     switch value { ... }
-    
+
 ...then all the conditionals are compared against that value. For example:
 
     switch foo {
@@ -87,7 +87,7 @@ If you supply a value with `switch`...
             # executed because foo != foo
         }
     }
-    
+
 You can use code blocks to return strings too
 
     switch foo {
@@ -98,7 +98,7 @@ You can use code blocks to return strings too
             # executed because foo != foo
         }
     }
-    
+
 #### By Boolean State
 
 This style of syntax could be argued as a prettier counterpart to if/else if.
@@ -108,7 +108,7 @@ rather than string matching.
 This is simply written as:
 
     switch { ... }
-    
+
 ### When To Use `case`, `if` and `default`?
 
 A `switch` command may contain multiple **case** and **if** blocks. These
@@ -132,7 +132,7 @@ the **case** statement is **false**. If a **case** statement is **true** then
             # ignored because a previous case was true
         }
     }
-    
+
 ### if
 
 An **if** statement will proceed to the next statement _even_ if the result of
@@ -149,7 +149,7 @@ the **if** statement is **true**.
             # executed because if == true
         }
     }
-    
+
 ### default
 
 **default** statements are only run if _all_ **case** _and_ **if** statements are
@@ -172,7 +172,7 @@ false.
             # ignored because one or more previous if's were true
         }
     }
-    
+
 > **default** was added in Murex version 3.1
 
 ### catch
@@ -181,29 +181,29 @@ false.
 
 ## See Also
 
-* [`!` (not)](../commands/not.md):
+- [`!` (not)](../commands/not.md):
   Reads the STDIN and exit number from previous process and not's it's condition
-* [`and`](../commands/and.md):
+- [`and`](../commands/and.md):
   Returns `true` or `false` depending on whether multiple conditions are met
-* [`break`](../commands/break.md):
+- [`break`](../commands/break.md):
   Terminate execution of a block within your processes scope
-* [`catch`](../commands/catch.md):
-  Handles the exception code raised by `try` or `trypipe` 
-* [`false`](../commands/false.md):
+- [`catch`](../commands/catch.md):
+  Handles the exception code raised by `try` or `trypipe`
+- [`false`](../commands/false.md):
   Returns a `false` value
-* [`if`](../commands/if.md):
+- [`if`](../commands/if.md):
   Conditional statement to execute different blocks of code depending on the result of the condition
-* [`let`](../commands/let.md):
+- [`let`](../commands/let.md):
   Evaluate a mathematical function and assign to variable (deprecated)
-* [`or`](../commands/or.md):
+- [`or`](../commands/or.md):
   Returns `true` or `false` depending on whether one code-block out of multiple ones supplied is successful or unsuccessful.
-* [`set`](../commands/set.md):
+- [`set`](../commands/set.md):
   Define a local variable and set it's value
-* [`true`](../commands/true.md):
+- [`true`](../commands/true.md):
   Returns a `true` value
-* [`try`](../commands/try.md):
+- [`try`](../commands/try.md):
   Handles errors inside a block of code
-* [`trypipe`](../commands/trypipe.md):
+- [`trypipe`](../commands/trypipe.md):
   Checks state of each function in a pipeline and exits block on error
-* [`while`](../commands/while.md):
+- [`while`](../commands/while.md):
   Loop until condition false

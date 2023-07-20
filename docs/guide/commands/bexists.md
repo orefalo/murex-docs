@@ -9,7 +9,7 @@ compiled into Murex. The 'b' in `bexists` stands for 'builtins'
 
 ## Usage
 
-    bexists command... -> <stdout>
+    bexists command... -> `<stdout>`
 
 ## Examples
 
@@ -36,9 +36,9 @@ that reason alone it has been spared from the axe.
 
 ## See Also
 
-* [Modules and Packages](../user-guide/modules.md):
+- [Modules and Packages](../user-guide/modules.md):
   An introduction to Murex modules and packages
-* [`fexec` ](../commands/fexec.md):
+- [`fexec` ](../commands/fexec.md):
   Execute a command or function, bypassing the usual order of precedence.
-* [`runtime`](../commands/runtime.md):
+- [`runtime`](../commands/runtime.md):
   Returns runtime information on the internal state of Murex

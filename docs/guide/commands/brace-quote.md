@@ -8,20 +8,20 @@ Write parameters to STDOUT (does not include a new line)
 
 ## Usage
 
-    (string to write) -> <stdout>
+    (string to write) -> `<stdout>`
 
 ## Examples
 
     » (Hello, World!)
     Hello, World!
-    
+
     » (Hello,\nWorld!)
     Hello,
     World!
-    
+
     » ((Hello,) (World!))
     (Hello,) (World!)
-    
+
     # Print "Hello, World!" in red text
     » {RED}Hello, World!{RESET}
     Hello, World!
@@ -39,24 +39,23 @@ characters if you don't want them nested.
 
 ## Synonyms
 
-* `(`
-
+- `(`
 
 ## See Also
 
-* [ANSI Constants](../user-guide/ansi.md):
+- [ANSI Constants](../user-guide/ansi.md):
   Infixed constants that return ANSI escape sequences
-* [`>>` (append file)](../commands/greater-than-greater-than.md):
+- [`>>` (append file)](../commands/greater-than-greater-than.md):
   Writes STDIN to disk - appending contents if file already exists
-* [`>` (truncate file)](../commands/greater-than.md):
+- [`>` (truncate file)](../commands/greater-than.md):
   Writes STDIN to disk - overwriting contents if file already exists
-* [`cast`](../commands/cast.md):
+- [`cast`](../commands/cast.md):
   Alters the data type of the previous function without altering it's output
-* [`err`](../commands/err.md):
+- [`err`](../commands/err.md):
   Print a line to the STDERR
-* [`out`](../commands/out.md):
+- [`out`](../commands/out.md):
   Print a string to the STDOUT with a trailing new line character
-* [`pt`](../commands/pt.md):
+- [`pt`](../commands/pt.md):
   Pipe telemetry. Writes data-types and bytes written
-* [`tout`](../commands/tout.md):
+- [`tout`](../commands/tout.md):
   Print a string to the STDOUT and set it's data-type

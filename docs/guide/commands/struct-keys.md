@@ -12,9 +12,9 @@ representation of the input structure's node.
 
 ## Usage
 
-    <stdin> -> struct-keys [ depth ] -> <stdout>
-    
-    <stdin> -> struct-keys [ flags ] -> <stdout>
+    `<stdin>` -> struct-keys [ depth ] -> `<stdout>`
+
+    `<stdin>` -> struct-keys [ flags ] -> `<stdout>`
 
 ## Examples
 
@@ -48,7 +48,7 @@ The source for these examples will be defined in the variable `$example`:
           "children": [],
           "spouse": null
       }
-    
+
 Without any flags set:
 
     » $example -> struct-keys
@@ -75,10 +75,10 @@ Without any flags set:
         "/spouse",
         "/firstName"
     ]
-    
+
 Defining max depth and changing the separator string:
 
-    » $example -> struct-keys --depth 1 --separator '.'   
+    » $example -> struct-keys --depth 1 --separator '.'
     [
         ".children",
         ".spouse",
@@ -89,10 +89,10 @@ Defining max depth and changing the separator string:
         ".address",
         ".phoneNumbers"
     ]
-    
+
 An example of a unicode character being used as a separator:
 
-    » $example -> struct-keys --depth 2 --separator ☺                                                                                                                                                           
+    » $example -> struct-keys --depth 2 --separator ☺
     [
         "☺age",
         "☺address",
@@ -110,10 +110,10 @@ An example of a unicode character being used as a separator:
         "☺lastName",
         "☺isAlive"
     ]
-    
+
 Separator can also be multiple characters:
 
-    » $example -> struct-keys --depth 1 --separator '|||' 
+    » $example -> struct-keys --depth 1 --separator '|||'
     [
         "|||firstName",
         "|||lastName",
@@ -127,22 +127,22 @@ Separator can also be multiple characters:
 
 ## Flags
 
-* `--depth`
-    How far to traverse inside the nested structure
-* `--separator`
-    String to use as a separator between fields (defaults to `/`)
-* `-d`
-    Alias for `--depth
-* `-s`
-    Alias for `--separator
+- `--depth`
+  How far to traverse inside the nested structure
+- `--separator`
+  String to use as a separator between fields (defaults to `/`)
+- `-d`
+  Alias for `--depth
+- `-s`
+  Alias for `--separator
 
 ## See Also
 
-* [`[[` (element)](../commands/element.md):
+- [`[[` (element)](../commands/element.md):
   Outputs an element from a nested structure
-* [`[` (index)](../commands/index.md):
+- [`[` (index)](../commands/index.md):
   Outputs an element from an array, map or table
-* [`formap`](../commands/formap.md):
+- [`formap`](../commands/formap.md):
   Iterate through a map or other collection of data
-* [`set`](../commands/set.md):
+- [`set`](../commands/set.md):
   Define a local variable and set it's value

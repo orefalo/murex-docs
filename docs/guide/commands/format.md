@@ -9,7 +9,7 @@ specified data-type
 
 ## Usage
 
-    <stdin> -> format data-type -> <stdout>
+    `<stdin>` -> format data-type -> `<stdout>`
 
 ## Examples
 
@@ -20,11 +20,11 @@ specified data-type
 
 ## See Also
 
-* [`Marshal()` (type)](../apis/Marshal.md):
+- [`Marshal()` (type)](../apis/Marshal.md):
   Converts structured memory into a structured file format (eg for stdio)
-* [`Unmarshal()` (type)](../apis/Unmarshal.md):
+- [`Unmarshal()` (type)](../apis/Unmarshal.md):
   Converts a structured file format into structured memory
-* [`cast`](../commands/cast.md):
+- [`cast`](../commands/cast.md):
   Alters the data type of the previous function without altering it's output
-* [`tout`](../commands/tout.md):
+- [`tout`](../commands/tout.md):
   Print a string to the STDOUT and set it's data-type

@@ -10,7 +10,7 @@
 
 ## Usage
 
-    <stdin> -> swivel-table -> <stdout>
+    `<stdin>` -> swivel-table -> `<stdout>`
 
 ## Examples
 
@@ -20,7 +20,7 @@
     root         2  0.0  0.0      0     0 ?        S    Feb19   0:00 [kthreadd]
     root         4  0.0  0.0      0     0 ?        I<   Feb19   0:00 [kworker/0:0H]
     root         6  0.0  0.0      0     0 ?        I<   Feb19   0:00 [mm_percpu_wq]
-    
+
 That data swivelled would look like the following:
 
     » ps: aux -> head: -n5 -> swivel-table
@@ -35,7 +35,7 @@ That data swivelled would look like the following:
     8       START   Feb19   Feb19   Feb19   Feb19
     9       TIME    0:02    0:00    0:00    0:00
     10      COMMAND /sbin/init      [kthreadd]      [kworker/0:0H]  [mm_percpu_wq]
-    
+
 Please note that column one is numbered because by default Murex couldn't
 guess whether the first line of generic output is a title or data. However if we
 format that as a CSV, which by default does have a title row (configurable via
@@ -47,7 +47,7 @@ format that as a CSV, which by default does have a title row (configurable via
     "root","2","0.0","0.0","0","0","?","S","Feb19","0:00","[kthreadd]"
     "root","4","0.0","0.0","0","0","?","I<","Feb19","0:00","[kworker/0:0H]"
     "root","6","0.0","0.0","0","0","?","I<","Feb19","0:00","[mm_percpu_wq]"
-    
+
     » ps: aux -> head: -n5 -> format: csv -> swivel-table
     "USER","root","root","root","root"
     "PID","1","2","4","6"
@@ -63,19 +63,19 @@ format that as a CSV, which by default does have a title row (configurable via
 
 ## See Also
 
-* [commands/`[[` (element)](../commands/element.md):
+- [commands/`[[` (element)](../commands/element.md):
   Outputs an element from a nested structure
-* [commands/`[` (index)](../commands/index.md):
+- [commands/`[` (index)](../commands/index.md):
   Outputs an element from an array, map or table
-* [commands/`alter`](../commands/alter.md):
+- [commands/`alter`](../commands/alter.md):
   Change a value within a structured data-type and pass that change along the pipeline without altering the original source input
-* [commands/`append`](../commands/append.md):
+- [commands/`append`](../commands/append.md):
   Add data to the end of an array
-* [commands/`cast`](../commands/cast.md):
+- [commands/`cast`](../commands/cast.md):
   Alters the data type of the previous function without altering it's output
-* [commands/`format`](../commands/format.md):
+- [commands/`format`](../commands/format.md):
   Reformat one data-type into another data-type
-* [commands/`prepend` ](../commands/prepend.md):
+- [commands/`prepend` ](../commands/prepend.md):
   Add data to the start of an array
-* [commands/`swivel-datatype`](../commands/swivel-datatype.md):
+- [commands/`swivel-datatype`](../commands/swivel-datatype.md):
   Converts tabulated data into a map of values for serialised data-types such as JSON and YAML

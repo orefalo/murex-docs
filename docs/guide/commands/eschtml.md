@@ -14,15 +14,15 @@ and returns its unescaped counterpart.
 
 Escape
 
-    <stdin> -> eschtml -> <stdout>
-    
-    eschtml string to escape -> <stdout>
-    
+    `<stdin>` -> eschtml -> `<stdout>`
+
+    eschtml string to escape -> `<stdout>`
+
 Unescape
 
-    <stdin> -> !eschtml -> <stdout>
-    
-    !eschtml string to unescape -> <stdout>
+    `<stdin>` -> !eschtml -> `<stdout>`
+
+    !eschtml string to unescape -> `<stdout>`
 
 ## Examples
 
@@ -30,7 +30,7 @@ Escape
 
     » out: "<h1>foo & bar</h1>" -> eschtml
     &lt;h1&gt;foo &amp; bar&lt;/h1&gt;
-    
+
 Unescape
 
     » out: '&lt;h1&gt;foo &amp; bar&lt;/h1&gt;' -> !eschtml
@@ -38,21 +38,20 @@ Unescape
 
 ## Synonyms
 
-* `eschtml`
-* `!eschtml`
-
+- `eschtml`
+- `!eschtml`
 
 ## See Also
 
-* [`escape`](../commands/escape.md):
-  Escape or unescape input 
-* [`esccli`](../commands/esccli.md):
+- [`escape`](../commands/escape.md):
+  Escape or unescape input
+- [`esccli`](../commands/esccli.md):
   Escapes an array so output is valid shell code
-* [`escurl`](../commands/escurl.md):
+- [`escurl`](../commands/escurl.md):
   Encode or decodes text for the URL
-* [`get`](../commands/get.md):
+- [`get`](../commands/get.md):
   Makes a standard HTTP request and returns the result as a JSON object
-* [`getfile`](../commands/getfile.md):
+- [`getfile`](../commands/getfile.md):
   Makes a standard HTTP request and return the contents as Murex-aware data type for passing along Murex pipelines.
-* [`post`](../commands/post.md):
+- [`post`](../commands/post.md):
   HTTP POST request with a JSON-parsable return

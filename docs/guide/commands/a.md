@@ -8,21 +8,21 @@ Pronounced "make array", like `mkdir` (etc), Murex has a pretty sophisticated
 builtin for generating arrays. Think like bash's `{1..9}` syntax:
 
     a: [1..9]
-    
+
 Except Murex also supports other sets of ranges like dates, days of the week,
 and alternative number bases.
 
 ## Usage
 
-    a: [start..end] -> <stdout>
-    a: [start..end,start..end] -> <stdout>
-    a: [start..end][start..end] -> <stdout>
-    
+    a: [start..end] -> `<stdout>`
+    a: [start..end,start..end] -> `<stdout>`
+    a: [start..end][start..end] -> `<stdout>`
+
 All usages also work with `ja` and `ta` as well, eg:
 
-    ja: [start..end] -> <stdout>
-    ta: data-type [start..end] -> <stdout>
-    
+    ja: [start..end] -> `<stdout>`
+    ta: data-type [start..end] -> `<stdout>`
+
 You can also inline arrays with the `%[]` syntax, eg:
 
     %[start..end]
@@ -33,12 +33,12 @@ You can also inline arrays with the `%[]` syntax, eg:
     1
     2
     3
-    
+
     » a: [3..1]
     3
     2
     1
-    
+
     » a: [01..03]
     01
     02
@@ -60,7 +60,7 @@ parameters.
     05
     06
     07
-    
+
     » a: 0[1..3],0[5..7]
     01
     02
@@ -68,7 +68,7 @@ parameters.
     05
     06
     07
-    
+
     » a: 0[1..3,5..7]
     01
     02
@@ -76,11 +76,11 @@ parameters.
     05
     06
     07
-    
+
     » a: b[o,i]b
     bob
     bib
-    
+
 You can also have multiple expansion blocks in a single parameter:
 
     » a: a[1..3]b[5..7]
@@ -93,7 +93,7 @@ You can also have multiple expansion blocks in a single parameter:
     a3b5
     a3b6
     a3b7
-    
+
 `a` will cycle through each iteration of the last expansion, moving itself
 backwards through the string; behaving like an normal counter.
 
@@ -117,7 +117,7 @@ as `a` but forgo the streaming capability:
         "Saturday",
         "Sunday"
     ]
-    
+
 This is particularly useful if you are adding formatting that might break
 under `a`'s formatting (which uses the `str` data type).
 
@@ -126,34 +126,34 @@ under `a`'s formatting (which uses the `str` data type).
 Murex supports a number of different formats that can be used to generate
 arrays. For more details on these please refer to the documents for each format
 
-* [Calendar Date Ranges](../mkarray/date.md):
+- [Calendar Date Ranges](../mkarray/date.md):
   Create arrays of dates
-* [Character arrays](../mkarray/character.md):
+- [Character arrays](../mkarray/character.md):
   Making character arrays (a to z)
-* [Decimal Ranges](../mkarray/decimal.md):
+- [Decimal Ranges](../mkarray/decimal.md):
   Create arrays of decimal integers
-* [Non-Decimal Ranges](../mkarray/non-decimal.md):
+- [Non-Decimal Ranges](../mkarray/non-decimal.md):
   Create arrays of integers from non-decimal number bases
-* [Special Ranges](../mkarray/special.md):
+- [Special Ranges](../mkarray/special.md):
   Create arrays from ranges of dictionary terms (eg weekdays, months, seasons, etc)
 
 ## See Also
 
-* [Create array (`%[]`) constructor](../parser/create-array.md):
+- [Create array (`%[]`) constructor](../parser/create-array.md):
   Quickly generate arrays
-* [`[[` (element)](../commands/element.md):
+- [`[[` (element)](../commands/element.md):
   Outputs an element from a nested structure
-* [`[` (index)](../commands/index.md):
+- [`[` (index)](../commands/index.md):
   Outputs an element from an array, map or table
-* [`[` (range) ](../commands/range.md):
+- [`[` (range) ](../commands/range.md):
   Outputs a ranged subset of data from STDIN
-* [`count`](../commands/count.md):
+- [`count`](../commands/count.md):
   Count items in a map, list or array
-* [`ja` (mkarray)](../commands/ja.md):
+- [`ja` (mkarray)](../commands/ja.md):
   A sophisticated yet simply way to build a JSON array
-* [`mtac`](../commands/mtac.md):
+- [`mtac`](../commands/mtac.md):
   Reverse the order of an array
-* [`str` (string) ](../types/str.md):
+- [`str` (string) ](../types/str.md):
   string (primitive)
-* [`ta` (mkarray)](../commands/ta.md):
+- [`ta` (mkarray)](../commands/ta.md):
   A sophisticated yet simple way to build an array of a user defined data-type
