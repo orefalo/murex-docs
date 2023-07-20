@@ -93,9 +93,29 @@ highlights:
         details: balances and auto-closes brackets and accolades
         link: https://theme-hope.vuejs.press/guide/markdown/tabs.html
 
+      - title: Extension Framework
+        icon: building
+        details: design yourself or enjoy prebuilt extensions such as `auto-jump` or `starfish` 
+        link: https://theme-hope.vuejs.press/guide/markdown/tabs.html
+
+      - title: Built-in Package Manager
+        icon: building
+        details: 
+        link: https://theme-hope.vuejs.press/guide/markdown/tabs.html
+
       - title: 65 builtins commands
         icon: building
-        details: full features builtins allow fast execution and portability
+        details: full featured builtins allow fast execution and portability
+        link: https://theme-hope.vuejs.press/guide/markdown/tabs.html
+
+      - title: Notifications and Events
+        icon: building
+        details: events streamline notifications upon files changes, process lifecycle and simple content availability.
+        link: https://theme-hope.vuejs.press/guide/markdown/tabs.html
+
+      - title: PNG Generation
+        icon: building
+        details: Generate barcodes or images diretly from you scripts
         link: https://theme-hope.vuejs.press/guide/markdown/tabs.html
 
 copyright: false
