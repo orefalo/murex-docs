@@ -75,7 +75,7 @@ highlights:
 
       - title: Smart Autocomplete
         icon: wand-magic-sparkles
-        details: use `TAB` to auto-complete commands and parameters
+        details: parses man pages for command line flags then use `TAB` to auto-complete commands and parameters,
         link: https://theme-hope.vuejs.press/guide/markdown/tabs.html
 
       - title: Hint text
