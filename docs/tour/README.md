@@ -1,53 +1,12 @@
-<h1>Language Tour</h1>
+---
+title: Getting Started
+index: true
+icon: life-ring
+category:
+  - Tour
+---
 
-<h2>Table of Contents</h2>
-<div id="toc">
-
-- [Introduction](#introduction)
-  - [Read–Eval–Print Loop](#readevalprint-loop)
-  - [Barewords](#barewords)
-  - [Expressions and Statements](#expressions-and-statements)
-  - [Functions and Methods](#functions-and-methods)
-  - [The Bang Prefix](#the-bang-prefix)
-- [Rosetta Stone](#rosetta-stone)
-- [Basic Syntax](#basic-syntax)
-  - [Quoting Strings](#quoting-strings)
-  - [Code Comments](#code-comments)
-- [Variables](#variables)
-  - [Global variables](#global-variables)
-  - [Environmental Variables](#environmental-variables)
-  - [Type Inference](#type-inference)
-  - [Scalars](#scalars)
-  - [Arrays](#arrays)
-- [Piping and Redirection](#piping-and-redirection)
-  - [Pipes](#pipes)
-  - [Redirection](#redirection)
-  - [Redirecting to files](#redirecting-to-files)
-  - [Type Conversion](#type-conversion)
-    - [Cast](#cast)
-    - [Format](#format)
-- [Sub-Shells](#sub-shells)
-- [Filesystem Wildcards (Globbing)](#filesystem-wildcards-globbing)
-- [Brace expansion](#brace-expansion)
-- [Executables](#executables)
-  - [Aliases](#aliases)
-  - [Public Functions](#public-functions)
-  - [Private Functions](#private-functions)
-  - [External Executables](#external-executables)
-- [Control Structures](#control-structures)
-  - [Using `if` Statements](#using-if-statements)
-  - [Using `switch` Statements](#using-switch-statements)
-  - [Using `foreach` Loops](#using-foreach-loops)
-  - [Using `formap` Loops](#using-formap-loops)
-- [Stopping Execution](#stopping-execution)
-  - [The `continue` Statement](#the-continue-statement)
-  - [The `break` Statement](#the-break-statement)
-  - [The `exit` Statement](#the-exit-statement)
-  - [Signal: SIGINT](#signal-sigint)
-  - [Signal: SIGQUIT](#signal-sigquit)
-  - [Signal: SIGTSTP](#signal-sigtstp)
-
-</div>
+# Language Tour
 
 ## Introduction
 
@@ -81,6 +40,7 @@ the choice of syntax we can use.
 ### Expressions and Statements
 
 An **expression** is an evaluation, operation or assignment, for example:
+
 ```
 » 6 > 5
 » fruit = %[ apples oranges bananas ]
@@ -90,6 +50,7 @@ An **expression** is an evaluation, operation or assignment, for example:
 > Expressions are type sensitive
 
 Whereas a **statement** is a shell command to execute:
+
 ```
 » echo "Hello Murex"
 » kill 1234
@@ -103,6 +64,7 @@ parses a command line to see if it is a valid expression, and if it is not, it
 then assumes it is an statement and parses it as such.
 
 This allow expressions and statements to be used interchangeably in a pipeline:
+
 ```
 » 5 + 5 | grep 10
 ```
@@ -111,6 +73,7 @@ This allow expressions and statements to be used interchangeably in a pipeline:
 
 A **function** is command that doesn't take data from STDIN whereas a **method**
 is any command that does.
+
 ```
 echo "Hello Murex" | grep "Murex"
 ^ a function         ^ a method
@@ -148,13 +111,14 @@ translate your Bash code into Murex code.
 
 There are three ways to quote a string in Murex:
 
-* `'single quote'`: use this for string literals    ([read more](parser/single-quote.md))
-* `"double quote"`: use this for infixing variables ([read more](parser/double-quote.md))
-* `%(brace quote)`: use this for nesting quotes     ([read more](parser/brace-quote.md))
+- `'single quote'`: use this for string literals ([read more](parser/single-quote.md))
+- `"double quote"`: use this for infixing variables ([read more](parser/double-quote.md))
+- `%(brace quote)`: use this for nesting quotes ([read more](parser/brace-quote.md))
 
 ### Code Comments
 
 You can comment out a single like, or end of a line with `#`:
+
 ```
 # this is a comment
 
@@ -162,6 +126,7 @@ echo Hello Murex # this is also a comment
 ```
 
 Multiple lines or mid-line comments can be achieved with `/#` and `#/` tokens:
+
 ```
 /#
 This is
@@ -169,7 +134,9 @@ a multi-line
 command
 #/
 ```
+
 ...which can also be inlined...
+
 ```
 » echo Hello /# comment #/ Murex
 ```
@@ -181,12 +148,13 @@ valid glob so Murex has substituted the asterisks with a hash symbol instead)
 
 All variables can be defined as expressions and their data types are inferred:
 
-* `name = "bob"`
-* `age = 20 * 2`
-* `fruit = %[ apples oranges bananas ]`
+- `name = "bob"`
+- `age = 20 * 2`
+- `fruit = %[ apples oranges bananas ]`
 
 If any variables are unset then reading from them will produce an error (under
 Murex's default behavior):
+
 ```
 » echo $foobar
 Error in `echo` (1,1): variable 'foobar' does not exist
@@ -195,12 +163,14 @@ Error in `echo` (1,1): variable 'foobar' does not exist
 ### Global variables
 
 Global variables can be defined using the `$GLOBAL` namespace:
+
 ```
 » $GLOBAL.foo = "bar"
 ```
 
 You can also force Murex to read the global assignment of `$foo` (ignoring
 any local assignments, should they exist) using the same syntax. eg:
+
 ```
 » $GLOBAL.name = "Tom"
 » out $name
@@ -219,9 +189,11 @@ Environmental Variables are like global variables except they are copied to any
 other programs that are launched from your shell session.
 
 Environmental variables can be assigned using the `$ENV` namespace:
+
 ```
 » $ENV.foo = "bar"
 ```
+
 as well as using the `export` statement like with traditional shells. ([read more](commands/export.md))
 
 Like with global variables, you can force Murex to read the environmental
@@ -245,16 +217,19 @@ Murex parses variables as tokens and expands them into the command line
 arguments intuitively. So, there are no more accidental bugs due to spaces in
 file names, or other such problems due to developers forgetting to quote
 variables. For example:
+
 ```
 » file = "file name.txt"
 » touch $file # this would normally need to be quoted
 » ls
 'file name.txt'
 ```
+
 ### Arrays
 
 Due to variables not being expanded into arrays by default, Murex supports an
 additional variable construct for arrays. These are `@` prefixed:
+
 ```
 » files = %[file1.txt, file2.txt, file3.txt]
 » touch @files
@@ -269,9 +244,9 @@ file1.txt  file2.txt
 Murex supports multiple different pipe tokens. The main two being `|` and
 `->`.
 
-* `|` works exactly the same as in any normal shell ([read more](parser/pipe-posix.md))
+- `|` works exactly the same as in any normal shell ([read more](parser/pipe-posix.md))
 
-* `->` displays all of the supported methods (commands that support the output
+- `->` displays all of the supported methods (commands that support the output
   of the previous command). Think of it a little like object orientated
   programming where an object will have functions (methods) attached. ([read more](parser/pipe-arrow.md))
 
@@ -286,7 +261,7 @@ tools.
 ### Redirection
 
 Redirection of stdout and stderr is very different in Murex. There is no
-support for the `2>` or `&1` tokens,  instead you name the pipe inside angle
+support for the `2>` or `&1` tokens, instead you name the pipe inside angle
 brackets, in the first parameter(s).
 
 `out` is that processes stdout (fd1), `err` is that processes stderr (fd2), and
@@ -295,17 +270,20 @@ brackets, in the first parameter(s).
 Any pipes prefixed by a bang means reading from that processes stderr.
 
 So to redirect stderr to stdout you would use `<!out>`:
+
 ```
 err <!out> "error message redirected to stdout"
 ```
 
 And to redirect stdout to stderr you would use `<err>`:
+
 ```
 out <err> "output redirected to stderr"
 ```
 
 Likewise you can redirect either stdout, or stderr to `/dev/null` via `<null>`
 or `<!null>` respectively.
+
 ```
 command <!null> # ignore stderr
 command <null>  # ignore stdout
@@ -330,11 +308,13 @@ along the pipeline.
 
 Casting doesn't alter the data, it simply changes the meta-information about
 how that data should be read.
+
 ```
 out [1,2,3] | cast json | foreach { ... }
 ```
 
 There is also a little syntactic sugar to do the same:
+
 ```
 out [1,2,3] | :json: foreach { ... }
 ```
@@ -342,6 +322,7 @@ out [1,2,3] | :json: foreach { ... }
 #### Format
 
 `format` takes the source data and reformats it into another data format:
+
 ```
 » out [1,2,3] | :json: format yaml
 - 1
@@ -353,11 +334,11 @@ out [1,2,3] | :json: foreach { ... }
 
 There are two types of emendable sub-shells: strings and arrays.
 
-* string sub-shells, `${ command }`, take the results from the sub-shell and
+- string sub-shells, `${ command }`, take the results from the sub-shell and
   return it as a single parameter. This saves the need to encapsulate the shell
   inside quotation marks.
 
-* array sub-shells, `@{ command }`, take the results from the sub-shell
+- array sub-shells, `@{ command }`, take the results from the sub-shell
   and expand it as parameters.
 
 **Examples:**
@@ -377,41 +358,47 @@ While glob expansion is supported in the interactive shell, there isn't
 auto-expansion of globbing in shell scripts. This is to protect against
 accidental damage. Instead globbing is achieved via sub-shells using either:
 
-* `g`  - traditional globbing ([read more](commands/g.md))
-* `rx` - regexp matching in current directory only ([read more](commands/rx.md))
-* `f`  - file type matching ([read more](commands/f.md))
+- `g` - traditional globbing ([read more](commands/g.md))
+- `rx` - regexp matching in current directory only ([read more](commands/rx.md))
+- `f` - file type matching ([read more](commands/f.md))
 
 **Examples:**
 
 All text files via globbing:
+
 ```
 g *.txt
 ```
 
 All text and markdown files via regexp:
+
 ```
 rx '\.(txt|md)$'
 ```
 
 All directories via type matching:
+
 ```
 f +d
 ```
 
 You can also chain them together, eg all directories named `*.txt`:
+
 ```
 g *.txt | f +d
 ```
 
 To use them in a shell script it could look something a like this:
+
 ```
 rm @{g *.txt | f +s}
 ```
+
 (this deletes any symlinks called `*.txt`)
 
 ## Brace expansion
 
-In [bash you can expand lists](https://en.wikipedia.org/wiki/Bash_(Unix_shell)#Brace_expansion)
+In [bash you can expand lists](<https://en.wikipedia.org/wiki/Bash_(Unix_shell)#Brace_expansion>)
 using the following syntax: `a{1..5}b`. In Murex, like with globbing, brace
 expansion is a function: `a: a[1..5]b` and supports a much wider range of lists
 that can be expanded. ([read more](commands/a.md))
@@ -422,6 +409,7 @@ that can be expanded. ([read more](commands/a.md))
 
 You can create "aliases" to common commands to save you a few keystrokes. For
 example:
+
 ```
 alias gc=git commit
 ```
@@ -431,10 +419,11 @@ alias gc=git commit
 ### Public Functions
 
 You can create custom functions in Murex using `function`. ([read more](commands/function.md))
+
 ```
 function gc (message: str) {
     # shorthand for `git commit`
-    
+
     git commit -m $message
 }
 ```
@@ -463,6 +452,7 @@ Thus for normal day to day usage, you shouldn't need to include `exec`.
 ### Using `if` Statements
 
 `if` can be used in a number of different ways, the most common being:
+
 ```
 if { true } then {
     # do something
@@ -476,6 +466,7 @@ if { true } then {
 ### Using `switch` Statements
 
 Because `if ... else if` chains are ugly, Murex supports `switch` statements:
+
 ```
 switch $USER {
     case "Tom"   { out: "Hello Tom" }
@@ -494,6 +485,7 @@ problems. ([read more](commands/switch.md))
 ### Using `foreach` Loops
 
 `foreach` allows you to easily iterate through an array or list of any type: ([read more](commands/foreach.md))
+
 ```
 %[ apples bananas oranges ] | foreach fruit { out "I like $fruit" }
 ```
@@ -501,6 +493,7 @@ problems. ([read more](commands/switch.md))
 ### Using `formap` Loops
 
 `formap` loops are the equivalent of `foreach` but against map objects: ([read more](commands/formap.md))
+
 ```
 %{
     Bob:     {age: 10},
@@ -517,6 +510,7 @@ problems. ([read more](commands/switch.md))
 
 `continue` will terminate execution of an inner block in iteration loops like
 `foreach` and `formap`. Thus _continuing_ the loop from the next iteration:
+
 ```
 %[1..10] | foreach i {
     if { $i == 5 } then {
@@ -535,6 +529,7 @@ you can use `continue` within nested loops and still have readable code. ([read 
 
 `break` will terminate execution of a block (eg `function`, `private`, `if`,
 `foreach`, etc):
+
 ```
 %[1..10] | foreach i {
     if { $i == 5 } then {
@@ -549,6 +544,7 @@ you can use `continue` within nested loops and still have readable code. ([read 
 `break` requires a parameter to define while block to end. Thus `break` can be
 considered to exhibit the behavior of _return_ as well as _break_ in other
 languages:
+
 ```
 function example {
     if { $USER == "root" } then {
@@ -569,7 +565,7 @@ then the whole shell will still exist and not just that function. ([read more](c
 
 ### Signal: SIGINT
 
-This can be invoked by pressing `Ctrl` + `c`. 
+This can be invoked by pressing `Ctrl` + `c`.
 
 ### Signal: SIGQUIT
 

@@ -208,4 +208,4 @@ More options are available in the [INSTALL](../cookbook/tutorial/README.md) docu
 
 ## 🛟 Getting Started Tutorial
 
-- [Tutorial](../cookbook/tutorial/README.md)
+Take your your first steps with `Murex` by following our [Tutorial](/tour)

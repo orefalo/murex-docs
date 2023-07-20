@@ -3,27 +3,10 @@ title: Install
 index: false
 icon: arrow-down
 category:
-  - Guide
+  - Install
 ---
 
-<h1>Install Murex</h1>
-
-<h2>Table of Contents</h2>
-<div id="toc">
-
-- [Supported Platforms](#supported-platforms)
-- [Pre-Compiled Binaries (HTTPS download)](#pre-compiled-binaries-https-download)
-- [Installing From A Package Manager](#installing-from-a-package-manager)
-  - [ArchLinux](#archlinux)
-  - [Homebrew](#homebrew)
-  - [MacPorts](#macports)
-- [Compiling From Source](#compiling-from-source)
-  - [Installation From Source Steps](#installation-from-source-steps)
-- [Including Optional Builtins](#including-optional-builtins)
-- [External Dependencies (Optional)](#external-dependencies-optional)
-- [Recommended Terminal Typeface](#recommended-terminal-typeface)
-
-</div>
+# Install Murexs
 
 ## Supported Platforms
 
@@ -35,30 +18,42 @@ experimental and/or having known limitations.
 [![Version](https://raw.githubusercontent.com/lmorg/murex/master/version.svg)](DOWNLOAD.md)
 [![CodeBuild](https://codebuild.eu-west-1.amazonaws.com/badges?uuid=eyJlbmNyeXB0ZWREYXRhIjoib3cxVnoyZUtBZU5wN1VUYUtKQTJUVmtmMHBJcUJXSUFWMXEyc2d3WWJldUdPTHh4QWQ1eFNRendpOUJHVnZ5UXBpMXpFVkVSb3k2UUhKL2xCY2JhVnhJPSIsIml2UGFyYW1ldGVyU3BlYyI6Im9QZ2dPS3ozdWFyWHIvbm8iLCJtYXRlcmlhbFNldFNlcmlhbCI6MX0%3D&branch=master)](DOWNLOAD.md)
 
-If you wish to download a pre-compiled binary then head to the [DOWNLOAD](DOWNLOAD.md)
+If you wish to **download a pre-compiled binary** then head to the [DOWNLOAD](DOWNLOAD.md)
 page to select your platform.
 
 ## Installing From A Package Manager
 
 [![Packaging status](https://repology.org/badge/vertical-allrepos/murex.svg)](https://repology.org/project/murex/versions)
 
-### ArchLinux
+Install `Murex` from your favorite package manager
 
-Available as an AUR package:
+::: code-tabs#shell
 
-- PKGBUILD file:
-  [https://aur.archlinux.org/cgit/aur.git/plain/PKGBUILD?h=murex](https://aur.archlinux.org/cgit/aur.git/plain/PKGBUILD?h=murex)
+@tab Brew
 
-- AUR package repository:
-  [https://aur.archlinux.org/packages/murex](https://aur.archlinux.org/packages/murex)
+```bash
+brew install murex
+```
 
-### Homebrew
+@tab AUR Package
 
-    brew install murex
+```bash
+https://aur.archlinux.org/packages/murex
+```
 
-### MacPorts
+@tab PKGBuild file
 
-    sudo port install murex
+```bash
+https://aur.archlinux.org/cgit/aur.git/plain/PKGBUILD?h=murex
+```
+
+@tab MacPorts
+
+```bash
+sudo port install murex
+```
+
+:::
 
 ## Compiling From Source
 
@@ -109,9 +104,11 @@ below.
 First create the directory path and clone the source into the appropriate
 directory structure.
 
-    mkdir -p $GOPATH/src/github.com/lmorg/murex
-    cd $GOPATH/src/github.com/lmorg/murex
-    git clone https://github.com/lmorg/murex .
+```bash
+mkdir -p $GOPATH/src/github.com/lmorg/murex
+cd $GOPATH/src/github.com/lmorg/murex
+git clone https://github.com/lmorg/murex .
+```
 
 At this point you can add and remove any optional builtins by following the
 instructions on this located further down this document. This is entirely
@@ -119,15 +116,21 @@ optional as Murex attempts to ship with sane defaults.
 
 **Compile the code:**
 
-    go build github.com/lmorg/murex
+```bash
+go build github.com/lmorg/murex
+```
 
 **Test the executable (optional stage):**
 
-    ./murex -c 'g: behavioural/*.mx -> foreach: f { source $f }; try {test: run *}'
+```bash
+./murex -c 'g: behavioural/*.mx -> foreach: f { source $f }; try {test: run *}'
+```
 
 **Start the shell:**
 
-    ./murex
+```bash
+./murex
+```
 
 ## Including Optional Builtins
 

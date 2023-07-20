@@ -7,15 +7,7 @@ export default sidebar({
       icon: "house",
       prefix: "",
       link: "",
-      children: ["/install", "/changelog", "/blog"],
-    },
-
-    {
-      text: "Getting Started",
-      icon: "life-ring",
-      prefix: "demo/",
-      link: "demo/",
-      children: "structure",
+      children: ["/install", "/changelog", "/blog", "/tour"],
     },
     {
       text: "Docs",
