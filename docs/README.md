@@ -15,8 +15,8 @@ actions:
     type: primary
   - text: Rosetta Stone 🧭
     link: ./rosetta
-  - text: Docs 📔
-    link: ./guide/
+  - text: Built-ins 📔
+    link: ./commands
 
 highlights:
   - header: A Modern shell for the rest of us
@@ -204,7 +204,7 @@ sudo port install murex
 
 :::
 
-More options are available in the [INSTALL](../cookbook/tutorial/README.md) document
+More options are available in the [INSTALL](/install) document
 
 ## 🛟 Getting Started Tutorial
 
