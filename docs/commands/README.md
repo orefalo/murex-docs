@@ -1,3 +1,11 @@
+---
+title: Commands
+icon: arrow-down
+index: true
+category:
+  - Guide
+---
+
 # Command Reference
 
 This section is a glossary of Murex builtin commands.
