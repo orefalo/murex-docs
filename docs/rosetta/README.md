@@ -1,3 +1,11 @@
+---
+title: Rosetta Stone
+icon: arrows-to-circle
+index: true
+category:
+  - Guide
+---
+
 # Rosetta Stone
 
 > A tabulated list of Bashism's and their equivalent Murex syntax

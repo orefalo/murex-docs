@@ -1,3 +1,11 @@
+---
+title: Content Aware
+icon: arrows-to-circle
+index: true
+category:
+  - Guide
+---
+
 # Data-Type Reference
 
 This section is a glossary of data-types which Murex is natively aware.
@@ -13,18 +21,18 @@ Read the [Language Tour](tour.md) for more detail on this topic.
 For clarity, it is worth explaining a couple of terms:
 
 1. "Data-types" in Murex are a description of the format of data. This
-means that while any stdio stream in UNIX will by "bytes", Murex might
-label that data as being a JSON string or CSV file (for example) which
-means any builtins that parse that stdio stream, for example to return
-the first 8 items, would need to parse those types differently. Thus a
-"data-type" in Murex is actually more than just a description of a data
-structure; it is a series of APIs to marshall and unmarshall data from
-complex file formats. This enables you to use the same command line tools
-to query any type of output.
+   means that while any stdio stream in UNIX will by "bytes", Murex might
+   label that data as being a JSON string or CSV file (for example) which
+   means any builtins that parse that stdio stream, for example to return
+   the first 8 items, would need to parse those types differently. Thus a
+   "data-type" in Murex is actually more than just a description of a data
+   structure; it is a series of APIs to marshall and unmarshall data from
+   complex file formats. This enables you to use the same command line tools
+   to query any type of output.
 
 2. "Primitive" data-types refer to types that are the required by Murex
-to function. These will be `int`, `float` / `number`, `bool`, `string`,
-`generic`, and `null`.
+   to function. These will be `int`, `float` / `number`, `bool`, `string`,
+   `generic`, and `null`.
 
 ## Feature Sets
 
@@ -36,33 +44,33 @@ details about specific hooks.
 
 ## Pages
 
-* [`*` (generic) ](types/generic.md):
+- [`*` (generic) ](./generic.md):
   generic (primitive)
-* [`bool` ](types/bool.md):
+- [`bool` ](./bool.md):
   Boolean (primitive)
-* [`commonlog` ](types/commonlog.md):
+- [`commonlog` ](./commonlog.md):
   Apache httpd "common" log format
-* [`csv` ](types/csv.md):
+- [`csv` ](./csv.md):
   CSV files (and other character delimited tables)
-* [`float` (floating point number)](types/float.md):
+- [`float` (floating point number)](./float.md):
   Floating point number (primitive)
-* [`hcl` ](types/hcl.md):
+- [`hcl` ](./hcl.md):
   HashiCorp Configuration Language (HCL)
-* [`int` ](types/int.md):
+- [`int` ](./int.md):
   Whole number (primitive)
-* [`json` ](types/json.md):
+- [`json` ](./json.md):
   JavaScript Object Notation (JSON)
-* [`jsonc` ](types/jsonc.md):
+- [`jsonc` ](./jsonc.md):
   Concatenated JSON
-* [`jsonl` ](types/jsonl.md):
+- [`jsonl` ](./jsonl.md):
   JSON Lines
-* [`num` (number)](types/num.md):
+- [`num` (number)](./num.md):
   Floating point number (primitive)
-* [`str` (string) ](types/str.md):
+- [`str` (string) ](./str.md):
   string (primitive)
-* [`toml` ](types/toml.md):
+- [`toml` ](./toml.md):
   Tom's Obvious, Minimal Language (TOML)
-* [`yaml` ](types/yaml.md):
+- [`yaml` ](./yaml.md):
   YAML Ain't Markup Language (YAML)
-* [mxjson](types/mxjson.md):
+- [mxjson](./mxjson.md):
   Murex-flavoured JSON (deprecated)

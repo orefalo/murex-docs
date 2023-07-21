@@ -30,8 +30,8 @@ highlights:
     features:
       - title: Content Aware
         icon: arrows-to-circle
-        details: natively manipulate JSON, TOML, YAML, XML, Markdown structures
-        link: https://theme-hope.vuejs.press/guide/markdown/tabs.html
+        details: natively manipulate JSON, TOML, YAML, XML, CSV, commonlog
+        link: /types
 
       - title: Objects and Maps
         icon: table-columns
