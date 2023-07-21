@@ -5,6 +5,7 @@ import theme from "./theme.js";
 const environment = process.env.NODE_ENV;
 
 const config = {
+  // this must be replace with the context path in PROD
   base: "/murex-docs/",
   lang: "en-US",
   title: "",
@@ -25,23 +26,23 @@ const config = {
   ],
   theme,
   plugins: [
-    // searchProPlugin({
-    //   // index all contents
-    //   indexContent: true,
-    //   // add supports for category and tags
-    //   customFields: [
-    //     {
-    //       //@ts-ignore
-    //       getter: (page) => page.frontmatter.category,
-    //       formatter: "Category: $content",
-    //     },
-    //     {
-    //       //@ts-ignore
-    //       getter: (page) => page.frontmatter.tag,
-    //       formatter: "Tag: $content",
-    //     },
-    //   ],
-    // }),
+    searchProPlugin({
+      // index all contents
+      // indexContent: true,
+      // add supports for category and tags
+      customFields: [
+        {
+          //@ts-ignore
+          getter: (page) => page.frontmatter.category,
+          formatter: "Category: $content",
+        },
+        {
+          //@ts-ignore
+          getter: (page) => page.frontmatter.tag,
+          formatter: "Tag: $content",
+        },
+      ],
+    }),
   ],
 };
 

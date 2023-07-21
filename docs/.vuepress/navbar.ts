@@ -10,8 +10,8 @@ export default navbar([
       {
         text: "User Guide",
         icon: "lightbulb",
-        prefix: "user-guide/",
-        children: ["baz", { text: "...", icon: "ellipsis", link: "#" }],
+        // prefix: "user-guide/",
+        children: ["user-guide", { text: "...", icon: "ellipsis", link: "#" }],
       },
       {
         text: "Commands",

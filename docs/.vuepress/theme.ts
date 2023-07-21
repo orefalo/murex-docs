@@ -12,7 +12,7 @@ export default hopeTheme({
 
   favicon: "favicon.ico",
 
-  fullscreen: true,
+  fullscreen: false,
 
   iconAssets: "fontawesome-with-brands",
 

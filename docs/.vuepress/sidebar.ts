@@ -12,13 +12,13 @@ export default sidebar({
     {
       text: "Docs",
       icon: "book",
-      prefix: "guide/",
+      prefix: "user-guide/",
       children: "structure",
     },
     {
       text: "Builtins",
       icon: "building",
-      prefix: "guide/",
+      prefix: "commands/",
       children: "structure",
     },
   ],
