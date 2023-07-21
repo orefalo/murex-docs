@@ -3,7 +3,7 @@ title: ChangeLog
 index: false
 icon: laptop-code
 category:
-  - Guide
+  - Murex
 ---
 
 # Change Log

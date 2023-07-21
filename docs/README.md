@@ -11,11 +11,11 @@ heroText: Murex.Rocks
 tagline: An intuitive, typed and content aware shell for the 2020s and beyond.
 actions:
   - text: Getting Started 💡
-    link: ./getting_started
+    link: ./tour
     type: primary
-  - text: Rosetta Stone
-    link: ./rosetta/
-  - text: Docs
+  - text: Rosetta Stone 🧭
+    link: ./rosetta
+  - text: Docs 📔
     link: ./guide/
 
 highlights:

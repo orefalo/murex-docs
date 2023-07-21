@@ -1,5 +1,7 @@
 This is the documentation for murex shell
 
+https://orefalo.github.io/murex-docs/
+
 Benefits
 
 - free hosting with your own domain name

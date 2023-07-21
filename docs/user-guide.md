@@ -1,23 +1,7 @@
-<h1>User Guide</h1>
+# User Guide
 
 This section contains miscellaneous documents on using and configuring the
 shell and Murex's numerous features.
-
-<h2>Table of Contents</h2>
-
-<div id="toc">
-
-- [Language Tour](#language-tour)
-- [User Guides](#user-guides)
-- [Operators And Tokens](#operators-and-tokens)
-- [Builtin Commands](#builtin-commands)
-  - [Standard Builtins](#standard-builtins)
-  - [Optional Builtins](#optional-builtins)
-- [Data Types](#data-types)
-- [Events](#events)
-- [API Reference](#api-reference)
-
-</div>
 
 ## Language Tour
 

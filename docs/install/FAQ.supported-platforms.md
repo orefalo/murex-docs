@@ -1,22 +1,7 @@
-<h1>Supported Operating Systems</h1>
+# Supported Operating Systems
 
 The following is a list of platforms Murex has been tested on and the
 level of support it has:
-
-<h2>Table of Contents</h2>
-<div id="toc">
-
-- [Linux](#linux)
-- [macOS (Darwin)](#macos-darwin)
-- [Windows](#windows)
-- [FreeBSD](#freebsd)
-- [OpenBSD](#openbsd)
-- [NetBSD](#netbsd)
-- [DragonflyBSD](#dragonflybsd)
-- [Plan 9](#plan-9)
-- [Other CPU architectures](#other-cpu-architectures)
-
-</div>
 
 ## Linux
 
@@ -34,11 +19,11 @@ Both x86 (Intel) and AMD (M2 etc) architectures are supported.
 Windows is supported there are a few known issue with the way how Windows
 internals are built. These cannot be easily worked around:
 
-* Windows doesn't decouple the terminal emulator and the shell Which means you
+- Windows doesn't decouple the terminal emulator and the shell Which means you
   cannot rely upon STDIN working as expected (eg some commands don't read input
   from STDIN but instead poll the terminal emulator directly)
 
-* Windows sends parameters as a single string rather than an array of string.
+- Windows sends parameters as a single string rather than an array of string.
   This is to retain backwards compatibility with DOS but it breaks the way how
   quotation marks and escaping works. Murex will compile an array of
   parameters based on the quotation strings (there are 3 different types of
@@ -49,10 +34,10 @@ internals are built. These cannot be easily worked around:
   there is no standard so one command might handle spaces correctly but another
   wouldn't.
 
-* Job control (`bg`, `^z`, `fg`, etc) isn't supported because Windows doesn't
-  have an equivalent of the SIGSTSP (etc) POSIX signals. 
+- Job control (`bg`, `^z`, `fg`, etc) isn't supported because Windows doesn't
+  have an equivalent of the SIGSTSP (etc) POSIX signals.
 
-* There is also the caveat that without a broad range of command line utilities
+- There is also the caveat that without a broad range of command line utilities
   (eg GNU coreutils) the usefulness of Murex is seriously diminished. You can
   mitigate this by installing [MSYS2](https://www.msys2.org/) or [Cygwin](https://cygwin.com/).
 
@@ -86,7 +71,7 @@ support all of the required signals. All other functions are expected to work.
 
 Several CPU architectures are supported:
 
-* 386   (x86 32bit)
-* AMD64 (x86 64bit)
-* ARMv7 (32bit)
-* ARMv8 (64bit)
+- 386 (x86 32bit)
+- AMD64 (x86 64bit)
+- ARMv7 (32bit)
+- ARMv8 (64bit)

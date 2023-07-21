@@ -3,7 +3,7 @@ title: Getting Started
 index: true
 icon: life-ring
 category:
-  - Tour
+  - Guide
 ---
 
 # Language Tour

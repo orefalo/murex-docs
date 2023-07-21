@@ -3,7 +3,7 @@ title: Blog
 index: false
 icon: comment
 category:
-  - Blog
+  - Murex
 ---
 
 # Blog

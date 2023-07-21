@@ -3,7 +3,7 @@ title: Install
 index: false
 icon: arrow-down
 category:
-  - Install
+  - Murex
 ---
 
 # Install Murexs
