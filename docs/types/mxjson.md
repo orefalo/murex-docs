@@ -88,4 +88,4 @@ Any block quoted by this method will be converted to the following valid JSON:
   Tom's Obvious, Minimal Language (TOML)
 - [`yaml` ](../types/yaml.md):
   YAML Ain't Markup Language (YAML)
-- [`create-objects`](../parser/create-objects.md):
+- [`create-object`](../parser/create-object.md):

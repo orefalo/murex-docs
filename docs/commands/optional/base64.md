@@ -8,21 +8,27 @@ An optional builtin to encode or decode a base64 string.
 
 ## Usage
 
-    `<stdin>` -> base64 -> `<stdout>`
+```
+    <stdin> -> base64 -> <stdout>
 
-    `<stdin>` -> !base64 -> `<stdout>`
+    <stdin> -> !base64 -> <stdout>
+```
 
 ## Examples
 
 Encode base64 string
 
-    » out: "Hello, World!" -> base64
-    SGVsbG8sIFdvcmxkIQo=
+```
+» out: "Hello, World!" -> base64
+SGVsbG8sIFdvcmxkIQo=
+```
 
 Decode base64 string
 
-    » out: "SGVsbG8sIFdvcmxkIQo=" -> !base64
-    Hello, World!
+```
+» out: "SGVsbG8sIFdvcmxkIQo=" -> !base64
+Hello, World!
+```
 
 ## Detail
 
@@ -46,15 +52,15 @@ it doesn't require the OS fork processes.
 
 ## See Also
 
-- [`!bz2` ](../optional/bz2.md):
+- [`!bz2` ](./bz2.md):
   Decompress a bz2 file
-- [`escape`](../commands/escape.md):
+- [`escape`](../escape.md):
   Escape or unescape input
-- [`esccli`](../commands/esccli.md):
+- [`esccli`](../esccli.md):
   Escapes an array so output is valid shell code
-- [`eschtml`](../commands/eschtml.md):
+- [`eschtml`](../eschtml.md):
   Encode or decodes text for HTML
-- [`escurl`](../commands/escurl.md):
+- [`escurl`](../escurl.md):
   Encode or decodes text for the URL
-- [`gz` ](../optional/gz.md):
+- [`gz` ](./gz.md):
   Compress or decompress a gzip file

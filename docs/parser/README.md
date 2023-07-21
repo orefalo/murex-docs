@@ -12,7 +12,7 @@ This section is a glossary of Murex tokens and parser behavior.
 2. [Rosetta Stone](/rosetta), which is a reference
    table comparing Bash syntax to Murex's.
 
-3. [Builtins](./GUIDE.builtin-functions.md), for docs on the core builtins.
+3. [Builtins](/commands), for docs on the core builtins.
 
 ### Murex's Source Code
 
@@ -21,35 +21,35 @@ files.
 
 ## Pages
 
-- [And (`&&`) Logical Operator](parser/logical-and.md):
+- [And (`&&`) Logical Operator](./logical-and.md):
   Continues next operation if previous operation passes
-- [Append Pipe (`>>`) Token](parser/pipe-append.md):
+- [Append Pipe (`>>`) Token](./pipe-append.md):
   Redirects STDOUT to a file and append its contents
-- [Array (`@`) Token](parser/array.md):
+- [Array (`@`) Token](./array.md):
   Expand values as an array
-- [Arrow Pipe (`->`) Token](parser/pipe-arrow.md):
+- [Arrow Pipe (`->`) Token](./pipe-arrow.md):
   Pipes STDOUT from the left hand command to STDIN of the right hand command
-- [Brace Quote (`%(`, `)`) Tokens](parser/brace-quote.md):
+- [Brace Quote (`%(`, `)`) Tokens](./brace-quote.md):
   Initiates or terminates a string (variables expanded)
-- [Create array (`%[]`) constructor](parser/create-array.md):
+- [Create array (`%[]`) constructor](./create-array.md):
   Quickly generate arrays
-- [Create object (`%{}`) constructor](parser/create-object.md):
+- [Create object (`%{}`) constructor](./create-object.md):
   Quickly generate objects and maps
-- [Curly Brace (`{`, `}`) Tokens](parser/curly-brace.md):
+- [Curly Brace (`{`, `}`) Tokens](./curly-brace.md):
   Initiates or terminates a code block
-- [Double Quote (`"`) Token](parser/double-quote.md):
+- [Double Quote (`"`) Token](./double-quote.md):
   Initiates or terminates a string (variables expanded)
-- [Generic Pipe (`=>`) Token](parser/pipe-generic.md):
+- [Generic Pipe (`=>`) Token](./pipe-generic.md):
   Pipes a reformatted STDOUT stream from the left hand command to STDIN of the right hand command
-- [Or (`||`) Logical Operator](parser/logical-or.md):
+- [Or (`||`) Logical Operator](./logical-or.md):
   Continues next operation only if previous operation fails
-- [POSIX Pipe (`|`) Token](parser/pipe-posix.md):
+- [POSIX Pipe (`|`) Token](./pipe-posix.md):
   Pipes STDOUT from the left hand command to STDIN of the right hand command
-- [STDERR Pipe (`?`) Token](parser/pipe-err.md):
+- [STDERR Pipe (`?`) Token](./pipe-err.md):
   Pipes STDERR from the left hand command to STDIN of the right hand command
-- [Single Quote (`'`) Token](parser/single-quote.md):
+- [Single Quote (`'`) Token](./single-quote.md):
   Initiates or terminates a string (variables not expanded)
-- [String (`$`) Token](parser/string.md):
+- [String (`$`) Token](./string.md):
   Expand values as a string
-- [Tilde (`~`) Token](parser/tilde.md):
+- [Tilde (`~`) Token](./tilde.md):
   Home directory path variable

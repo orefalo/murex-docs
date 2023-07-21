@@ -5,18 +5,18 @@ export default navbar([
   {
     text: "Docs",
     icon: "book",
-    prefix: "/guide/",
+    // prefix: "/guide/",
     children: [
       {
-        text: "Bar",
+        text: "User Guide",
         icon: "lightbulb",
-        prefix: "bar/",
+        prefix: "user-guide/",
         children: ["baz", { text: "...", icon: "ellipsis", link: "#" }],
       },
       {
-        text: "Foo",
+        text: "Commands",
         icon: "lightbulb",
-        prefix: "foo/",
+        prefix: "commands/",
         children: ["ray", { text: "...", icon: "ellipsis", link: "#" }],
       },
     ],

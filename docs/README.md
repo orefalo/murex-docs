@@ -108,9 +108,9 @@ highlights:
         details: full featured builtins allow fast execution and portability
         link: https://theme-hope.vuejs.press/guide/markdown/tabs.html
 
-      - title: Notifications and Events
+      - title: Realtime Events
         icon: bolt
-        details: events streamline notifications upon files changes, process lifecycle and simple content availability
+        details: events streamline script notifications upon elapsed time, keypress, completion, prompt or filesystem changes
         link: https://theme-hope.vuejs.press/guide/markdown/tabs.html
 
       - title: PNG Generation
@@ -125,7 +125,7 @@ highlights:
 
       - title: NOT POSIX compliant!
         icon: recycle
-        details: purposely NOT POSIX compliant to set free, be performant and allow for extended capabilities
+        details: purposely NOT POSIX compliant to be performant and allow for extended capabilities
         link: https://theme-hope.vuejs.press/guide/markdown/tabs.html
 
 copyright: false

@@ -19,15 +19,15 @@ An optional builtin for compressing or decompressing a gzip stream from STDIN.
 
 ## See Also
 
-- [`!bz2` ](../optional/bz2.md):
+- [`!bz2` ](./bz2.md):
   Decompress a bz2 file
-- [`base64` ](../optional/base64.md):
+- [`base64` ](./base64.md):
   Encode or decode a base64 string
-- [`escape`](../commands/escape.md):
+- [`escape`](../escape.md):
   Escape or unescape input
-- [`esccli`](../commands/esccli.md):
+- [`esccli`](../esccli.md):
   Escapes an array so output is valid shell code
-- [`eschtml`](../commands/eschtml.md):
+- [`eschtml`](../eschtml.md):
   Encode or decodes text for HTML
-- [`escurl`](../commands/escurl.md):
+- [`escurl`](../escurl.md):
   Encode or decodes text for the URL

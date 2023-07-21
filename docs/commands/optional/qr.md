@@ -29,7 +29,7 @@ have to `cast` the output in some circumstances.
 
 ## See Also
 
-- [`cast`](../commands/cast.md):
+- [`cast`](../cast.md):
   Alters the data type of the previous function without altering it's output
-- [`open-image` ](../commands/open-image.md):
+- [`open-image` ](../open-image.md):
   Renders bitmap image data on your terminal

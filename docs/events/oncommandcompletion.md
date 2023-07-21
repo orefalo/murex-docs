@@ -48,6 +48,7 @@ will re-run `pacman` with `sudo`.
 
 The following payload is passed to the function via STDIN:
 
+```
     {
         "Name": "",
         "Interrupt": {
@@ -58,6 +59,7 @@ The following payload is passed to the function via STDIN:
             "ExitNum": 0
         }
     }
+```
 
 #### Name
 
@@ -117,7 +119,7 @@ prompt itself and three extra lines for the hint text.
   Define a function block
 - [`if`](../commands/if.md):
   Conditional statement to execute different blocks of code depending on the result of the condition
-- [`onPrompt`](../events/onprompt.md):
+- [`onPrompt`](./onprompt.md):
   Events triggered by changes in state of the interactive shell
 - [`regexp`](../commands/regexp.md):
   Regexp tools for arrays / lists of strings

@@ -24,11 +24,11 @@ shells.
 ### Read–Eval–Print Loop
 
 If you want to learn more about the interactive shell then there is a dedicated
-document detailing [Murex's REPL features](user-guide/interactive-shell.md).
+document detailing [Murex's REPL features](../user-guide/interactive-shell.md).
 
 ### Barewords
 
-Shells need to [balance scripting with an efficient interactive terminal](blog/split_personalities.md)
+Shells need to [balance scripting with an efficient interactive terminal](../blog/split_personalities.md)
 interface. One of the most common approaches to solving that conflict between
 readability and terseness is to make heavy use of barewords. Barewords are
 ostensibly just instructions that are not quoted. In our case, command names
@@ -111,9 +111,9 @@ translate your Bash code into Murex code.
 
 There are three ways to quote a string in Murex:
 
-- `'single quote'`: use this for string literals ([read more](parser/single-quote.md))
-- `"double quote"`: use this for infixing variables ([read more](parser/double-quote.md))
-- `%(brace quote)`: use this for nesting quotes ([read more](parser/brace-quote.md))
+- `'single quote'`: use this for string literals ([read more](../parser/single-quote.md))
+- `"double quote"`: use this for infixing variables ([read more](../parser/double-quote.md))
+- `%(brace quote)`: use this for nesting quotes ([read more](../parser/brace-quote.md))
 
 ### Code Comments
 

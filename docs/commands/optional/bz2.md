@@ -20,15 +20,15 @@ Currently there is no support for compressing a stream using bz2.
 
 ## See Also
 
-- [`base64` ](../optional/base64.md):
+- [`base64` ](./base64.md):
   Encode or decode a base64 string
-- [`escape`](../commands/escape.md):
+- [`escape`](../escape.md):
   Escape or unescape input
-- [`esccli`](../commands/esccli.md):
+- [`esccli`](../esccli.md):
   Escapes an array so output is valid shell code
-- [`eschtml`](../commands/eschtml.md):
+- [`eschtml`](../eschtml.md):
   Encode or decodes text for HTML
-- [`escurl`](../commands/escurl.md):
+- [`escurl`](../escurl.md):
   Encode or decodes text for the URL
-- [`gz` ](../optional/gz.md):
+- [`gz` ](./gz.md):
   Compress or decompress a gzip file

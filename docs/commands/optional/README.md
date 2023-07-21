@@ -12,7 +12,7 @@ not ready to ship with Murex.
 
 ### Language Guides
 
-1. [Core Builtins](./GUIDE.builtin-functions.md), for docs
+1. [Builtins](./commands), for docs
    on the core builtins.
 
 2. [Language Tour](/tour), which is an introduction into
@@ -36,15 +36,15 @@ to return the same markdown-formatted document as those listed below. eg
 
 ## Pages
 
-- [`!bz2` ](optional/bz2.md):
+- [`!bz2` ](./bz2.md):
   Decompress a bz2 file
-- [`base64` ](optional/base64.md):
+- [`base64` ](./base64.md):
   Encode or decode a base64 string
-- [`gz` ](optional/gz.md):
+- [`gz` ](./gz.md):
   Compress or decompress a gzip file
-- [`qr` ](optional/qr.md):
+- [`qr` ](./qr.md):
   Creates a QR code from STDIN
-- [`select` ](optional/select.md):
+- [`select` ](./select.md):
   Inlining SQL into shell pipelines
-- [`sleep` ](optional/sleep.md):
+- [`sleep` ](./sleep.md):
   Suspends the shell for a number of seconds

@@ -32,5 +32,5 @@ As a function
 
 - [`open`](./open.md):
   Open a file with a preferred handler
-- [`qr` ](../optional/qr.md):
+- [`qr` ](../commands/optional/qr.md):
   Creates a QR code from STDIN
