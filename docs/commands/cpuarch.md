@@ -1,4 +1,4 @@
-f# `cpuarch`
+# `cpuarch`
 
 > Output the hosts CPU architecture
 

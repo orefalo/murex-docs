@@ -21,5 +21,11 @@ export default sidebar({
       prefix: "commands/",
       children: "structure",
     },
+    {
+      text: "Optional Builtins",
+      icon: "building",
+      prefix: "optional/",
+      children: "structure",
+    },
   ],
 });

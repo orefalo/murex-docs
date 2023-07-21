@@ -1,6 +1,4 @@
-# Murex Shell Docs
-
-## Command Reference: `len`
+# `len`
 
 > Outputs the length of an array
 
@@ -14,8 +12,10 @@ This will read an array from STDIN and outputs the length for that array
 
 ## Examples
 
-    » tout: json (["a", "b", "c"]) -> len
-    3
+```
+» tout: json (["a", "b", "c"]) -> len
+3
+```
 
 ## Detail
 
@@ -26,21 +26,23 @@ would return `2`). If you need to count characters in a string and are
 running POSIX (eg Linux / BSD / OSX) then it is recommended to use `wc`
 instead. But be mindful that `wc` will also count new line characters
 
-    » out: "foobar" -> len
-    1
+```
+» out: "foobar" -> len
+1
 
-    » out: "foo\nbar" -> len
-    2
+» out: "foo\nbar" -> len
+2
 
-    » out: "foobar" -> wc: -c
-    7
+» out: "foobar" -> wc: -c
+7
 
-    » out: "foo\nbar" -> wc: -c
-    8
+» out: "foo\nbar" -> wc: -c
+8
 
-    » printf: "foobar" -> wc: -c
-    6
-    # (printf does not print a trailing new line)
+» printf: "foobar" -> wc: -c
+6
+# (printf does not print a trailing new line)
+```
 
 ## See Also
 

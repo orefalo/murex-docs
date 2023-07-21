@@ -1,6 +1,4 @@
-# Murex Shell Docs
-
-## Command Reference: `swivel-datatype`
+# `swivel-datatype`
 
 > Converts tabulated data into a map of values for serialised data-types such as JSON and YAML
 

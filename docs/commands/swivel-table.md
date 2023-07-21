@@ -1,6 +1,4 @@
-# Murex Shell Docs
-
-## Command Reference: `swivel-table`
+# `swivel-table`
 
 > Rotates a table by 90 degrees
 

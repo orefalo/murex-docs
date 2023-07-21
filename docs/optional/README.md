@@ -1,3 +1,11 @@
+---
+title: README
+icon: eye
+index: true
+category:
+  - Builtins
+---
+
 # Optional Command Reference
 
 This section is a glossary of Murex optional builtins.
