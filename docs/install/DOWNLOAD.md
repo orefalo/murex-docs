@@ -6,7 +6,7 @@
 
 Below are the instructions to download a pre-compiled binary via HTTPS. If you
 wish to install from source or use your preferred package manager, then please
-refer to the [INSTALL](INSTALL.md) page for further instructions.
+refer to the [INSTALL](/install) page for further instructions.
 
 All files are approximately 6 MB in size (aside the Plan 9 builds which are 3 MB).
 

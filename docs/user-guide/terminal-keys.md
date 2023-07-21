@@ -235,7 +235,7 @@ Pressing `ctrl`+`l` will clear the screen.
 
 - [Murex's Interactive Shell](../user-guide/interactive-shell.md):
   What's different about Murex's interactive shell?
-- [Rosetta Stone](../user-guide/rosetta-stone.md):
+- [Rosetta Stone](/rosetta):
   A tabulated list of Bashism's and their equivalent Murex syntax
 - [Spellcheck](../user-guide/spellcheck.md):
   How to enable inline spellchecking

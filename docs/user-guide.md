@@ -29,7 +29,7 @@ The [Language Tour](tour.md) is a great introduction into the Murex language.
   Overview of what a "pipeline" is
 - [Reserved Variables](user-guide/reserved-vars.md):
   Special variables reserved by Murex
-- [Rosetta Stone](user-guide/rosetta-stone.md):
+- [Rosetta Stone](/rosetta):
   A tabulated list of Bashism's and their equivalent Murex syntax
 - [Schedulers](user-guide/schedulers.md):
   Overview of the different schedulers (or 'run modes') in Murex

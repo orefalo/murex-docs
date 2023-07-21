@@ -13,7 +13,7 @@ actions:
   - text: Getting Started 💡
     link: ./tour
     type: primary
-  - text: Rosetta Stone 🧭
+  - text: Rosetta Stone 🪨
     link: ./rosetta
   - text: Built-ins 📔
     link: ./commands
@@ -110,7 +110,7 @@ highlights:
 
       - title: Notifications and Events
         icon: bolt
-        details: events streamline notifications upon files changes, process lifecycle and simple content availability.
+        details: events streamline notifications upon files changes, process lifecycle and simple content availability
         link: https://theme-hope.vuejs.press/guide/markdown/tabs.html
 
       - title: PNG Generation
@@ -120,7 +120,7 @@ highlights:
 
       - title: Multi-threaded
         icon: gears
-        details: builtins are not forked processes like in a traditional POSIX shell, rather separate threads to optimize resource and performance.
+        details: builtins are not forked processes like in a traditional POSIX shell, rather separate threads to optimize resource and performance
         link: https://theme-hope.vuejs.press/guide/markdown/tabs.html
 
       - title: NOT POSIX compliant!
@@ -206,6 +206,6 @@ sudo port install murex
 
 More options are available in the [INSTALL](/install) document
 
-## 🛟 Getting Started Tutorial
+## 🛟 Getting Started
 
-Take your your first steps with `Murex` by following our [Tutorial](/tour)
+Take your your first steps with `Murex` by following our [Language Tutorial](/tour)

@@ -14,7 +14,7 @@ Most of the time you will not need to worry about typing in Murex as the
 shell is designed around productivity as opposed to strictness despite
 generally following a strictly typed design.
 
-Read the [Language Tour](tour.md) for more detail on this topic.
+Read the [Language Tour](/tour) for more detail on this topic.
 
 ## Definitions
 

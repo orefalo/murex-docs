@@ -25,23 +25,23 @@ const config = {
   ],
   theme,
   plugins: [
-    searchProPlugin({
-      // index all contents
-      indexContent: true,
-      // add supports for category and tags
-      customFields: [
-        {
-          //@ts-ignore
-          getter: (page) => page.frontmatter.category,
-          formatter: "Category: $content",
-        },
-        {
-          //@ts-ignore
-          getter: (page) => page.frontmatter.tag,
-          formatter: "Tag: $content",
-        },
-      ],
-    }),
+    // searchProPlugin({
+    //   // index all contents
+    //   indexContent: true,
+    //   // add supports for category and tags
+    //   customFields: [
+    //     {
+    //       //@ts-ignore
+    //       getter: (page) => page.frontmatter.category,
+    //       formatter: "Category: $content",
+    //     },
+    //     {
+    //       //@ts-ignore
+    //       getter: (page) => page.frontmatter.tag,
+    //       formatter: "Tag: $content",
+    //     },
+    //   ],
+    // }),
   ],
 };
 

@@ -1,6 +1,6 @@
 ---
 title: Rosetta Stone
-icon: arrows-to-circle
+icon: language
 index: true
 category:
   - Guide
@@ -13,7 +13,7 @@ category:
 Below is a reference table of common Bash code and how it could be written in
 Murex.
 
-It is also recommended that you read the language [tour](../tour.md)
+It is also recommended that you read the language [tour](/tour)
 if you want to learn more about shell scripting in Murex.
 
 | Description                                                   | Bash                                                                     | Murex                                                                                                                                                                                       |
