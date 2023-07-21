@@ -100,7 +100,7 @@ arrays such as JSON (`ja`).
   Create arrays of integers from non-decimal number bases
 - [`[[` (element)](../../commands/element.md):
   Outputs an element from a nested structure
-- [`[` (index)](../../commands/index.md):
+- [`[` (index)](../../commands/index2.md):
   Outputs an element from an array, map or table
 - [`[` (range) ](../../commands/range.md):
   Outputs a ranged subset of data from STDIN

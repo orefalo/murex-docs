@@ -111,7 +111,7 @@ unique count should be one less than the total count:
 
 - [`[[` (element)](./element.md):
   Outputs an element from a nested structure
-- [`[` (index)](./index.md):
+- [`[` (index)](./index2.md):
   Outputs an element from an array, map or table
 - [`[` (range) ](./range.md):
   Outputs a ranged subset of data from STDIN

@@ -281,7 +281,7 @@ functions.
 
 ## See Also
 
-- [`[` (index)](./index.md):
+- [`[` (index)](./index2.md):
   Outputs an element from an array, map or table
 - [`autocomplete`](./autocomplete.md):
   Set definitions for tab-completion in the command line

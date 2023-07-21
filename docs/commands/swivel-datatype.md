@@ -125,7 +125,7 @@ Marshallers are enabled at compile time from the `builtins/data-types` directory
 
 - [commands/`[[` (element)](./element.md):
   Outputs an element from a nested structure
-- [commands/`[` (index)](./index.md):
+- [commands/`[` (index)](./index2.md):
   Outputs an element from an array, map or table
 - [commands/`alter`](./alter.md):
   Change a value within a structured data-type and pass that change along the pipeline without altering the original source input

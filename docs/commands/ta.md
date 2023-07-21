@@ -52,7 +52,7 @@ Please read the documentation on `a` for a more detailed breakdown on of
   Quickly generate arrays
 - [`[[` (element)](./element.md):
   Outputs an element from a nested structure
-- [`[` (index)](./index.md):
+- [`[` (index)](./index2.md):
   Outputs an element from an array, map or table
 - [`[` (range) ](./range.md):
   Outputs a ranged subset of data from STDIN

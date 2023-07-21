@@ -36,7 +36,7 @@ This type is modelled closely on generic but is more tailored for textual
   Converts a structured file format into structured memory
 - [`[[` (element)](../commands/element.md):
   Outputs an element from a nested structure
-- [`[` (index)](../commands/index.md):
+- [`[` (index)](../commands/index2.md):
   Outputs an element from an array, map or table
 - [`cast`](../commands/cast.md):
   Alters the data type of the previous function without altering it's output

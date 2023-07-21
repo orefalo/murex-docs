@@ -28,7 +28,7 @@ const config = {
   plugins: [
     searchProPlugin({
       // index all contents
-      // indexContent: true,
+      indexContent: true,
       // add supports for category and tags
       customFields: [
         {

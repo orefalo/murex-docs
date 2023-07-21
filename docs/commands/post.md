@@ -67,7 +67,7 @@ This enables sane, repeatable and readable defaults. Read the documents on
 
 - [`[[` (element)](./element.md):
   Outputs an element from a nested structure
-- [`[` (index)](./index.md):
+- [`[` (index)](./index2.md):
   Outputs an element from an array, map or table
 - [`config`](./config.md):
   Query or define Murex runtime settings

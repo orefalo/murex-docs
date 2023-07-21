@@ -13,12 +13,12 @@ export default navbar([
         // prefix: "user-guide/",
         children: ["user-guide", { text: "...", icon: "ellipsis", link: "#" }],
       },
-      // {
-      //   text: "Commands",
-      //   icon: "lightbulb",
-      //   prefix: "commands/",
-      //   children: ["ray", { text: "...", icon: "ellipsis", link: "#" }],
-      // },
+      {
+        text: "Commands",
+        icon: "lightbulb",
+        prefix: "commands/",
+        children: ["ray", { text: "...", icon: "ellipsis", link: "#" }],
+      },
     ],
   },
   "/changelog",

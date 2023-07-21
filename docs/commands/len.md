@@ -48,7 +48,7 @@ instead. But be mindful that `wc` will also count new line characters
   Outputs a ranged subset of data from STDIN
 - [commands/`[[` (element)](./element.md):
   Outputs an element from a nested structure
-- [commands/`[` (index)](./index.md):
+- [commands/`[` (index)](./index2.md):
   Outputs an element from an array, map or table
 - [commands/`a` (mkarray)](./a.md):
   A sophisticated yet simple way to build an array or list

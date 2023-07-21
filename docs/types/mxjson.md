@@ -60,7 +60,7 @@ Any block quoted by this method will be converted to the following valid JSON:
   Converts a structured file format into structured memory
 - [`[[` (element)](../commands/element.md):
   Outputs an element from a nested structure
-- [`[` (index)](../commands/index.md):
+- [`[` (index)](../commands/index2.md):
   Outputs an element from an array, map or table
 - [`autocomplete`](../commands/autocomplete.md):
   Set definitions for tab-completion in the command line

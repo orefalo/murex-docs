@@ -134,7 +134,7 @@ Marshallers are enabled at compile time from the `builtins/data-types` directory
 
 - [`[[` (element)](./element.md):
   Outputs an element from a nested structure
-- [`[` (index)](./index.md):
+- [`[` (index)](./index2.md):
   Outputs an element from an array, map or table
 - [`append`](./append.md):
   Add data to the end of an array

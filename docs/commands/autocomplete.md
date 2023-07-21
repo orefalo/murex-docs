@@ -471,7 +471,7 @@ flags.
 
 - [`<stdin>` ](./stdin.md):
   Read the STDIN belonging to the parent code block
-- [`[` (index)](./index.md):
+- [`[` (index)](./index2.md):
   Outputs an element from an array, map or table
 - [`alias`](./alias.md):
   Create an alias for a command

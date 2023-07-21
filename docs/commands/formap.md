@@ -92,7 +92,7 @@ The following meta values are defined:
 
 ## See Also
 
-- [`[` (index)](./index.md):
+- [`[` (index)](./index2.md):
   Outputs an element from an array, map or table
 - [`break`](./break.md):
   Terminate execution of a block within your processes scope

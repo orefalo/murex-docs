@@ -140,7 +140,7 @@ Separator can also be multiple characters:
 
 - [`[[` (element)](./element.md):
   Outputs an element from a nested structure
-- [`[` (index)](./index.md):
+- [`[` (index)](./index2.md):
   Outputs an element from an array, map or table
 - [`formap`](./formap.md):
   Iterate through a map or other collection of data

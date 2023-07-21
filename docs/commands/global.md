@@ -226,7 +226,7 @@ quotes:
   Evaluate a mathematical function (deprecated)
 - [`[[` (element)](./element.md):
   Outputs an element from a nested structure
-- [`[` (index)](./index.md):
+- [`[` (index)](./index2.md):
   Outputs an element from an array, map or table
 - [`export`](./export.md):
   Define an environmental variable and set it's value

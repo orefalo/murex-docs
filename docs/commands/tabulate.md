@@ -51,7 +51,7 @@ for dynamically turning command like program help output into JSON maps for
 
 - [`[[` (element)](./element.md):
   Outputs an element from a nested structure
-- [`[` (index)](./index.md):
+- [`[` (index)](./index2.md):
   Outputs an element from an array, map or table
 - [`autocomplete`](./autocomplete.md):
   Set definitions for tab-completion in the command line

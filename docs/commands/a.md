@@ -143,7 +143,7 @@ arrays. For more details on these please refer to the documents for each format
   Quickly generate arrays
 - [`[[` (element)](./element.md):
   Outputs an element from a nested structure
-- [`[` (index)](./index.md):
+- [`[` (index)](./index2.md):
   Outputs an element from an array, map or table
 - [`[` (range) ](./range.md):
   Outputs a ranged subset of data from STDIN

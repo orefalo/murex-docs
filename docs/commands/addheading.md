@@ -24,7 +24,7 @@ prepend to tables.
 
 - [`[[` (element)](./element.md):
   Outputs an element from a nested structure
-- [`[` (index)](./index.md):
+- [`[` (index)](./index2.md):
   Outputs an element from an array, map or table
 - [`a` (mkarray)](./a.md):
   A sophisticated yet simple way to build an array or list

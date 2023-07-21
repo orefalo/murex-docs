@@ -37,7 +37,7 @@ As a function
 
 ## See Also
 
-- [`[` (index)](./index.md):
+- [`[` (index)](./index2.md):
   Outputs an element from an array, map or table
 - [`alias`](./alias.md):
   Create an alias for a command

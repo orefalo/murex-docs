@@ -167,7 +167,7 @@ Murex uses the [govaluate package](https://github.com/Knetic/govaluate). More in
   Write a string to the STDOUT without new line
 - [`[[` (element)](./element.md):
   Outputs an element from a nested structure
-- [`[` (index)](./index.md):
+- [`[` (index)](./index2.md):
   Outputs an element from an array, map or table
 - [`export`](./export.md):
   Define an environmental variable and set it's value

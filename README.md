@@ -54,3 +54,10 @@ To generate a static version of the site locally, run
 
 - `pnpm docs:build`
 - generates the static `html` at `src/.vuepress/dist`
+
+## ChangeLog
+
+- the command `index.md` had to be renamed, vuepress search has a bug were `index.md` and `README.md` land on the same index creating a error
+- adding ``` on code blocks whenever possible
+- `<stdin>` can be a issue, they should be wrapped in ```
+- remove toc from page, vuepress does a good job at generating them
