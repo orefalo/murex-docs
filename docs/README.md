@@ -103,7 +103,7 @@ highlights:
         details: comes with all utilities to search and manage the lifecycle of packages
         link: https://theme-hope.vuejs.press/guide/markdown/tabs.html
 
-      - title: 65 builtins commands
+      - title: 80 builtins commands
         icon: building
         details: full featured builtins allow fast execution and portability
         link: https://theme-hope.vuejs.press/guide/markdown/tabs.html

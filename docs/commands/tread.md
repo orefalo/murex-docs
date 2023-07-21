@@ -13,7 +13,7 @@ store that as a typed variable.
 
     tread: data-type "prompt" var_name
 
-    `<stdin>` -> tread: data-type var_name
+    <stdin> -> tread: data-type var_name
 
 ## Examples
 

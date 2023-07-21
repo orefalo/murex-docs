@@ -13,7 +13,7 @@
       case | if { conditional } [then] { code-block }
       ...
       [ default { code-block } ]
-    } -> `<stdout>`
+    } -> <stdout>
 
 The first parameter should be either **case** or **if** -- the statements are
 subtly different and thus alter the behavior of `switch`.
