@@ -135,12 +135,12 @@ Published: 06.05.2021 at 08:24
 
 ## See Also
 
-- [Create array (`%[]`) constructor](../parser/create-array.md):
+- [Create array (`%[]`) constructor](/parser/create-array.md):
   Quickly generate arrays
-- [`cast`](../commands/cast.md):
+- [`cast`](/commands/cast.md):
   Alters the data type of the previous function without altering it's output
-- [`foreach`](../commands/foreach.md):
+- [`foreach`](/commands/foreach.md):
   Iterate through an array
-- [`formap`](../commands/formap.md):
+- [`formap`](/commands/formap.md):
   Iterate through a map or other collection of data
-- [mkarray](../commands/mkarray/):
+- [mkarray](/commands/mkarray/):

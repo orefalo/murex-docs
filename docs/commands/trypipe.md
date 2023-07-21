@@ -41,7 +41,7 @@ command.
 
 ## See Also
 
-- [Schedulers](../user-guide/schedulers.md):
+- [Schedulers](/user-guide/schedulers.md):
   Overview of the different schedulers (or 'run modes') in Murex
 - [`catch`](./catch.md):
   Handles the exception code raised by `try` or `trypipe`

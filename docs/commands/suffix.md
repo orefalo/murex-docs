@@ -39,9 +39,9 @@ Supported data types can queried via `runtime`
   Count items in a map, list or array
 - [`ja` (mkarray)](./ja.md):
   A sophisticated yet simply way to build a JSON array
-- [`lang.MarshalData()` (system API)](../apis/lang.MarshalData.md):
+- [`lang.MarshalData()` (system API)](/apis/lang.MarshalData.md):
   Converts structured memory into a Murex data-type (eg for stdio)
-- [`lang.UnmarshalData()` (system API)](../apis/lang.UnmarshalData.md):
+- [`lang.UnmarshalData()` (system API)](/apis/lang.UnmarshalData.md):
   Converts a Murex data-type into structured memory
 - [`left`](./left.md):
   Left substring every item in a list

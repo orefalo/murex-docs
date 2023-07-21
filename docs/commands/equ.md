@@ -159,9 +159,9 @@ Murex uses the [govaluate package](https://github.com/Knetic/govaluate). More in
 
 ## See Also
 
-- [Reserved Variables](../user-guide/reserved-vars.md):
+- [Reserved Variables](/user-guide/reserved-vars.md):
   Special variables reserved by Murex
-- [Variable and Config Scoping](../user-guide/scoping.md):
+- [Variable and Config Scoping](/user-guide/scoping.md):
   How scoping works within Murex
 - [`(` (brace quote)](./brace-quote.md):
   Write a string to the STDOUT without new line

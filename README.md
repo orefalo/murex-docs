@@ -61,3 +61,4 @@ To generate a static version of the site locally, run
 - adding ``` on code blocks whenever possible
 - `<stdin>` can be a issue, they should be wrapped in ```
 - remove toc from page, vuepress does a good job at generating them
+- using absolute path is much easier and will resist content relocation

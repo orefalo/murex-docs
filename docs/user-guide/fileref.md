@@ -17,7 +17,7 @@ even just bugs in your own profiles and/or modules.
             "Module": "murex-dev/murex-dev"
         }
     }
-    
+
     » runtime --globals -> [[ /DEVOPSBIN/FileRef ]]
     {
         "Column": 1,
@@ -28,7 +28,7 @@ even just bugs in your own profiles and/or modules.
             "Module": "devops/global"
         }
     }
-    
+
 ### Module Strings For Non-Module Code
 
 #### Source
@@ -50,13 +50,13 @@ empty Filename string.
 
 ## See Also
 
-* [Modules and Packages](../user-guide/modules.md):
+- [Modules and Packages](/user-guide/modules.md):
   An introduction to Murex modules and packages
-* [`[[` (element)](../commands/element.md):
+- [`[[` (element)](/commands/element.md):
   Outputs an element from a nested structure
-* [`murex-package`](../commands/murex-package.md):
+- [`murex-package`](/commands/murex-package.md):
   Murex's package manager
-* [`runtime`](../commands/runtime.md):
+- [`runtime`](/commands/runtime.md):
   Returns runtime information on the internal state of Murex
-* [`source` ](../commands/source.md):
+- [`source` ](/commands/source.md):
   Import Murex code from another file of code block

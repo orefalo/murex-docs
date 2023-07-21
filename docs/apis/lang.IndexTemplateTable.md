@@ -459,19 +459,19 @@ func ittNot(p *Process, params []string, cRecords chan []string, marshaller func
 
 ## See Also
 
-- [apis/`ReadArray()` (type)](../apis/ReadArray.md):
+- [apis/`ReadArray()` (type)](/apis/ReadArray.md):
   Read from a data type one array element at a time
-- [apis/`ReadArrayWithType()` (type)](../apis/ReadArrayWithType.md):
+- [apis/`ReadArrayWithType()` (type)](/apis/ReadArrayWithType.md):
   Read from a data type one array element at a time and return the elements contents and data type
-- [apis/`ReadIndex()` (type)](../apis/ReadIndex.md):
+- [apis/`ReadIndex()` (type)](/apis/ReadIndex.md):
   Data type handler for the index, `[`, builtin
-- [apis/`ReadMap()` (type)](../apis/ReadMap.md):
+- [apis/`ReadMap()` (type)](/apis/ReadMap.md):
   Treat data type as a key/value structure and read its contents
-- [apis/`ReadNotIndex()` (type)](../apis/ReadNotIndex.md):
+- [apis/`ReadNotIndex()` (type)](/apis/ReadNotIndex.md):
   Data type handler for the bang-prefixed index, `![`, builtin
-- [apis/`WriteArray()` (type)](../apis/WriteArray.md):
+- [apis/`WriteArray()` (type)](/apis/WriteArray.md):
   Write a data type, one array element at a time
-- [commands/`[` (index)](../commands/index2.md):
+- [commands/`[` (index)](/commands/index2.md):
   Outputs an element from an array, map or table
-- [apis/`lang.IndexTemplateObject()` (template API)](../apis/lang.IndexTemplateObject.md):
+- [apis/`lang.IndexTemplateObject()` (template API)](/apis/lang.IndexTemplateObject.md):
   Returns element(s) from a data structure

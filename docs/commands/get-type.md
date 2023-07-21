@@ -43,9 +43,9 @@ Get the data-type of a Murex named pipe
 
 ## See Also
 
-- [Reserved Variables](../user-guide/reserved-vars.md):
+- [Reserved Variables](/user-guide/reserved-vars.md):
   Special variables reserved by Murex
-- [Variable and Config Scoping](../user-guide/scoping.md):
+- [Variable and Config Scoping](/user-guide/scoping.md):
   How scoping works within Murex
 - [`debug`](./debug.md):
   Debugging information

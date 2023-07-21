@@ -17,7 +17,7 @@ while the base identifier is written in decimal: `[hex..hex.dec]`
 Also note that the additional zeros denotes padding (ie the results will
 start at `00`, `01`, etc rather than `0`, `1`...)
 
-Please refer to [a (mkarray)](../commands/a.md) for more detailed usage of mkarray.
+Please refer to [a (mkarray)](/commands/a.md) for more detailed usage of mkarray.
 
 ## Usage
 
@@ -111,17 +111,17 @@ arrays such as JSON (`ja`).
   Making character arrays (a to z)
 - [Decimal Ranges](./decimal.md):
   Create arrays of decimal integers
-- [`[[` (element)](../commands/element.md):
+- [`[[` (element)](/commands/element.md):
   Outputs an element from a nested structure
-- [`[` (index)](../commands/index2.md):
+- [`[` (index)](/commands/index2.md):
   Outputs an element from an array, map or table
-- [`[` (range) ](../commands/range.md):
+- [`[` (range) ](/commands/range.md):
   Outputs a ranged subset of data from STDIN
-- [`a` (mkarray)](../commands/a.md):
+- [`a` (mkarray)](/commands/a.md):
   A sophisticated yet simple way to build an array or list
-- [`count`](../commands/count.md):
+- [`count`](/commands/count.md):
   Count items in a map, list or array
-- [`ja` (mkarray)](../commands/ja.md):
+- [`ja` (mkarray)](/commands/ja.md):
   A sophisticated yet simply way to build a JSON array
-- [`ta` (mkarray)](../commands/ta.md):
+- [`ta` (mkarray)](/commands/ta.md):
   A sophisticated yet simple way to build an array of a user defined data-type

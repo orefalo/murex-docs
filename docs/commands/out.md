@@ -36,7 +36,7 @@ For compatibility with other shells, `echo` is also supported:
 
 ## See Also
 
-- [ANSI Constants](../user-guide/ansi.md):
+- [ANSI Constants](/user-guide/ansi.md):
   Infixed constants that return ANSI escape sequences
 - [`(` (brace quote)](./brace-quote.md):
   Write a string to the STDOUT without new line

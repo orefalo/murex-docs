@@ -12,7 +12,7 @@ the AST is only generated for a block at a time. Take this sample code:
         }
         out: 'Finished!'
     }
-    
+
 When that code is run `function` is executed with the parameters `example` and
 `{ ... }` but the contents of `{ ... }` isn't converted into ASTs until someone
 calls `example` elsewhere in the shell.
@@ -37,7 +37,7 @@ are associated with those functions. eg the AST would look something like this:
             ]
         }
     ]
-    
+
 > Please note this is a mock JSON structure rather than a representation of the
 > actual AST that would be created. Parameters are stored differently to allow
 > infixing of variables; and there also needs to be data shared about how
@@ -58,11 +58,11 @@ brace block might be JSON).
 
 ## See Also
 
-* [ANSI Constants](../user-guide/ansi.md):
+- [ANSI Constants](/user-guide/ansi.md):
   Infixed constants that return ANSI escape sequences
-* [Curly Brace (`{`, `}`) Tokens](../parser/curly-brace.md):
+- [Curly Brace (`{`, `}`) Tokens](/parser/curly-brace.md):
   Initiates or terminates a code block
-* [Pipeline](../user-guide/pipeline.md):
+- [Pipeline](/user-guide/pipeline.md):
   Overview of what a "pipeline" is
-* [Schedulers](../user-guide/schedulers.md):
+- [Schedulers](/user-guide/schedulers.md):
   Overview of the different schedulers (or 'run modes') in Murex

@@ -487,5 +487,5 @@ flags.
   Defines a summary help text for a command
 - [`switch`](./switch.md):
   Blocks of cascading conditionals
-- [mxjson](../types/mxjson.md):
+- [mxjson](/types/mxjson.md):
   Murex-flavoured JSON (deprecated)

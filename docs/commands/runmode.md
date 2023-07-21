@@ -64,9 +64,9 @@ if `runmode ... module` is set.
 
 ## See Also
 
-- [Pipeline](../user-guide/pipeline.md):
+- [Pipeline](/user-guide/pipeline.md):
   Overview of what a "pipeline" is
-- [Schedulers](../user-guide/schedulers.md):
+- [Schedulers](/user-guide/schedulers.md):
   Overview of the different schedulers (or 'run modes') in Murex
 - [`autocomplete`](./autocomplete.md):
   Set definitions for tab-completion in the command line

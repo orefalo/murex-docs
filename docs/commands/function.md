@@ -218,7 +218,7 @@ You can override this order of precedence via the `fexec` and `exec` builtins.
 
 ## See Also
 
-- [Reserved Variables](../user-guide/reserved-vars.md):
+- [Reserved Variables](/user-guide/reserved-vars.md):
   Special variables reserved by Murex
 - [`alias`](./alias.md):
   Create an alias for a command

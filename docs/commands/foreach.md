@@ -310,7 +310,7 @@ Luckily JSON also has it's own streaming format: JSON lines (`jsonl`). We can
 
 ## See Also
 
-- [`ReadArrayWithType()` (type)](../apis/ReadArrayWithType.md):
+- [`ReadArrayWithType()` (type)](/apis/ReadArrayWithType.md):
   Read from a data type one array element at a time and return the elements contents and data type
 - [`[[` (element)](./element.md):
   Outputs an element from a nested structure
@@ -332,9 +332,9 @@ Luckily JSON also has it's own streaming format: JSON lines (`jsonl`). We can
   Conditional statement to execute different blocks of code depending on the result of the condition
 - [`ja` (mkarray)](./ja.md):
   A sophisticated yet simply way to build a JSON array
-- [`json` ](../types/json.md):
+- [`json` ](/types/json.md):
   JavaScript Object Notation (JSON)
-- [`jsonl` ](../types/jsonl.md):
+- [`jsonl` ](/types/jsonl.md):
   JSON Lines
 - [`left`](./left.md):
   Left substring every item in a list
@@ -342,5 +342,5 @@ Luckily JSON also has it's own streaming format: JSON lines (`jsonl`). We can
   Print a string to the STDOUT with a trailing new line character
 - [`while`](./while.md):
   Loop until condition false
-- [`yaml` ](../types/yaml.md):
+- [`yaml` ](/types/yaml.md):
   YAML Ain't Markup Language (YAML)

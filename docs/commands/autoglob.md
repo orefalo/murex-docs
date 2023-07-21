@@ -33,7 +33,7 @@ It is enabled by default on from version 3.x onwards (and renamed to
 
 ## See Also
 
-- [Murex Profile Files](../user-guide/profile.md):
+- [Murex Profile Files](/user-guide/profile.md):
   A breakdown of the different files loaded on start up
 - [`config`](./config.md):
   Query or define Murex runtime settings

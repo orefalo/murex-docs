@@ -105,7 +105,7 @@ that pipes created in modules should be prefixed with the name of its package.
 
 ## See Also
 
-- [Pipeline](../user-guide/pipeline.md):
+- [Pipeline](/user-guide/pipeline.md):
   Overview of what a "pipeline" is
 - [`<>` / `read-named-pipe`](./namedpipe.md):
   Reads from a Murex named pipe

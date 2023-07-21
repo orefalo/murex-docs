@@ -205,5 +205,5 @@ This is executed when `autocomplete` is setting a value (eg `set`, `default`,
   HTTP POST request with a JSON-parsable return
 - [`runtime`](./runtime.md):
   Returns runtime information on the internal state of Murex
-- [mxjson](../types/mxjson.md):
+- [mxjson](/types/mxjson.md):
   Murex-flavoured JSON (deprecated)

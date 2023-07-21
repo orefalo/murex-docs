@@ -20,9 +20,9 @@ specified data-type
 
 ## See Also
 
-- [`Marshal()` (type)](../apis/Marshal.md):
+- [`Marshal()` (type)](/apis/Marshal.md):
   Converts structured memory into a structured file format (eg for stdio)
-- [`Unmarshal()` (type)](../apis/Unmarshal.md):
+- [`Unmarshal()` (type)](/apis/Unmarshal.md):
   Converts a structured file format into structured memory
 - [`cast`](./cast.md):
   Alters the data type of the previous function without altering it's output

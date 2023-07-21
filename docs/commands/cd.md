@@ -43,7 +43,7 @@ In Murex you can enable this behaviour by turning on "auto-cd":
 
 ## See Also
 
-- [Reserved Variables](../user-guide/reserved-vars.md):
+- [Reserved Variables](/user-guide/reserved-vars.md):
   Special variables reserved by Murex
 - [`source` ](./source.md):
   Import Murex code from another file of code block

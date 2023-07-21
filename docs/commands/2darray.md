@@ -101,7 +101,7 @@
   Count items in a map, list or array
 - [`ja` (mkarray)](./ja.md):
   A sophisticated yet simply way to build a JSON array
-- [`json` ](../types/json.md):
+- [`json` ](/types/json.md):
   JavaScript Object Notation (JSON)
 - [`jsplit` ](./jsplit.md):
   Splits STDIN into a JSON array based on a regex parameter

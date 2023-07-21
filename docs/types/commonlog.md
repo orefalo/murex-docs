@@ -33,27 +33,27 @@ the following:
 
 ## See Also
 
-- [`*` (generic) ](../types/generic.md):
+- [`*` (generic) ](/types/generic.md):
   generic (primitive)
-- [`Marshal()` (type)](../apis/Marshal.md):
+- [`Marshal()` (type)](/apis/Marshal.md):
   Converts structured memory into a structured file format (eg for stdio)
-- [`ReadArray()` (type)](../apis/ReadArray.md):
+- [`ReadArray()` (type)](/apis/ReadArray.md):
   Read from a data type one array element at a time
-- [`ReadIndex()` (type)](../apis/ReadIndex.md):
+- [`ReadIndex()` (type)](/apis/ReadIndex.md):
   Data type handler for the index, `[`, builtin
-- [`ReadMap()` (type)](../apis/ReadMap.md):
+- [`ReadMap()` (type)](/apis/ReadMap.md):
   Treat data type as a key/value structure and read its contents
-- [`ReadNotIndex()` (type)](../apis/ReadNotIndex.md):
+- [`ReadNotIndex()` (type)](/apis/ReadNotIndex.md):
   Data type handler for the bang-prefixed index, `![`, builtin
-- [`Unmarshal()` (type)](../apis/Unmarshal.md):
+- [`Unmarshal()` (type)](/apis/Unmarshal.md):
   Converts a structured file format into structured memory
-- [`[[` (element)](../commands/element.md):
+- [`[[` (element)](/commands/element.md):
   Outputs an element from a nested structure
-- [`[` (index)](../commands/index2.md):
+- [`[` (index)](/commands/index2.md):
   Outputs an element from an array, map or table
-- [`cast`](../commands/cast.md):
+- [`cast`](/commands/cast.md):
   Alters the data type of the previous function without altering it's output
-- [`format`](../commands/format.md):
+- [`format`](/commands/format.md):
   Reformat one data-type into another data-type
-- [`str` (string) ](../types/str.md):
+- [`str` (string) ](/types/str.md):
   string (primitive)

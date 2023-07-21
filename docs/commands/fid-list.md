@@ -59,7 +59,7 @@ include:
 
 ## See Also
 
-- [`*` (generic) ](../types/generic.md):
+- [`*` (generic) ](/types/generic.md):
   generic (primitive)
 - [`bexists`](./bexists.md):
   Check which builtins exist
@@ -67,7 +67,7 @@ include:
   Run processes in the background
 - [`builtins`](./runtime.md):
   Returns runtime information on the internal state of Murex
-- [`csv` ](../types/csv.md):
+- [`csv` ](/types/csv.md):
   CSV files (and other character delimited tables)
 - [`exec`](./exec.md):
   Runs an executable
@@ -81,7 +81,7 @@ include:
   Terminate _all_ running Murex functions
 - [`jobs`](./fid-list.md):
   Lists all running functions within the current Murex session
-- [`jsonl` ](../types/jsonl.md):
+- [`jsonl` ](/types/jsonl.md):
   JSON Lines
 - [`murex-update-exe-list`](./murex-update-exe-list.md):
   Forces Murex to rescan $PATH looking for executables

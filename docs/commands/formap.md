@@ -100,7 +100,7 @@ The following meta values are defined:
   A more familiar iteration loop to existing developers
 - [`foreach`](./foreach.md):
   Iterate through an array
-- [`json` ](../types/json.md):
+- [`json` ](/types/json.md):
   JavaScript Object Notation (JSON)
 - [`set`](./set.md):
   Define a local variable and set it's value

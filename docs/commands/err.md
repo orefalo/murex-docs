@@ -43,7 +43,7 @@ a new Murex named pipe.
 
 ## See Also
 
-- [ANSI Constants](../user-guide/ansi.md):
+- [ANSI Constants](/user-guide/ansi.md):
   Infixed constants that return ANSI escape sequences
 - [`(` (brace quote)](./brace-quote.md):
   Write a string to the STDOUT without new line

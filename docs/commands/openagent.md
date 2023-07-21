@@ -35,9 +35,9 @@ handler by checking `runtime --open-agents` and checking it's **FileRef**.
 
 ## See Also
 
-- [FileRef](../user-guide/fileref.md):
+- [FileRef](/user-guide/fileref.md):
   How to track what code was loaded and from where
-- [Modules and Packages](../user-guide/modules.md):
+- [Modules and Packages](/user-guide/modules.md):
   An introduction to Murex modules and packages
 - [`fexec` ](./fexec.md):
   Execute a command or function, bypassing the usual order of precedence.

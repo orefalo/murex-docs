@@ -9,7 +9,7 @@ It works a little bit like Bash's `{1..9}` syntax but includes a few
 additional nifty features.
 
 **Please note that while this builtin is not marked for deprecation, it has
-been superseded by the `%[]` tokens.** ([read more](../parser/create-array.md))
+been superseded by the `%[]` tokens.** ([read more](/parser/create-array.md))
 
 ## Usage
 
@@ -52,7 +52,7 @@ Please read the documentation on `a` for a more detailed breakdown on of
 
 ## See Also
 
-- [Create array (`%[]`) constructor](../parser/create-array.md):
+- [Create array (`%[]`) constructor](/parser/create-array.md):
   Quickly generate arrays
 - [`[[` (element)](./element.md):
   Outputs an element from a nested structure
@@ -64,7 +64,7 @@ Please read the documentation on `a` for a more detailed breakdown on of
   A sophisticated yet simple way to build an array or list
 - [`count`](./count.md):
   Count items in a map, list or array
-- [`json` ](../types/json.md):
+- [`json` ](/types/json.md):
   JavaScript Object Notation (JSON)
 - [`mtac`](./mtac.md):
   Reverse the order of an array

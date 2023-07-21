@@ -36,7 +36,7 @@ that reason alone it has been spared from the axe.
 
 ## See Also
 
-- [Modules and Packages](../user-guide/modules.md):
+- [Modules and Packages](/user-guide/modules.md):
   An introduction to Murex modules and packages
 - [`fexec` ](./fexec.md):
   Execute a command or function, bypassing the usual order of precedence.

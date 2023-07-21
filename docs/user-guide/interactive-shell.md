@@ -43,7 +43,7 @@ A full breakdown of supported hotkeys is available at [terminal-keys.md](termina
 
 Autocompletion happen when you press `[tab]` and will differ slightly depending
 on what is defined in `autocomplete` and whether you use the traditional
-[POSIX pipe token](../parser/pipe-posix.md), `|`, or the [arrow pipe](../parser/pipe-arrow.md),
+[POSIX pipe token](/parser/pipe-posix.md), `|`, or the [arrow pipe](/parser/pipe-arrow.md),
 `->`.
 
 The `|` token will behave much like any other shell however `->` will offer
@@ -139,25 +139,25 @@ prompt:
 
 ## See Also
 
-- [ANSI Constants](../user-guide/ansi.md):
+- [ANSI Constants](/user-guide/ansi.md):
   Infixed constants that return ANSI escape sequences
-- [Arrow Pipe (`->`) Token](../parser/pipe-arrow.md):
+- [Arrow Pipe (`->`) Token](/parser/pipe-arrow.md):
   Pipes STDOUT from the left hand command to STDIN of the right hand command
-- [Code Block Parsing](../user-guide/code-block.md):
+- [Code Block Parsing](/user-guide/code-block.md):
   Overview of how code blocks are parsed
-- [Curly Brace (`{`, `}`) Tokens](../parser/curly-brace.md):
+- [Curly Brace (`{`, `}`) Tokens](/parser/curly-brace.md):
   Initiates or terminates a code block
-- [POSIX Pipe (`|`) Token](../parser/pipe-posix.md):
+- [POSIX Pipe (`|`) Token](/parser/pipe-posix.md):
   Pipes STDOUT from the left hand command to STDIN of the right hand command
-- [Spellcheck](../user-guide/spellcheck.md):
+- [Spellcheck](/user-guide/spellcheck.md):
   How to enable inline spellchecking
-- [Terminal Hotkeys](../user-guide/terminal-keys.md):
+- [Terminal Hotkeys](/user-guide/terminal-keys.md):
   A list of all the terminal hotkeys and their uses
-- [`autocomplete`](../commands/autocomplete.md):
+- [`autocomplete`](/commands/autocomplete.md):
   Set definitions for tab-completion in the command line
-- [`config`](../commands/config.md):
+- [`config`](/commands/config.md):
   Query or define Murex runtime settings
-- [`method`](../commands/method.md):
+- [`method`](/commands/method.md):
   Define a methods supported data-types
-- [`runtime`](../commands/runtime.md):
+- [`runtime`](/commands/runtime.md):
   Returns runtime information on the internal state of Murex

@@ -208,7 +208,7 @@ While processes are running, the following keys are assigned roles:
 
 - `ctrl`+`z`: suspend foreground process. This will take you back to the prompt
   and from there you can then use job control to resume execution in either the
-  foreground or background. ([read more](../commands/fid-list.md))
+  foreground or background. ([read more](/commands/fid-list.md))
 
 ## Miscellaneous
 
@@ -233,9 +233,9 @@ Pressing `ctrl`+`l` will clear the screen.
 
 ## See Also
 
-- [Murex's Interactive Shell](../user-guide/interactive-shell.md):
+- [Murex's Interactive Shell](/user-guide/interactive-shell.md):
   What's different about Murex's interactive shell?
 - [Rosetta Stone](/rosetta):
   A tabulated list of Bashism's and their equivalent Murex syntax
-- [Spellcheck](../user-guide/spellcheck.md):
+- [Spellcheck](/user-guide/spellcheck.md):
   How to enable inline spellchecking

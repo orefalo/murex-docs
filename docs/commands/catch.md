@@ -43,7 +43,7 @@ handles the exceptions raised by the aforementioned.
 
 ## See Also
 
-- [Schedulers](../user-guide/schedulers.md):
+- [Schedulers](/user-guide/schedulers.md):
   Overview of the different schedulers (or 'run modes') in Murex
 - [`if`](./if.md):
   Conditional statement to execute different blocks of code depending on the result of the condition

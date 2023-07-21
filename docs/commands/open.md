@@ -202,7 +202,7 @@ In the case of macOS and some Linux systems, that might look like:
 
 ## See Also
 
-- [`*` (generic) ](../types/generic.md):
+- [`*` (generic) ](/types/generic.md):
   generic (primitive)
 - [`config`](./config.md):
   Query or define Murex runtime settings
