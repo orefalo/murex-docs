@@ -81,7 +81,7 @@ use `config`)
   Whole number (primitive)
 - [`jsonl` ](../types/jsonl.md):
   JSON Lines
-- [`select` ](../commands/optional/select.md):
+- [`select` ](../optional/select.md):
   Inlining SQL into shell pipelines
 - [`str` (string) ](../types/str.md):
   string (primitive)

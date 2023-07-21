@@ -26,9 +26,9 @@ or similar platforms then you will need to launch with the `exec` builtin:
 
 ## See Also
 
-- [`exec`](../exec.md):
+- [`exec`](/commands/exec.md):
   Runs an executable
-- [`source` ](../source.md):
+- [`source` ](/commands/source.md):
   Import Murex code from another file of code block
-- [`time` ](../time.md):
+- [`time` ](/commands/time.md):
   Returns the execution run time of a command or block

@@ -23,11 +23,11 @@ An optional builtin for compressing or decompressing a gzip stream from STDIN.
   Decompress a bz2 file
 - [`base64` ](./base64.md):
   Encode or decode a base64 string
-- [`escape`](../escape.md):
+- [`escape`](/commands/escape.md):
   Escape or unescape input
-- [`esccli`](../esccli.md):
+- [`esccli`](/commands/esccli.md):
   Escapes an array so output is valid shell code
-- [`eschtml`](../eschtml.md):
+- [`eschtml`](/commands/eschtml.md):
   Encode or decodes text for HTML
-- [`escurl`](../escurl.md):
+- [`escurl`](/commands/escurl.md):
   Encode or decodes text for the URL

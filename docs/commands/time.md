@@ -33,7 +33,7 @@ and STDERR as usual.
 
 - [`exec`](./exec.md):
   Runs an executable
-- [`sleep` ](../commands/optional/sleep.md):
+- [`sleep` ](../optional/sleep.md):
   Suspends the shell for a number of seconds
 - [`source` ](./source.md):
   Import Murex code from another file of code block

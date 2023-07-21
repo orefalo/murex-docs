@@ -14,7 +14,7 @@ Unlike bash, Murex also supports some special ranges:
 » a: [spring..winter]
 ```
 
-Please refer to [a (mkarray)](../../commands/a.md) for more detailed usage of mkarray.
+Please refer to [a (mkarray)](../commands/a.md) for more detailed usage of mkarray.
 
 ## Usage
 
@@ -200,21 +200,21 @@ var rangeMoon = map[string]int{
 
 - [Calendar Date Ranges](./date.md):
   Create arrays of dates
-- [`[[` (element)](../../commands/element.md):
+- [`[[` (element)](../commands/element.md):
   Outputs an element from a nested structure
-- [`[` (index)](../../commands/index2.md):
+- [`[` (index)](../commands/index2.md):
   Outputs an element from an array, map or table
-- [`[` (range) ](../../commands/range.md):
+- [`[` (range) ](../commands/range.md):
   Outputs a ranged subset of data from STDIN
-- [`a` (mkarray)](../../commands/a.md):
+- [`a` (mkarray)](../commands/a.md):
   A sophisticated yet simple way to build an array or list
-- [`count`](../../commands/count.md):
+- [`count`](../commands/count.md):
   Count items in a map, list or array
-- [`datetime` ](../../commands/datetime.md):
+- [`datetime` ](../commands/datetime.md):
   A date and/or time conversion tool (like `printf` but for date and time values)
-- [`ja` (mkarray)](../../commands/ja.md):
+- [`ja` (mkarray)](../commands/ja.md):
   A sophisticated yet simply way to build a JSON array
-- [`mtac`](../../commands/mtac.md):
+- [`mtac`](../commands/mtac.md):
   Reverse the order of an array
-- [`ta` (mkarray)](../../commands/ta.md):
+- [`ta` (mkarray)](../commands/ta.md):
   A sophisticated yet simple way to build an array of a user defined data-type

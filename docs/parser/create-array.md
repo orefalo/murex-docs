@@ -93,7 +93,7 @@ This will allow you to copy/paste lists from traditional shells like Bash
         "August"
     ]
 
-A full list of special ranges are available at [docs/mkarray/special](../commands/mkarray/special.md)
+A full list of special ranges are available at [docs/mkarray/special](/mkarray/special.md)
 
 ### Multiple expansion blocks:
 
@@ -140,34 +140,34 @@ The `%` prefix for the nested object is optional.
 Murex supports a number of different formats that can be used to generate
 arrays. For more details on these please refer to the documents for each format
 
-- [Calendar Date Ranges](../commands/mkarray/date.md):
+- [Calendar Date Ranges](/mkarray/date.md):
   Create arrays of dates
-- [Character arrays](../commands/mkarray/character.md):
+- [Character arrays](/mkarray/character.md):
   Making character arrays (a to z)
-- [Decimal Ranges](../commands/mkarray/decimal.md):
+- [Decimal Ranges](/mkarray/decimal.md):
   Create arrays of decimal integers
-- [Non-Decimal Ranges](../commands/mkarray/non-decimal.md):
+- [Non-Decimal Ranges](/mkarray/non-decimal.md):
   Create arrays of integers from non-decimal number bases
-- [Special Ranges](../commands/mkarray/special.md):
+- [Special Ranges](/mkarray/special.md):
   Create arrays from ranges of dictionary terms (eg weekdays, months, seasons, etc)
 
 ## See Also
 
-- [Brace Quote (`%(`, `)`) Tokens](../parser/brace-quote.md):
+- [Brace Quote (`%(`, `)`) Tokens](/parser/brace-quote.md):
   Initiates or terminates a string (variables expanded)
-- [Create object (`%{}`) constructor](../parser/create-object.md):
+- [Create object (`%{}`) constructor](/parser/create-object.md):
   Quickly generate objects and maps
-- [Double Quote (`"`) Token](../parser/double-quote.md):
+- [Double Quote (`"`) Token](/parser/double-quote.md):
   Initiates or terminates a string (variables expanded)
-- [Single Quote (`'`) Token](../parser/single-quote.md):
+- [Single Quote (`'`) Token](/parser/single-quote.md):
   Initiates or terminates a string (variables not expanded)
-- [Special Ranges](../commands/mkarray/special.md):
+- [Special Ranges](/mkarray/special.md):
   Create arrays from ranges of dictionary terms (eg weekdays, months, seasons, etc)
-- [`a` (mkarray)](../commands/a.md):
+- [`a` (mkarray)](/commands/a.md):
   A sophisticated yet simple way to build an array or list
-- [`expr`](../commands/expr.md):
+- [`expr`](/commands/expr.md):
   Expressions: mathematical, string comparisons, logical operators
-- [`ja` (mkarray)](../commands/ja.md):
+- [`ja` (mkarray)](/commands/ja.md):
   A sophisticated yet simply way to build a JSON array
-- [`ta` (mkarray)](../commands/ta.md):
+- [`ta` (mkarray)](/commands/ta.md):
   A sophisticated yet simple way to build an array of a user defined data-type

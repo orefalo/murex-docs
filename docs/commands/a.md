@@ -126,20 +126,20 @@ under `a`'s formatting (which uses the `str` data type).
 Murex supports a number of different formats that can be used to generate
 arrays. For more details on these please refer to the documents for each format
 
-- [Calendar Date Ranges](./mkarray/date.md):
+- [Calendar Date Ranges](/mkarray/date.md):
   Create arrays of dates
-- [Character arrays](./mkarray/character.md):
+- [Character arrays](/mkarray/character.md):
   Making character arrays (a to z)
-- [Decimal Ranges](./mkarray/decimal.md):
+- [Decimal Ranges](/mkarray/decimal.md):
   Create arrays of decimal integers
-- [Non-Decimal Ranges](./mkarray/non-decimal.md):
+- [Non-Decimal Ranges](/mkarray/non-decimal.md):
   Create arrays of integers from non-decimal number bases
-- [Special Ranges](./mkarray/special.md):
+- [Special Ranges](/mkarray/special.md):
   Create arrays from ranges of dictionary terms (eg weekdays, months, seasons, etc)
 
 ## See Also
 
-- [Create array (`%[]`) constructor](../parser/create-array.md):
+- [Create array (`%[]`) constructor](/parser/create-array.md):
   Quickly generate arrays
 - [`[[` (element)](./element.md):
   Outputs an element from a nested structure
@@ -153,7 +153,7 @@ arrays. For more details on these please refer to the documents for each format
   A sophisticated yet simply way to build a JSON array
 - [`mtac`](./mtac.md):
   Reverse the order of an array
-- [`str` (string) ](../types/str.md):
+- [`str` (string) ](/types/str.md):
   string (primitive)
 - [`ta` (mkarray)](./ta.md):
   A sophisticated yet simple way to build an array of a user defined data-type

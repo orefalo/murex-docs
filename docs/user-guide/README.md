@@ -328,17 +328,17 @@ These builtins are optional. `select` is included as part of the default build
 but can be disabled without breaking functionality. The other optional builtins
 are only included by default on Windows.
 
-- [`!bz2` ](../commands/optional/bz2.md):
+- [`!bz2` ](../optional/bz2.md):
   Decompress a bz2 file
-- [`base64` ](../commands/optional/base64.md):
+- [`base64` ](../optional/base64.md):
   Encode or decode a base64 string
-- [`gz` ](../commands/optional/gz.md):
+- [`gz` ](../optional/gz.md):
   Compress or decompress a gzip file
-- [`qr` ](../commands/optional/qr.md):
+- [`qr` ](../optional/qr.md):
   Creates a QR code from STDIN
-- [`select` ](../commands/optional/select.md):
+- [`select` ](../optional/select.md):
   Inlining SQL into shell pipelines
-- [`sleep` ](../commands/optional/sleep.md):
+- [`sleep` ](../optional/sleep.md):
   Suspends the shell for a number of seconds
 
 ## Data Types

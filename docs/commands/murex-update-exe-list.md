@@ -15,7 +15,9 @@ program and you want it to appear in tab completion) then you can run `murex-upd
 
 ## Examples
 
-    » murex-update-exe-list
+```
+» murex-update-exe-list
+```
 
 ## Detail
 
