@@ -1,3 +1,11 @@
+---
+title: Parser
+icon: gear
+index: true
+category:
+  - Guide
+---
+
 # Parser Reference
 
 This section is a glossary of Murex tokens and parser behavior.

@@ -3,7 +3,7 @@ title: Content Aware
 icon: arrows-to-circle
 index: true
 category:
-  - Guide
+  - Feature
 ---
 
 # Data-Type Reference

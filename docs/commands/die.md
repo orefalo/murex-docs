@@ -12,7 +12,9 @@ Terminate Murex with an exit number of 1.
 
 ## Examples
 
-    » die
+```
+» die
+```
 
 ## See Also
 

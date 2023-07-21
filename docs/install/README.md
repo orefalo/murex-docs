@@ -1,7 +1,7 @@
 ---
 title: Install
-index: false
 icon: arrow-down
+index: false
 category:
   - Murex
 ---

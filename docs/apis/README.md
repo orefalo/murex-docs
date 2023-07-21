@@ -1,3 +1,11 @@
+---
+title: APIs
+icon: arrows-to-circle
+index: true
+category:
+  - Feature
+---
+
 # API Reference
 
 This section is a glossary of APIs.
