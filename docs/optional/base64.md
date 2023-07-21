@@ -9,9 +9,9 @@ An optional builtin to encode or decode a base64 string.
 ## Usage
 
 ```
-    <stdin> -> base64 -> <stdout>
+<stdin> -> base64 -> <stdout>
 
-    <stdin> -> !base64 -> <stdout>
+<stdin> -> !base64 -> <stdout>
 ```
 
 ## Examples

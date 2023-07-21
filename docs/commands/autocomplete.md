@@ -108,18 +108,20 @@ If you wish to disable this then set **CacheTTL** to `-1`.
 This directive needs to live in the very first definition and affects all
 autocompletes within the rest of the command. For example
 
-    autocomplete set foobar { [
-        {
-            "Flags": [ "--foo", "--bar" ],
-            "CacheTTL": 60
-        },
-        {
-            "Dynamic": ({
-                a: [Monday..Friday]
-                sleep: 3
-            })
-        }
-    ] }
+```
+autocomplete set foobar { [
+    {
+        "Flags": [ "--foo", "--bar" ],
+        "CacheTTL": 60
+    },
+    {
+        "Dynamic": ({
+            a: [Monday..Friday]
+            sleep: 3
+        })
+    }
+] }
+```
 
 Here the days of the week take 3 seconds to show up as autocompletion
 suggestions the first time and instantly for the next 60 seconds after.
@@ -229,22 +231,24 @@ Remember that **ExecCmdline** is designed to be included with either
 **Dynamic** or **DynamicDesc** and those code blocks would need to read
 from STDIN:
 
-    autocomplete set "[" { [{
-        "AnyValue": true,
-        "AllowMultiple": true,
-        "ExecCmdline": true,
-        "Dynamic": ({
-            switch ${ get-type: stdin } {
-                case * {
-                    `<stdin>` -> [ 0: ] -> format json -> [ 0 ]
-                }
-
-                catch {
-                    `<stdin>` -> formap k v { out $k } -> cast str -> append "]"
-                }
+```
+autocomplete set "[" { [{
+    "AnyValue": true,
+    "AllowMultiple": true,
+    "ExecCmdline": true,
+    "Dynamic": ({
+        switch ${ get-type: stdin } {
+            case * {
+                `<stdin>` -> [ 0: ] -> format json -> [ 0 ]
             }
-        })
-    }] }
+
+            catch {
+                `<stdin>` -> formap k v { out $k } -> cast str -> append "]"
+            }
+        }
+    })
+}] }
+```
 
 ### "FileRegexp": string (zls)
 
@@ -252,10 +256,12 @@ When set in conjunction with **IncFiles**, this directive will filter on files
 files which match the regexp string. eg to only show ".txt" extensions you can
 use the following:
 
-    autocomplete set notepad.exe { [{
-        "IncFiles": true,
-        "FileRegexp": (\.txt)
-    }] }
+```
+autocomplete set notepad.exe { [{
+    "IncFiles": true,
+    "FileRegexp": (\.txt)
+}] }
+```
 
 > Please note that you may need to double escape any regexp strings: escaping
 > the `.` match and then also escaping the escape character in JSON. It is
@@ -273,17 +279,19 @@ multiple parameters.
 
 **FlagValues** takes a map of arrays, eg
 
-    autocomplete set example { [{
-        "Flags": [ "add", "delete" ],
-        "FlagValues": {
-            "add": [{
-                "Flags": [ "foo" ]
-            }],
-            "delete": [{
-                "Flags": [ "bar" ]
-            }]
-        }
-    }] }
+```
+autocomplete set example { [{
+    "Flags": [ "add", "delete" ],
+    "FlagValues": {
+        "add": [{
+            "Flags": [ "foo" ]
+        }],
+        "delete": [{
+            "Flags": [ "bar" ]
+        }]
+    }
+}] }
+```
 
 ...will provide "foo" as a suggestion to `example add`, and "bar" as a
 suggestion to `example delete`.
@@ -293,20 +301,22 @@ suggestion to `example delete`.
 You can set default properties to all matched flags by using `*` as a
 **FlagValues** value. To expand the above example...
 
-    autocomplete set example { [{
-        "Flags": [ "add", "delete" ],
-        "FlagValues": {
-            "add": [{
-                "Flags": [ "foo" ]
-            }],
-            "delete": [{
-                "Flags": [ "bar" ]
-            }],
-            "*": [{
-                "IncFiles"
-            }]
-        }
-    }] }
+```
+autocomplete set example { [{
+    "Flags": [ "add", "delete" ],
+    "FlagValues": {
+        "add": [{
+            "Flags": [ "foo" ]
+        }],
+        "delete": [{
+            "Flags": [ "bar" ]
+        }],
+        "*": [{
+            "IncFiles"
+        }]
+    }
+}] }
+```
 
 ...in this code we are saying not only does "add" support "foo" and "delete"
 supports "bar", but both "add" and "delete" also supports any filesystem files.
@@ -318,29 +328,33 @@ This default only applies if there is a matched **Flags** or **FlagValues**.
 If you wanted a default which applied to all **FlagValues**, even when the flag
 wasn't matched, then you can use a zero length string (""). For example
 
-    autocomplete set example { [{
-        "Flags": [ "add", "delete" ],
-        "FlagValues": {
-            "add": [{
-                "Flags": [ "foo" ]
-            }],
-            "delete": [{
-                "Flags": [ "bar" ]
-            }],
-            "": [{
-                "IncFiles"
-            }]
-        }
-    }] }
+```
+autocomplete set example { [{
+    "Flags": [ "add", "delete" ],
+    "FlagValues": {
+        "add": [{
+            "Flags": [ "foo" ]
+        }],
+        "delete": [{
+            "Flags": [ "bar" ]
+        }],
+        "": [{
+            "IncFiles"
+        }]
+    }
+}] }
+```
 
 ### "Flags": array of strings (auto-populated from man pages)
 
 Setting **Flags** is the fastest and easiest way to populate suggestions
 because it is just an array of strings. eg
 
-    autocomplete set example { [{
-        "Flags": [ "foo", "bar" ]
-    }] }
+```
+autocomplete set example { [{
+    "Flags": [ "foo", "bar" ]
+}] }
+```
 
 If a command doesn't **Flags** already defined when you request a completion
 suggestion but that command does have a man page, then **Flags** will be
@@ -383,25 +397,27 @@ of that autocomplete definition. The path should look something like:
 
 An example of a really simple **Goto**:
 
-    autocomplete set dd { [
-        {
-            "Flags": [ "if=", "of=", "bs=", "iflag=", "oflag=", "count=", "status=" ],
-            "FlagValues": {
-                "if": [{
-                    "IncFiles": true
-                }],
-                "of": [{
-                    "IncFiles": true
-                }],
-                "*": [{
-                    "AllowAny": true
-                }]
-            }
-        },
-        {
-            "Goto": "/0"
+```
+autocomplete set dd { [
+    {
+        "Flags": [ "if=", "of=", "bs=", "iflag=", "oflag=", "count=", "status=" ],
+        "FlagValues": {
+            "if": [{
+                "IncFiles": true
+            }],
+            "of": [{
+                "IncFiles": true
+            }],
+            "*": [{
+                "AllowAny": true
+            }]
         }
-    ] }
+    },
+    {
+        "Goto": "/0"
+    }
+] }
+```
 
 **Goto** is given precedence over any other directive. So ensure it's the only
 directive in it's group.

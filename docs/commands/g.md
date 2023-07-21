@@ -10,15 +10,17 @@ Output is a JSON list.
 
 ## Usage
 
-    g: pattern -> `<stdout>`
+```
+    g: pattern -> <stdout>
 
-    [ `<stdin>` -> ] @g command pattern [ -> `<stdout>` ]
+    [ <stdin> -> ] @g command pattern [ -> <stdout> ]
 
-    !g: pattern -> `<stdout>`
+    !g: pattern -> <stdout>
 
-    `<stdin>` -> g: pattern -> `<stdout>`
+    <stdin> -> g: pattern -> <stdout>
 
-    `<stdin>` -> !g: pattern -> `<stdout>`
+    <stdin> -> !g: pattern -> <stdout>
+```
 
 ## Examples
 
@@ -70,13 +72,15 @@ Remove any glob matches from a file list:
 If you want to exclude any matches based on wildcards, rather than include
 them, then you can use the bang prefix. eg
 
-    » g: READ*
-    [
-        "README.md"
-    ]
+```
+» g: READ*
+[
+    "README.md"
+]
 
-    » !g: *
-    Error in `!g` (1,1): No data returned.
+» !g: *
+Error in `!g` (1,1): No data returned.
+```
 
 ### When Used As A Method
 

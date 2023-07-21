@@ -28,13 +28,15 @@ Undefine a function:
 
 ## Examples
 
-    » function hw { out "Hello, World!" }
-    » hw
-    Hello, World!
+```
+» function hw { out "Hello, World!" }
+» hw
+Hello, World!
 
-    » !function hw
-    » hw
-    exec: "hw": executable file not found in $PATH
+» !function hw
+» hw
+exec: "hw": executable file not found in $PATH
+```
 
 ## Detail
 
@@ -63,12 +65,14 @@ you would have to use either:
 Starting from Murex `2.7.x` it's been possible to declare parameters from
 within the function declaration:
 
-    function: name (
-        variable1: data-type [default-value] "description",
-        variable2: data-type [default-value] "description"
-    ) {
-        code-block
-    }
+```
+function: name (
+    variable1: data-type [default-value] "description",
+    variable2: data-type [default-value] "description"
+) {
+    code-block
+}
+```
 
 #### Syntax
 
