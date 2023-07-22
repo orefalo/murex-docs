@@ -5,9 +5,7 @@ export default sidebar({
     {
       text: "Murex",
       icon: "house",
-      prefix: "",
-      link: "",
-      children: ["/install", "/changelog", "/blog", "/tour"],
+      children: ["/install", "/changelog", "/blog", "/tour", "/rosetta"],
       collapsible: true,
     },
     {

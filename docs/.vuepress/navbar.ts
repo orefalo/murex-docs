@@ -12,6 +12,7 @@ export default navbar([
         children: [
           "install",
           { text: "Getting Started", link: "tour/", icon: "life-ring" },
+          { text: "Rosetta Stone", link: "rosetta/", icon: "language" },
           { text: "User Guide", link: "user-guide/", icon: "book" },
           { text: "BuiltIns", link: "commands/", icon: "terminal" },
         ],
