@@ -10,9 +10,15 @@ export default sidebar({
       children: ["/install", "/changelog", "/blog", "/tour"],
     },
     {
-      text: "Docs",
+      text: "User Guide",
       icon: "book",
       prefix: "user-guide/",
+      children: "structure",
+    },
+    {
+      text: "Operators And Tokens",
+      icon: "book",
+      prefix: "parser/",
       children: "structure",
     },
     {
@@ -25,6 +31,24 @@ export default sidebar({
       text: "Optional Builtins",
       icon: "building",
       prefix: "optional/",
+      children: "structure",
+    },
+    {
+      text: "Data Types",
+      icon: "building",
+      prefix: "types/",
+      children: "structure",
+    },
+    {
+      text: "Events",
+      icon: "building",
+      prefix: "events/",
+      children: "structure",
+    },
+    {
+      text: "API Reference",
+      icon: "building",
+      prefix: "apis/",
       children: "structure",
     },
   ],

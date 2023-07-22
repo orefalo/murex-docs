@@ -1,3 +1,11 @@
+---
+title: User Guide
+index: true
+icon: book
+category:
+  - Guide
+---
+
 # User Guide
 
 This section contains miscellaneous documents on using and configuring the

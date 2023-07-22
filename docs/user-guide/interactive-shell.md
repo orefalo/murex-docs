@@ -1,4 +1,4 @@
-# Murex's Interactive Shell
+# Interactive Shell
 
 > What's different about Murex's interactive shell?
 
@@ -56,10 +56,12 @@ in an intelligent and readable yet succinct way.
 You can add your own commands and functions to Murex as methods by defining
 them with `method`. For example if we were to add `jq` as a method:
 
-    method: define jq {
-        "Stdin":  "json",
-        "Stdout": "@Any"
-    }
+```
+method: define jq {
+    "Stdin":  "json",
+    "Stdout": "@Any"
+}
+```
 
 ### Syntax Completion
 
@@ -104,7 +106,9 @@ The formatting config takes a string and supports [ANSI constants](ansi.md).
 It is also worth noting that if colour is disabled then the **hint text** will
 not be coloured even if **hint-text-formatting** includes colour codes:
 
-    » config: set shell color false
+```
+» config: set shell color false
+```
 
 (please note that **syntax highlighting** is unaffected by the above config)
 
@@ -116,6 +120,7 @@ displayed then Murex can fallback to a default **hint text** status. This
 default is a user defined function. At time of writing this document the author
 has the following function defined:
 
+```
     config: set shell hint-text-func {
         trypipe <!null> {
             git status --porcelain -b -> set gitstatus
@@ -125,6 +130,7 @@ has the following function defined:
             out "Not a git repository."
         }
     }
+```
 
 ...which produces a colorized status that looks something like the following:
 
@@ -135,7 +141,9 @@ has the following function defined:
 It is enabled by default but can be disabled if you prefer a more minimal
 prompt:
 
-    » config: set shell hint-text-enabled false
+```
+» config: set shell hint-text-enabled false
+```
 
 ## See Also
 
