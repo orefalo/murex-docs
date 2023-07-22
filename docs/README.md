@@ -31,102 +31,102 @@ highlights:
       - title: Content Aware
         icon: arrows-to-circle
         details: natively manipulate JSON, TOML, YAML, XML, CSV, commonlog
-        link: /types
+        link: types/
 
       - title: Objects and Maps
         icon: table-columns
         details: use maps, hashed, lists and dictionaries
-        link: https://theme-hope.vuejs.press/guide/markdown/tabs.html
+        link: mkarray/
 
       - title: Arrays manipulation
         icon: layer-group
         details: native builtins allows the proper manipulation of arrays
-        link: link to GUIDE.arrays-and-maps.html
+        link: lmkarray/
 
       - title: Scalar expression
         icon: check-double
         details: the shell parses variables as expression to get around accidental bugs due to spaces
-        link: https://theme-hope.vuejs.press/guide/markdown/tabs.html
+        link: tour/#scalars
 
       - title: Public & Private functions
         icon: unlock-keyhole
         details: private functions restrict scope visibility to nearest module or source file
-        link: https://theme-hope.vuejs.press/guide/markdown/tabs.html
+        link: commands/private
 
       - title: Type inference
         icon: text-height
         details: the shell tries to infer the data type of variable and pipelines it manages
-        link: https://theme-hope.vuejs.press/guide/markdown/tabs.html
+        link: tour/#type-inference
 
       - title: Enhanced pipelines & redirection
         icon: puzzle-piece
         details: supports sending typed information to compatible functions via redirection and pipelines
-        link: https://theme-hope.vuejs.press/guide/markdown/others.html#link-check
+        link: user-guide/pipeline
 
       - title: Type casting and formats
         icon: text-width
         details: change the meta-data about how an information should be read or displayed
-        link: https://theme-hope.vuejs.press/guide/markdown/tabs.html
+        link: tour/#type-conversion
 
       - title: Inline spellchecking
         icon: spell-check
         details: quickly identify typing spelling errors with underlines text
-        link: https://theme-hope.vuejs.press/guide/markdown/container.html
+        link: user-guide/spellcheck
 
       - title: Smart Autocomplete
         icon: wand-magic-sparkles
         details: parses man pages for command line flags then use `TAB` to auto-complete commands and parameters,
-        link: https://theme-hope.vuejs.press/guide/markdown/tabs.html
+        link: commands/autocomplete
 
       - title: Hint text
         icon: comment
         details: the hinttext gives clues to the user without any distractions
-        link: https://theme-hope.vuejs.press/guide/markdown/container.html
+        link: user-guide/interactive-shell#hint-text
 
       - title: Syntax highlighting
         icon: highlighter
         details: in the interactive terminal, syntax is highlighted and style can be piped to the next built-in
-        link: https://theme-hope.vuejs.press/guide/markdown/tabs.html
+        link: user-guide/interactive-shell#syntax-highlighting
 
       - title: Syntax Completion
         icon: down-left-and-up-right-to-center
         details: balances and auto-closes brackets and accolades
-        link: https://theme-hope.vuejs.press/guide/markdown/tabs.html
+        link: user-guide/interactive-shell#syntax-completion
 
       - title: Extension Framework
         icon: cube
         details: design yourself or enjoy prebuilt extensions such as `auto-jump` or `starfish`
-        link: https://theme-hope.vuejs.press/guide/markdown/tabs.html
+        link: user-guide/modules
 
       - title: Built-in Package Manager
         icon: cubes
         details: comes with all utilities to search and manage the lifecycle of packages
-        link: https://theme-hope.vuejs.press/guide/markdown/tabs.html
+        link: commands/murex-package
 
       - title: 80 builtins commands
         icon: building
         details: full featured builtins allow fast execution and portability
-        link: https://theme-hope.vuejs.press/guide/markdown/tabs.html
+        link: commands/
 
       - title: Realtime Events
         icon: bolt
         details: events streamline script notifications upon elapsed time, keypress, completion, prompt or filesystem changes
-        link: https://theme-hope.vuejs.press/guide/markdown/tabs.html
+        link: events/
 
       - title: PNG Generation
         icon: image
         details: generate barcodes and images diretly from scripts
-        link: https://theme-hope.vuejs.press/guide/markdown/tabs.html
+        link: optional/qr
 
       - title: Multi-threaded
         icon: gears
         details: builtins are not forked processes like in a traditional POSIX shell, rather separate threads to optimize resource and performance
-        link: https://theme-hope.vuejs.press/guide/markdown/tabs.html
+        link: commands/fid-list
 
       - title: NOT POSIX compliant!
         icon: recycle
         details: purposely NOT POSIX compliant to be performant and allow for extended capabilities
-        link: https://theme-hope.vuejs.press/guide/markdown/tabs.html
+        link: /
 
 copyright: false
 footer: GPL Licensed, Copyright © 2017-present Laurence Morgan
@@ -204,8 +204,8 @@ sudo port install murex
 
 :::
 
-More options are available in the [INSTALL](/install) document
+More options are available in the [INSTALL](install/) document
 
 ## 🛟 Getting Started
 
-Take your your first steps with `Murex` by following our [Language Tutorial](/tour)
+Take your your first steps with `Murex` by following our [Language Tutorial](tour/)
