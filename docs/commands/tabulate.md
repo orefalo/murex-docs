@@ -14,7 +14,7 @@ into machine readable data structure.
 
 ## Usage
 
-    `<stdin>` -> tabulate [ flags ] -> `<stdout>`
+    <stdin> -> tabulate [ flags ] -> <stdout>
 
 ## Flags
 

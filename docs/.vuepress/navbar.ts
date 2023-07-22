@@ -12,7 +12,6 @@ export default navbar([
         icon: "lightbulb",
         prefix: "/",
         children: [
-          { text: "install", icon: "ellipsis", link: "install/" },
           "install",
           "user-guide",
           "commands",
