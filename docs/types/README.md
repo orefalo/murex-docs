@@ -1,9 +1,9 @@
 ---
-title: Content Aware
-icon: arrows-to-circle
+title: README
+icon: eye
 index: true
 category:
-  - Feature
+  - DataTypes
 ---
 
 # Data-Type Reference
@@ -41,36 +41,3 @@ doesn't support naked arrays where as JSON does), you may find some
 features missing in some data-types which are present in others. If in
 doubt then refer to the manual here or check the API manual for more
 details about specific hooks.
-
-## Pages
-
-- [`*` (generic) ](./generic.md):
-  generic (primitive)
-- [`bool` ](./bool.md):
-  Boolean (primitive)
-- [`commonlog` ](./commonlog.md):
-  Apache httpd "common" log format
-- [`csv` ](./csv.md):
-  CSV files (and other character delimited tables)
-- [`float` (floating point number)](./float.md):
-  Floating point number (primitive)
-- [`hcl` ](./hcl.md):
-  HashiCorp Configuration Language (HCL)
-- [`int` ](./int.md):
-  Whole number (primitive)
-- [`json` ](./json.md):
-  JavaScript Object Notation (JSON)
-- [`jsonc` ](./jsonc.md):
-  Concatenated JSON
-- [`jsonl` ](./jsonl.md):
-  JSON Lines
-- [`num` (number)](./num.md):
-  Floating point number (primitive)
-- [`str` (string) ](./str.md):
-  string (primitive)
-- [`toml` ](./toml.md):
-  Tom's Obvious, Minimal Language (TOML)
-- [`yaml` ](./yaml.md):
-  YAML Ain't Markup Language (YAML)
-- [mxjson](./mxjson.md):
-  Murex-flavoured JSON (deprecated)

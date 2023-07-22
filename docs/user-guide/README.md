@@ -1,7 +1,7 @@
 ---
 title: README
 index: true
-icon: book
+icon: eye
 category:
   - Guide
 ---
