@@ -18,7 +18,9 @@ enable Bash-like globbing.
 
 ## Examples
 
-    @g echo *
+```
+@g echo *
+```
 
 ## Detail
 

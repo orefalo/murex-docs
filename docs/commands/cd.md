@@ -12,26 +12,30 @@ Changes current working directory.
 
 ## Examples
 
-    # Home directory
-    » cd: ~
+```
+# Home directory
+» cd: ~
 
-    # Absolute path
-    » cd: /etc/
+# Absolute path
+» cd: /etc/
 
-    # Relative path
-    » cd: Documents
-    » cd: ./Documents
+# Relative path
+» cd: Documents
+» cd: ./Documents
+```
 
 ## Detail
 
 `cd` updates an environmental variable, `$PWDHIST` with an array of paths.
 You can then use that to change to a previous directory
 
-    # View the working directory history
-    » $PWDHIST
+```
+# View the working directory history
+» $PWDHIST
 
-    # Change to a previous directory
-    » cd $PWDHIST[0]
+# Change to a previous directory
+» cd $PWDHIST[0]
+```
 
 ### auto-cd
 
@@ -39,7 +43,9 @@ Some people prefer to omit `cd` and just write the path, with their shell
 automatically changing to that directory if the "command" is just a directory.
 In Murex you can enable this behaviour by turning on "auto-cd":
 
-    config: set shell auto-cd true
+```
+config: set shell auto-cd true
+```
 
 ## See Also
 

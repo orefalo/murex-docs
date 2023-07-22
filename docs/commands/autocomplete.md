@@ -65,10 +65,12 @@ Set to `true` to enable multiple parameters following the same rules as defined
 in this index. For example the following will suggest directories on each tab
 for multiple parameters:
 
-    autocomplete set example { [{
-        "IncDirs": true,
-        "AllowMultiple": true
-    }] }
+```
+autocomplete set example { [{
+    "IncDirs": true,
+    "AllowMultiple": true
+}] }
+```
 
 ### "AnyValue": boolean (false)
 

@@ -17,15 +17,17 @@
 Because aliases are parsed into an array of parameters, you cannot put the
 entire alias within quotes. For example:
 
-    # bad :(
-    » alias hw="out Hello, World!"
-    » hw
-    exec: "out\\ Hello,\\ World!": executable file not found in $PATH
+```
+# bad :(
+» alias hw="out Hello, World!"
+» hw
+exec: "out\\ Hello,\\ World!": executable file not found in $PATH
 
-    # good :)
-    » alias hw=out "Hello, World!"
-    » hw
-    Hello, World!
+# good :)
+» alias hw=out "Hello, World!"
+» hw
+Hello, World!
+```
 
 Notice how only the command `out "Hello, World!"` is quoted in `alias` the
 same way you would have done if you'd run that command "naked" in the command
@@ -50,13 +52,15 @@ The following regex is used to validate the `alias`'s parameters:
 Like all other definable states in Murex, you can delete an alias with the
 bang prefix:
 
-    » alias hw=out "Hello, World!"
-    » hw
-    Hello, World!
+```
+» alias hw=out "Hello, World!"
+» hw
+Hello, World!
 
-    » !alias hw
-    » hw
-    exec: "hw": executable file not found in $PATH
+» !alias hw
+» hw
+exec: "hw": executable file not found in $PATH
+```
 
 ### Order of preference
 

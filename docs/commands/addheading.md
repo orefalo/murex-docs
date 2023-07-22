@@ -10,7 +10,7 @@ prepend to tables.
 
 ## Usage
 
-    `<stdin>` -> addheading: value value value ... -> `<stdout>`
+    <stdin> -> addheading: value value value ... -> <stdout>
 
 ## Examples
 

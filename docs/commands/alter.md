@@ -19,45 +19,53 @@ The _value_ must always be supplied as JSON however
 
 ## Examples
 
-    » config: -> [ shell ] -> [ prompt ] -> alter: /Value moo
-    {
-        "Data-Type": "block",
-        "Default": "{ out 'murex » ' }",
-        "Description": "Interactive shell prompt.",
-        "Value": "moo"
-    }
+```
+» config: -> [ shell ] -> [ prompt ] -> alter: /Value moo
+{
+    "Data-Type": "block",
+    "Default": "{ out 'murex » ' }",
+    "Description": "Interactive shell prompt.",
+    "Value": "moo"
+}
+```
 
 `alter` also accepts JSON as a parameter for adding structured data:
 
-    config: -> [ shell ] -> [ prompt ] -> alter: /Example { "Foo": "Bar" }
-    {
-        "Data-Type": "block",
-        "Default": "{ out 'murex » ' }",
-        "Description": "Interactive shell prompt.",
-        "Example": {
-            "Foo": "Bar"
-        },
-        "Value": "{ out 'murex » ' }"
-    }
+```
+config: -> [ shell ] -> [ prompt ] -> alter: /Example { "Foo": "Bar" }
+{
+    "Data-Type": "block",
+    "Default": "{ out 'murex » ' }",
+    "Description": "Interactive shell prompt.",
+    "Example": {
+        "Foo": "Bar"
+    },
+    "Value": "{ out 'murex » ' }"
+}
+```
 
 However it is also data type aware so if they key you're updating holds a string
 (for example) then the JSON data a will be stored as a string:
 
-    » config: -> [ shell ] -> [ prompt ] -> alter: /Value { "Foo": "Bar" }
-    {
-        "Data-Type": "block",
-        "Default": "{ out 'murex » ' }",
-        "Description": "Interactive shell prompt.",
-        "Value": "{ \"Foo\": \"Bar\" }"
-    }
+```
+» config: -> [ shell ] -> [ prompt ] -> alter: /Value { "Foo": "Bar" }
+{
+    "Data-Type": "block",
+    "Default": "{ out 'murex » ' }",
+    "Description": "Interactive shell prompt.",
+    "Value": "{ \"Foo\": \"Bar\" }"
+}
+```
 
 Numbers will also follow the same transparent conversion treatment:
 
-    » tout: json { "one": 1, "two": 2 } -> alter: /two "3"
-    {
-        "one": 1,
-        "two": 3
-    }
+```
+» tout: json { "one": 1, "two": 2 } -> alter: /two "3"
+{
+    "one": 1,
+    "two": 3
+}
+```
 
 > Please note: `alter` is not changing the value held inside `config` but
 > instead took the STDOUT from `config`, altered a value and then passed that
@@ -72,13 +80,15 @@ Thus far all the examples have be changing existing keys. However you can also
 alter a structure by appending to an array or a merging two maps together. You
 do this with the `--merge` (or `-m`) flag.
 
-    » out: a\nb\nc -> alter: --merge / ([ "d", "e", "f" ])
-    a
-    b
-    c
-    d
-    e
-    f
+```
+» out: a\nb\nc -> alter: --merge / ([ "d", "e", "f" ])
+a
+b
+c
+d
+e
+f
+```
 
 ### -s / --sum
 
@@ -86,12 +96,14 @@ This behaves similarly to `--merge` where structures are blended together.
 However where a map exists with two keys the same and the values are numeric,
 those values are added together.
 
-    » tout json { "a": 1, "b": 2 } -> alter --sum / { "b": 3, "c": 4 }
-    {
-        "a": 1,
-        "b": 5,
-        "c": 4
-    }
+```
+» tout json { "a": 1, "b": 2 } -> alter --sum / { "b": 3, "c": 4 }
+{
+    "a": 1,
+    "b": 5,
+    "c": 4
+}
+```
 
 ## Flags
 
@@ -111,13 +123,17 @@ those values are added together.
 The path parameter can take any character as node separators. The separator is
 assigned via the first character in the path. For example
 
-    config -> alter: .shell.prompt.Value moo
-    config -> alter: >shell>prompt>Value moo
+```
+config -> alter: .shell.prompt.Value moo
+config -> alter: >shell>prompt>Value moo
+```
 
 Just make sure you quote or escape any characters used as shell tokens. eg
 
-    config -> alter: '#shell#prompt#Value' moo
-    config -> alter: ' shell prompt Value' moo
+```
+config -> alter: '#shell#prompt#Value' moo
+config -> alter: ' shell prompt Value' moo
+```
 
 ### Supported data-types
 
@@ -126,7 +142,9 @@ can be any data-type supported by murex.
 
 You can check what data-types are available via the `runtime` command:
 
-    runtime --marshallers
+```
+runtime --marshallers
+```
 
 Marshallers are enabled at compile time from the `builtins/data-types` directory.
 

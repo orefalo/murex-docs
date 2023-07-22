@@ -12,14 +12,18 @@ Write parameters to STDERR with a trailing new line character.
 
 ## Examples
 
-    » err Hello, World!
-    Hello, World!
+```
+» err Hello, World!
+Hello, World!
+```
 
 ## Detail
 
 `err` outputs as `string` data-type. This can be changed by casting
 
-    err { "Code": 404, "Message": "Page not found" } ? cast json
+```
+err { "Code": 404, "Message": "Page not found" } ? cast json
+```
 
 However passing structured data-types along the STDERR stream is not recommended
 as any other function within your code might also pass error messages along the
@@ -28,14 +32,16 @@ supply a `tout` function for STDERR. The recommended solution for passing
 messages like these which you want separate from your STDOUT stream is to create
 a new Murex named pipe.
 
-    » pipe: --create messages
-    » bg { <messages> -> pretty }
-    » tout: <messages> json { "Code": 404, "Message": "Page not found" }
-    » pipe: --close messages
-    {
-        "Code": 404,
-        "Message": "Page not found"
-    }
+```
+» pipe: --create messages
+» bg { <messages> -> pretty }
+» tout: <messages> json { "Code": 404, "Message": "Page not found" }
+» pipe: --close messages
+{
+    "Code": 404,
+    "Message": "Page not found"
+}
+```
 
 ### ANSI Constants
 

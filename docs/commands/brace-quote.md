@@ -8,23 +8,25 @@ Write parameters to STDOUT (does not include a new line)
 
 ## Usage
 
-    (string to write) -> `<stdout>`
+    (string to write) -> <stdout>
 
 ## Examples
 
-    » (Hello, World!)
-    Hello, World!
+```
+» (Hello, World!)
+Hello, World!
 
-    » (Hello,\nWorld!)
-    Hello,
-    World!
+» (Hello,\nWorld!)
+Hello,
+World!
 
-    » ((Hello,) (World!))
-    (Hello,) (World!)
+» ((Hello,) (World!))
+(Hello,) (World!)
 
-    # Print "Hello, World!" in red text
-    » {RED}Hello, World!{RESET}
-    Hello, World!
+# Print "Hello, World!" in red text
+» {RED}Hello, World!{RESET}
+Hello, World!
+```
 
 ## Detail
 
