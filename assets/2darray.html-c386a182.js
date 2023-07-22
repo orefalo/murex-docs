@@ -1,0 +1,72 @@
+import{_ as t}from"./plugin-vue_export-helper-c27b6911.js";import{r as l,o as s,c as o,d as e,b as a,w as d,e as n,f as u}from"./app-4653c0b0.js";const r={},c=u(`<h1 id="_2darray" tabindex="-1"><a class="header-anchor" href="#_2darray" aria-hidden="true">#</a> <code>2darray</code></h1><blockquote><p>Create a 2D JSON array from multiple input sources</p></blockquote><h2 id="description" tabindex="-1"><a class="header-anchor" href="#description" aria-hidden="true">#</a> Description</h2><p><code>2darray</code> merges multiple input sources to create a two dimensional array in JSON</p><h2 id="usage" tabindex="-1"><a class="header-anchor" href="#usage" aria-hidden="true">#</a> Usage</h2><pre><code>2darray: { code-block } { code-block } -&gt; \`&lt;stdout&gt;\`
+</code></pre><h2 id="examples" tabindex="-1"><a class="header-anchor" href="#examples" aria-hidden="true">#</a> Examples</h2><div class="language-text line-numbers-mode" data-ext="text"><pre class="language-text"><code>» ps: -fe -&gt; head: -n 10 -&gt; set: ps
+» 2darray { $ps[UID] } { $ps[PID] } { $ps[TTY] } { $ps[TIME] }
+[
+    [
+        &quot;&quot;,
+        &quot;&quot;,
+        &quot;&quot;,
+        &quot;&quot;
+    ],
+    [
+        &quot;UID&quot;,
+        &quot;PID&quot;,
+        &quot;TTY&quot;,
+        &quot;TIME&quot;
+    ],
+    [
+        &quot;root&quot;,
+        &quot;1&quot;,
+        &quot;?&quot;,
+        &quot;00:00:02&quot;
+    ],
+    [
+        &quot;root&quot;,
+        &quot;2&quot;,
+        &quot;?&quot;,
+        &quot;00:00:00&quot;
+    ],
+    [
+        &quot;root&quot;,
+        &quot;3&quot;,
+        &quot;?&quot;,
+        &quot;00:00:00&quot;
+    ],
+    [
+        &quot;root&quot;,
+        &quot;4&quot;,
+        &quot;?&quot;,
+        &quot;00:00:00&quot;
+    ],
+    [
+        &quot;root&quot;,
+        &quot;6&quot;,
+        &quot;?&quot;,
+        &quot;00:00:00&quot;
+    ],
+    [
+        &quot;root&quot;,
+        &quot;8&quot;,
+        &quot;?&quot;,
+        &quot;00:00:00&quot;
+    ],
+    [
+        &quot;root&quot;,
+        &quot;9&quot;,
+        &quot;?&quot;,
+        &quot;00:00:03&quot;
+    ],
+    [
+        &quot;root&quot;,
+        &quot;10&quot;,
+        &quot;?&quot;,
+        &quot;00:00:19&quot;
+    ],
+    [
+        &quot;root&quot;,
+        &quot;11&quot;,
+        &quot;?&quot;,
+        &quot;00:00:01&quot;
+    ]
+]
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2 id="detail" tabindex="-1"><a class="header-anchor" href="#detail" aria-hidden="true">#</a> Detail</h2><p><code>2darray</code> can have as many or as few code blocks as you wish.</p><h2 id="see-also" tabindex="-1"><a class="header-anchor" href="#see-also" aria-hidden="true">#</a> See Also</h2>`,11),v=e("code",null,"[",-1),m=e("code",null,"[",-1),b=e("code",null,"a",-1),q=e("code",null,"append",-1),h=e("code",null,"count",-1),p=e("code",null,"ja",-1),_=e("code",null,"json",-1),f=e("code",null,"jsplit",-1),y=e("code",null,"map",-1),x=e("code",null,"msort",-1),g=e("code",null,"mtac",-1),N=e("code",null,"prepend",-1);function S(k,D){const i=l("RouterLink");return s(),o("div",null,[c,e("ul",null,[e("li",null,[a(i,{to:"/commands/index2.html"},{default:d(()=>[v,n(" (index)")]),_:1}),n(": Outputs an element from an array, map or table")]),e("li",null,[a(i,{to:"/commands/range.html"},{default:d(()=>[m,n(" (range) ")]),_:1}),n(": Outputs a ranged subset of data from STDIN")]),e("li",null,[a(i,{to:"/commands/a.html"},{default:d(()=>[b,n(" (mkarray)")]),_:1}),n(": A sophisticated yet simple way to build an array or list")]),e("li",null,[a(i,{to:"/commands/append.html"},{default:d(()=>[q]),_:1}),n(": Add data to the end of an array")]),e("li",null,[a(i,{to:"/commands/count.html"},{default:d(()=>[h]),_:1}),n(": Count items in a map, list or array")]),e("li",null,[a(i,{to:"/commands/ja.html"},{default:d(()=>[p,n(" (mkarray)")]),_:1}),n(": A sophisticated yet simply way to build a JSON array")]),e("li",null,[a(i,{to:"/types/json.html"},{default:d(()=>[_]),_:1}),n(": JavaScript Object Notation (JSON)")]),e("li",null,[a(i,{to:"/commands/jsplit.html"},{default:d(()=>[f]),_:1}),n(": Splits STDIN into a JSON array based on a regex parameter")]),e("li",null,[a(i,{to:"/commands/map.html"},{default:d(()=>[y]),_:1}),n(": Creates a map from two data sources")]),e("li",null,[a(i,{to:"/commands/msort.html"},{default:d(()=>[x]),_:1}),n(": Sorts an array - data type agnostic")]),e("li",null,[a(i,{to:"/commands/mtac.html"},{default:d(()=>[g]),_:1}),n(": Reverse the order of an array")]),e("li",null,[a(i,{to:"/commands/prepend.html"},{default:d(()=>[N]),_:1}),n(": Add data to the start of an array")])])])}const I=t(r,[["render",S],["__file","2darray.html.vue"]]);export{I as default};
