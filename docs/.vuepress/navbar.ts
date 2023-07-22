@@ -5,25 +5,17 @@ export default navbar([
   {
     text: "Documentations",
     icon: "book",
-    // prefix: "/guide/",
     children: [
       {
         text: "Shortcuts",
-        icon: "lightbulb",
         prefix: "/",
         children: [
           "install",
-          "user-guide",
-          "commands",
-          // { text: "...", icon: "ellipsis", link: "#" },
+          { text: "Getting Started", link: "tour/", icon: "life-ring" },
+          { text: "User Guide", link: "user-guide/", icon: "book" },
+          { text: "BuiltIns", link: "commands/", icon: "terminal" },
         ],
       },
-      //   {
-      //     text: "Commands",
-      //     icon: "lightbulb",
-      //     prefix: "commands/",
-      //     children: ["ray", { text: "...", icon: "ellipsis", link: "#" }],
-      //   },
     ],
   },
   "/changelog",
