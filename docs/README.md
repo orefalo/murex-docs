@@ -30,37 +30,37 @@ highlights:
     features:
       - title: Content Aware
         icon: arrows-to-circle
-        details: Natively manipulate JSON, TOML, YAML, XML, CSV, and commonlog files
+        details: Murex has built-in support for natively manipulating various file formats such as JSON, TOML, YAML, XML, CSV, and commonlog. This allows for seamless integration and manipulation of data in these formats.
         link: types/
 
       - title: Objects and Maps
         icon: table-columns
-        details: Use maps, hashes, lists, and dictionaries for data manipulation
+        details: Murex provides powerful data structures like maps, hashes, lists, and dictionaries, which can be used for efficient and flexible data manipulation. These data structures enable you to organize and manipulate data in a structured and intuitive way.
         link: mkarray/
 
       - title: Arrays manipulation
         icon: layer-group
-        details: Native built-ins allow for proper manipulation of arrays
+        details: Murex comes with native built-in functions and features that allow for proper manipulation of arrays. These functions make it easy to perform operations like filtering, sorting, appending, and merging arrays, providing a seamless experience for working with array data
         link: lmkarray/
 
       - title: Scalar expression
         icon: check-double
-        details: The shell parses variables as expressions to avoid accidental bugs due to spaces
+        details: Murex treats variables as expressions, allowing you to perform calculations and evaluations directly within the shell. This feature helps to avoid accidental bugs caused by spaces or incorrect syntax, providing a more reliable and predictable scripting experience.
         link: tour/#scalars
 
       - title: Public & Private functions
         icon: unlock-keyhole
-        details: Private functions restrict scope visibility to the nearest module or source file
+        details: Murex supports both public and private functions. Private functions have restricted scope visibility, meaning they can only be accessed within the nearest module or source file. This allows for better encapsulation and organization of code, enhancing code readability and maintainability.
         link: commands/private
 
       - title: Type inference
         icon: text-height
-        details: The shell tries to infer the data type of variables and pipelines it manages
+        details: Murex employs type inference to automatically determine the data type of variables and pipelines it manages. This means that you don't always have to explicitly specify the data type, as the shell can intelligently infer it based on the context. This simplifies scripting and reduces the need for explicit type declarations.
         link: tour/#type-inference
 
       - title: Enhanced pipelines & redirection
         icon: puzzle-piece
-        details: urex supports sending typed information to compatible functions via redirection and pipelines. This allows for more efficient and flexible data processing.
+        details: Murex supports sending typed information to compatible functions via redirection and pipelines. This allows for more efficient and flexible data processing.
         link: user-guide/pipeline
 
       - title: Type casting and formats
