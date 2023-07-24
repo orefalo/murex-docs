@@ -22,13 +22,15 @@ export default hopeTheme({
 
   docsDir: "docs",
 
+  editLink: false,
+
   // navbar
   navbar,
 
   // sidebar
   sidebar,
 
-  footer: "Empty footer",
+  // footer: "Empty footer",
 
   displayFooter: false,
 
@@ -38,9 +40,9 @@ export default hopeTheme({
   //   },
   // },
 
-  metaLocales: {
-    editLink: "Edit this page on GitHub",
-  },
+  // metaLocales: {
+  //   editLink: "Edit this page on GitHub",
+  // },
 
   plugins: {
     // TODO: You should generate and use your own comment service
